@@ -3,119 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlashSale Pro - STADVDB MCO2</title>
-    <style>
-        /* Add all the CSS from the previous response here */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        /* ... include all the CSS styles from the previous answer ... */
-    </style>
+    <title>FlashSale - Online Shopping</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
-            <nav class="nav">
+            <div class="top-nav">
                 <div class="logo">
                     <span class="logo-icon">⚡</span>
-                    FlashSale Pro - STADVDB MCO2
+                    FlashSale
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#flash-sales">Flash Sales</a></li>
-                    <li><a href="#analytics">Analytics</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button>Search</button>
+                </div>
                 <div class="user-actions">
-                    <a href="#cart" class="btn btn-secondary">🛒 Cart (0)</a>
-                    <a href="#login" class="btn btn-primary">Login</a>
+                    <button class="action-btn">
+                        <span class="action-icon">👤</span>
+                        <span>Account</span>
+                    </button>
+                    <button class="action-btn">
+                        <span class="action-icon">❤️</span>
+                        <span>Wishlist</span>
+                    </button>
+                    <button class="action-btn">
+                        <span class="action-icon">🛒</span>
+                        <span>Cart (0)</span>
+                    </button>
                 </div>
-            </nav>
+            </div>
+            <div class="nav-categories">
+                <button class="category-btn">All Categories</button>
+                <button class="category-btn">Electronics</button>
+                <button class="category-btn">Fashion</button>
+                <button class="category-btn">Home & Living</button>
+                <button class="category-btn">Beauty</button>
+                <button class="category-btn">Sports</button>
+                <button class="category-btn">Toys & Games</button>
+                <button class="category-btn">Automotive</button>
+            </div>
         </div>
     </header>
 
+    <!-- Hero Banner -->
     <section class="hero-banner">
         <div class="container">
-            <h1>Flash Sale Madness! 🎉</h1>
-            <p>STADVDB MCO2 Project - Database Systems Implementation</p>
-            <a href="#products" class="btn btn-primary" style="background: white; color: #ff6b6b;">Shop Now</a>
+            <h1>MEGA FLASH SALE! 🎉</h1>
+            <p>Up to 80% OFF - Limited Time Only!</p>
+            <button class="cta-button">SHOP NOW</button>
         </div>
     </section>
 
-    <section id="products" class="container">
-        <div class="section-title">
-            <h2>Active Flash Sales</h2>
-        </div>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Flash Sale Section -->
+        <section class="flash-sale-section">
+            <div class="section-header">
+                <div class="section-title">
+                    ⚡ Flash Deals
+                    <div class="countdown-timer">02:15:30</div>
+                </div>
+                <a href="#" class="view-all">View All →</a>
+            </div>
 
-        <div class="countdown-timer">
-            <h3>Sale Ends In:</h3>
-            <div class="timer-display">02:15:30</div>
-            <p>Hurry up! Limited quantities available</p>
-        </div>
-
-        <div class="products-grid">
-            <!-- Product cards will go here -->
-            <div class="product-card">
-                <div class="product-badge">Flash Sale 🔥</div>
-                <div class="product-image"></div>
-                <div class="product-info">
-                    <div class="product-category">Electronics</div>
-                    <h3 class="product-name">Wireless Bluetooth Headphones</h3>
-                    <div class="product-price">
-                        <span class="current-price">$79.99</span>
-                        <span class="original-price">$129.99</span>
-                        <span class="discount-rate">38% OFF</span>
-                    </div>
-                    <div class="stock-info">
-                        Only 15 left in stock!
-                        <div class="stock-bar">
-                            <div class="stock-level" style="width: 30%;"></div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">FLASH SALE</div>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <div class="product-name">Wireless Bluetooth Headphones Noise Cancelling</div>
+                        <div class="product-price">
+                            <span class="current-price">₱1,299</span>
+                            <span class="original-price">₱2,599</span>
+                            <span class="discount-rate">-50%</span>
                         </div>
+                        <div class="product-sold">152 sold</div>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
-                    <button class="add-to-cart">Add to Cart 🛒</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-badge">FLASH SALE</div>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <div class="product-name">Smartphone 128GB Dual Camera 5000mAh</div>
+                        <div class="product-price">
+                            <span class="current-price">₱6,999</span>
+                            <span class="original-price">₱9,999</span>
+                            <span class="discount-rate">-30%</span>
+                        </div>
+                        <div class="product-sold">89 sold</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">FLASH SALE</div>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <div class="product-name">Running Shoes Lightweight Sports Sneakers</div>
+                        <div class="product-price">
+                            <span class="current-price">₱1,499</span>
+                            <span class="original-price">₱2,499</span>
+                            <span class="discount-rate">-40%</span>
+                        </div>
+                        <div class="product-sold">234 sold</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-badge">FLASH SALE</div>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <div class="product-name">Smart Watch Fitness Tracker with Heart Rate</div>
+                        <div class="product-price">
+                            <span class="current-price">₱1,799</span>
+                            <span class="original-price">₱3,599</span>
+                            <span class="discount-rate">-50%</span>
+                        </div>
+                        <div class="product-sold">167 sold</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-badge">FLASH SALE</div>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <div class="product-name">Wireless Earbuds Bluetooth 5.0 Touch Control</div>
+                        <div class="product-price">
+                            <span class="current-price">₱899</span>
+                            <span class="original-price">₱1,799</span>
+                            <span class="discount-rate">-50%</span>
+                        </div>
+                        <div class="product-sold">312 sold</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-badge">FLASH SALE</div>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <div class="product-name">Gaming Mouse RGB 7200DPI Programmable</div>
+                        <div class="product-price">
+                            <span class="current-price">₱699</span>
+                            <span class="original-price">₱1,399</span>
+                            <span class="discount-rate">-50%</span>
+                        </div>
+                        <div class="product-sold">98 sold</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="analytics" class="analytics-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Sales Analytics Dashboard</h2>
-            </div>
+        <!-- Analytics Section -->
+        <section class="analytics-section">
+            <h2 class="analytics-title">📊 Sales Analytics Dashboard</h2>
             <div class="reports-grid">
                 <div class="report-card">
-                    <div class="report-icon">📊</div>
-                    <h3>Top 10 Selling Products</h3>
-                    <p class="report-description">Real-time ranking of best-selling items</p>
-                    <div class="chart-placeholder">Chart Placeholder</div>
+                    <div class="report-header">
+                        <div class="report-icon">📈</div>
+                        <h3 class="report-title">Top Selling Products</h3>
+                    </div>
+                    <p class="report-description">Real-time ranking of best-selling items based on sales volume and revenue</p>
+                    <div class="chart-placeholder">Product Performance Chart</div>
                 </div>
+
                 <div class="report-card">
-                    <div class="report-icon">📈</div>
-                    <h3>Sales by Category</h3>
-                    <p class="report-description">Performance across product categories</p>
-                    <div class="chart-placeholder">Chart Placeholder</div>
+                    <div class="report-header">
+                        <div class="report-icon">🏷️</div>
+                        <h3 class="report-title">Category Performance</h3>
+                    </div>
+                    <p class="report-description">Sales distribution across different product categories and departments</p>
+                    <div class="chart-placeholder">Category Sales Chart</div>
                 </div>
+
                 <div class="report-card">
-                    <div class="report-icon">🔥</div>
-                    <h3>Flash Sale Performance</h3>
-                    <p class="report-description">Flash sale effectiveness metrics</p>
-                    <div class="chart-placeholder">Chart Placeholder</div>
+                    <div class="report-header">
+                        <div class="report-icon">🔥</div>
+                        <h3 class="report-title">Flash Sale Analytics</h3>
+                    </div>
+                    <p class="report-description">Performance metrics for flash sales including conversion rates and peak hours</p>
+                    <div class="chart-placeholder">Flash Sale Performance Chart</div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>STADVDB MCO2</h3>
-                    <p>FlashSale Pro - Database Systems Project</p>
+                    <h3>FlashSale</h3>
+                    <p>Your trusted online shopping destination with the best deals and fastest delivery.</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Team Members</h3>
+                    <h3>Customer Service</h3>
                     <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">How to Buy</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About FlashSale</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>STADVDB MCO2</h3>
+                    <ul class="footer-links">
+                        <li>Database Systems Project</li>
+                        <li>Team Members</li>
                         <li>Mark Celemen</li>
                         <li>Mark Abergos</li>
                         <li>Audrey Stingson</li>
@@ -123,12 +239,11 @@
                         <li>JV Torres</li>
                         <li>Kimm Gonzales</li>
                         <li>Kyle Gan</li>
-                        
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 STADVDB MCO2 - FlashSale Pro Implementation</p>
+                <p>&copy; 2025 FlashSale - STADVDB MCO2 Project. All rights reserved.</p>
             </div>
         </div>
     </footer>
