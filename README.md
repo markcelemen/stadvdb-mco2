@@ -1,59 +1,110 @@
 # STADVDB-MCO2
 
-# E-commerce Frontend Prototype
+# FlashSale Pro - E-Commerce Platform
 
-This is a **frontend-only** React prototype for an e-commerce application, based on the provided OLTP and OLAP database schemas.
+![FlashSale Pro](https://img.shields.io/badge/Project-MCO2_System-blue)
+![Database](https://img.shields.io/badge/Database-PostgreSQL-green)
+![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS-orange)
 
-It is built as a single `App.jsx` file and uses **Tailwind CSS** for styling. All data is hardcoded inside the `App.jsx` file, clearly marked with `TODO: UPDATE THE DATA IN BACKEND.` comments.
+A comprehensive flash sale e-commerce platform with transactional and analytical database operations, built for the MCO2 Database Systems project.
 
----
+## 🚀 Project Overview
 
-## Table of Contents
+This system implements a flash sale e-commerce platform with:
 
-1.  [Features](#1-features)
-2.  [How to Run This Application](#2-how-to-run-this-application)
-    - [Step 1: Create Project](#step-1-create-a-new-react--tailwind-project)
-    - [Step 2: Configure Tailwind](#step-2-configure-tailwind-css)
-    - [Step 3: Add Code](#step-3-add-the-application-code)
-    - [Step 4: Run](#step-4-run-the-application)
+- **OLTP Database** for transactional operations (inventory management, order processing)
+- **OLAP Database** for analytical reporting and visualizations
+- **Hot Backup Server** with physical replication
+- **Data Warehouse** for reporting with logical replication
 
----
+## 📋 Project Requirements
 
-## 1. Features
+### Transactional Operations
 
-- **Product Browsing**: A home page with a product list, including a mock "Flash Sale" section.
-- **Product Details**: A detail page for viewing a single product.
-- **Mock Cart**: A functional cart page that calculates totals based on dummy data.
-- **Order History**: A page showing a user's past orders.
-- **Analytics Dashboard**: A dedicated dashboard that visualizes the 3 reports specified in your OLAP schema:
-  1.  Top Selling Items
-  2.  Sales by Category
-  3.  Flash Sale Performance (hourly breakdown)
+- Batch updates and race condition handling
+- Deadlock avoidance strategies
+- Optimized database schema for high-concurrency operations
+- Flash sale inventory management
 
----
+### Analytical Operations
 
-## 2. How to Run This Application
+- Real-time and historical reporting
+- Three main visualizations:
+  1. Top 10 Selling Products
+  2. Sales by Product Category
+  3. Flash Sale Performance Analytics
 
-This is not a standalone runnable file; it's designed to be dropped into a standard React project. The quickest way to get this running is by using `vite`.
+### Database Architecture
 
-### Step 1: Create a new React + Tailwind Project
+- Primary OLTP Database (PostgreSQL)
+- Hot Backup Server (Physical Replication)
+- Reports & Visualizations Server (OLAP - Data Warehouse)
 
-If you don't have a project, create one:
+## 🏗️ System Architecture
 
-```bash
-# 0. Make sure you're in the frontend folder on your terminal
-cd frontend
+┌─────────────────┐ ┌──────────────────┐ ┌────────────────────┐
+│ Frontend │ │ Primary DB │ │ Hot Backup │
+│ (HTML/CSS) │◄──►│ (OLTP) │◄──►│ (Physical │
+│ │ │ │ │ Replication) │
+└─────────────────┘ └──────────────────┘ └────────────────────┘
+│
+▼
+┌──────────────────┐
+│ Data Warehouse │
+│ (OLAP) │
+│ Logical │
+│ Replication │
+└──────────────────┘
 
-# 1. Create a new React project using vite
-npm create vite@latest my-ecommerce-app --template react
+## 📁 Project Structure
 
-# 2. Enter the new directory
-cd my-ecommerce-app
+flashsale-pro/
+├── frontend/
+│ ├── index.html # Main frontend page
+│ ├── styles/ # CSS stylesheets
+│ └── images/ # Static images
+├── backend/ # (To be implemented)
+│ ├── api/ # REST API endpoints
+│ ├── models/ # Database models
+│ └── services/ # Business logic
+├── database/
+│ ├── oltp/ # OLTP schema and migrations
+│ ├── olap/ # OLAP schema and ETL
+│ └── replication/ # Replication configuration
+├── docker-compose.yml # Docker orchestration
+├── load-testing/ # JMeter test scripts
+└── README.md # This file
 
-# 3. Install npm packages
-npm install
+## 🛠️ Technologies Used
 
-# 4. Install Tailwind CSS
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+### Frontend
+
+- **HTML5** - Structure and semantics
+- **CSS3** - Styling and responsive design
+- **JavaScript** - Client-side interactions (placeholder)
+
+### Backend (To be implemented)
+
+- **Node.js/Express** or **Python/FastAPI** - API server
+- **PostgreSQL** - Primary database (OLTP)
+- **PostgreSQL** - Data warehouse (OLAP)
+
+### Infrastructure
+
+- **Docker** - Containerization
+- **Docker Compose** - Service orchestration
+- **JMeter** - Load testing
+
+## 🗄️ Database Schema
+
+### OLTP Database (Transactional)
+
+```sql
+-- Core Tables
+users (user_id, name, email, password, role)
+products (product_id, seller_id, name, category, price, original_price, discount_rate, quantity_stock, flash_sale_id)
+flash_sales (flash_sale_id, start_time, end_time)
+cart_items (cart_item_id, user_id, product_id, quantity_added)
+orders (order_id, user_id, total_amount, status, created_at)
+order_items (order_item_id, order_id, product_id, quantity_sold, price_at_sale)
 ```
