@@ -1,110 +1,138 @@
-# STADVDB-MCO2
-
-# FlashSale Pro - E-Commerce Platform
+# STADVDB-MCO2 - FlashSale E-Commerce Platform
 
 ![FlashSale Pro](https://img.shields.io/badge/Project-MCO2_System-blue)
 ![Database](https://img.shields.io/badge/Database-PostgreSQL-green)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS-orange)
 
-A comprehensive flash sale e-commerce platform with transactional and analytical database operations, built for the MCO2 Database Systems project.
+A modern flash sale e-commerce platform built for STADVDB MCO2 with transactional and analytical database operations.
 
-## 🚀 Project Overview
+## 🚀 Quick Start
 
-This system implements a flash sale e-commerce platform with:
+### Prerequisites
 
-- **OLTP Database** for transactional operations (inventory management, order processing)
-- **OLAP Database** for analytical reporting and visualizations
-- **Hot Backup Server** with physical replication
-- **Data Warehouse** for reporting with logical replication
+- Web browser (Chrome, Firefox, Safari)
+- (Optional) Visual Studio Code
 
-## 📋 Project Requirements
+### Running the Frontend
 
-### Transactional Operations
+```bash
+# Navigate to your project directory
+cd stadvdb-mco2
 
-- Batch updates and race condition handling
-- Deadlock avoidance strategies
-- Optimized database schema for high-concurrency operations
-- Flash sale inventory management
+# Open the frontend in browser
+open frontend/index.html
+```
 
-### Analytical Operations
+### Alternative methods:
 
-- Real-time and historical reporting
-- Three main visualizations:
-  1. Top 10 Selling Products
-  2. Sales by Product Category
-  3. Flash Sale Performance Analytics
-
-### Database Architecture
-
-- Primary OLTP Database (PostgreSQL)
-- Hot Backup Server (Physical Replication)
-- Reports & Visualizations Server (OLAP - Data Warehouse)
-
-## 🏗️ System Architecture
-
-┌─────────────────┐ ┌──────────────────┐ ┌────────────────────┐
-│ Frontend │ │ Primary DB │ │ Hot Backup │
-│ (HTML/CSS) │◄──►│ (OLTP) │◄──►│ (Physical │
-│ │ │ │ │ Replication) │
-└─────────────────┘ └──────────────────┘ └────────────────────┘
-│
-▼
-┌──────────────────┐
-│ Data Warehouse │
-│ (OLAP) │
-│ Logical │
-│ Replication │
-└──────────────────┘
+- Double-click `frontend/index.html` in Finder
+- Use VSCode with Live Server extension
+- Run `python3 -m http.server 8000` and `visit http://localhost:8000/frontend/`
 
 ## 📁 Project Structure
 
-flashsale-pro/
+```bash
+stadvdb-mco2/
 ├── frontend/
-│ ├── index.html # Main frontend page
-│ ├── styles/ # CSS stylesheets
-│ └── images/ # Static images
-├── backend/ # (To be implemented)
-│ ├── api/ # REST API endpoints
-│ ├── models/ # Database models
-│ └── services/ # Business logic
-├── database/
-│ ├── oltp/ # OLTP schema and migrations
-│ ├── olap/ # OLAP schema and ETL
-│ └── replication/ # Replication configuration
-├── docker-compose.yml # Docker orchestration
-├── load-testing/ # JMeter test scripts
-└── README.md # This file
-
-## 🛠️ Technologies Used
-
-### Frontend
-
-- **HTML5** - Structure and semantics
-- **CSS3** - Styling and responsive design
-- **JavaScript** - Client-side interactions (placeholder)
-
-### Backend (To be implemented)
-
-- **Node.js/Express** or **Python/FastAPI** - API server
-- **PostgreSQL** - Primary database (OLTP)
-- **PostgreSQL** - Data warehouse (OLAP)
-
-### Infrastructure
-
-- **Docker** - Containerization
-- **Docker Compose** - Service orchestration
-- **JMeter** - Load testing
-
-## 🗄️ Database Schema
-
-### OLTP Database (Transactional)
-
-```sql
--- Core Tables
-users (user_id, name, email, password, role)
-products (product_id, seller_id, name, category, price, original_price, discount_rate, quantity_stock, flash_sale_id)
-flash_sales (flash_sale_id, start_time, end_time)
-cart_items (cart_item_id, user_id, product_id, quantity_added)
-orders (order_id, user_id, total_amount, status, created_at)
-order_items (order_item_id, order_id, product_id, quantity_sold, price_at_sale)
+│   ├── index.html          # Main application page
+│   └── styles/
+│       └── style.css       # All styling and responsive design
+├── backend/                # (Future) API server implementation
+├── database/               # (Future) Database schemas and replication
+├── load-testing/           # (Future) JMeter test scripts
+└── README.md               # Project documentation
 ```
+
+## 🎯 Features Implemented
+
+### Frontend (Completed)
+
+- Modern E-commerce Design - Lazada/Shopee-inspired interface
+- Responsive Layout - Works on desktop and mobile devices
+- Flash Sale Section - Countdown timer and product grid
+- Product Catalog - 6 sample products with pricing and inventory
+- Analytics Dashboard - Placeholder for 3 OLAP reports
+- User Interface - Search bar, categories, shopping cart
+
+### Backend (Planned)
+
+- OLTP Database - PostgreSQL for transactional operations
+- OLAP Database - Data warehouse for analytical reporting
+- API Endpoints - RESTful services for frontend integration
+- Replication - Hot backup and data warehouse replication
+
+## 🛠️ Technology Stack
+
+### Current Implementation
+
+- Frontend: HTML5, CSS3 (No JavaScript dependencies)
+- Styling: Custom CSS with Flexbox and Grid
+- Icons: Unicode emojis for cross-platform compatibility
+
+### Planned Stack
+
+- Backend: Node.js/Express or Python/FastAPI
+- Database: PostgreSQL (OLTP + OLAP)
+- Replication: Physical & Logical replication
+- Containerization: Docker & Docker Compose
+- Load Testing: JMeter
+
+## 📊 Database Schema Preview
+
+### OLTP (Transactional Operations)
+
+- `users` - User accounts and authentication
+- `products` - Product catalog with inventory
+- `flash_sales` - Flash sale events and timing
+- `cart_items` - Shopping cart management
+- `orders` & `order_items` - Order processing
+
+### OLAP (Analytical Operations)
+
+- Star schema for reporting
+- Three main reports:
+
+1. Top Selling Products - Sales performance ranking
+2. Category Performance - Sales by product category
+3. Flash Sale Analytics - Flash sale effectiveness metrics
+
+## 🎨 Frontend Design
+
+The interface features:
+
+- Color Scheme: Red/pink gradient (Shopee-inspired)
+- Layout: Responsive grid system
+- Components: Product cards, countdown timer, analytics dashboard
+- Navigation: Category bar, search functionality, user actions
+- Mobile-Friendly: Responsive design for all screen sizes
+
+## 🔧 Development Status
+
+- ✅ Frontend Design - Completed
+- ✅ Responsive Layout - Completed
+- 🔄 Backend API - In Progress
+- 🔄 Database Setup - In Progress
+- 🔄 Replication - Planned
+- 🔄 Load Testing - Planned
+
+## 👥 Team Members
+
+Course: STADVDB MCO2 - Database Systems
+Repository: `https://github.com/markcelemen/stadvdb-mco2.git`
+
+## 🚀 Next Steps
+
+1. Backend Development - Implement API endpoints
+2. Database Integration - Connect to PostgreSQL
+3. Authentication - User login and registration
+4. Order Processing - Handle flash sale race conditions
+5. Analytics - Implement real-time reporting
+6. Deployment - Docker containerization
+
+## 📞 Support
+
+For technical issues or questions:
+
+1. Check browser console for errors (F12)
+2. Verify file paths are correct
+3. Ensure all files are in the proper directory structure
