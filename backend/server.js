@@ -8,7 +8,7 @@ const productRoutes = require('./routes/products');
 const authRoutes = require('./routes/auth');
 const cartRoutes = require('./routes/cart');
 const orderRoutes = require('./routes/orders');
-const analyticsRoutes = require('./routes/analytics');
+// const analyticsRoutes = require('./routes/analytics'); // for the OLAP queries
 const flashSaleRoutes = require('./routes/flashSales');
 
 // Middleware
@@ -21,7 +21,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
-app.use('/api/analytics', analyticsRoutes);
+// app.use('/api/analytics', analyticsRoutes); // for the OLAP queries
 app.use('/api/flash-sales', flashSaleRoutes);
 
 // Health check
