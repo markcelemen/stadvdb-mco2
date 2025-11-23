@@ -20,7 +20,7 @@ CREATE TABLE DimProduct(
 
 CREATE TABLE DimTime(
     time_id int,
-    t_hour int, --Range [0,23]
+    t_hour int, #Range [0,23]
     t_day int,
     t_month int,
     t_year int,
@@ -29,12 +29,12 @@ CREATE TABLE DimTime(
 
 CREATE TABLE DimFlashSale(
     flash_sale_id int,
-    title varchar(100),
-    start_time int,
-    end_time int,
-    PRIMARY KEY (flash_sale_id)
-    FOREIGN KEY (start_time) REFERENCES DimTime(time_id),
-    FOREIGN KEY (end_time) REFERENCES DimTime(time_id)
+    name varchar(100),
+    start_time_id int,
+    end_time_id int,
+    PRIMARY KEY (flash_sale_id),
+    FOREIGN KEY (start_time_id) REFERENCES DimTime(time_id),
+    FOREIGN KEY (end_time_id) REFERENCES DimTime(time_id)
 );
 
 CREATE TABLE FactOrders(

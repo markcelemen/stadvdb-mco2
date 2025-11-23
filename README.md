@@ -29,6 +29,19 @@ open frontend/index.html
 - Use VSCode with Live Server extension
 - Run `python3 -m http.server 8000` and `visit http://localhost:8000/frontend/`
 
+### To populate data in DB:
+
+* Alternatively, just use the data already in sample_data and olap_data.
+
+- RUN "CREATE DATABASE <db_name>; USE <db_name>;" in mySQL workbench
+- Run schema_oltp.sql in MySQL workbench. This is the main DB and replication and hot backup db.
+- Right click each table in Navigator view and click Table Data Import Wizard
+- Map the path to the right csv file in sample_data. Use existing data, and keep clicking Next. Data in the tables should be populated.
+- Run schema_olap.sql in MySQL workbench
+- Run etl.ipynb to transform oltp data to olap data in olap_data folder.
+- Right click each new table in Navigator view and click Table Data Import Wizard
+- Map the path to the right csv file in olap_data. Use existing data, and keep clicking Next. Data in the tables should be populated.
+
 ## 📁 Project Structure
 
 ```bash

@@ -2,13 +2,14 @@ CREATE TABLE Users(
     user_id int,
     user_name varchar(100),
     email varchar(100),
-    user_pw varchar(100), --password
+    user_pw varchar(100), # password
     user_role ENUM('SELLER', 'BUYER'),
     PRIMARY KEY (user_id)
 );
 
 CREATE TABLE FlashSales(
     flash_sale_id int,
+    name varchar(100),
     start_time datetime,
     end_time datetime,
     PRIMARY KEY (flash_sale_id)
@@ -19,10 +20,10 @@ CREATE TABLE Products(
     seller_id int,
     product_name varchar(100),
     category varchar(100),
-    product_desc varchar(256), --currently not in schema diagram
+    product_desc varchar(256),
     price decimal(8,2),
     original_price decimal(8,2),
-    discount_rate decimal(4,2), --percentage
+    discount_rate decimal(4,2), #percentage
     quantity_stock int,
     flash_sale_id int,
     PRIMARY KEY (product_id),
