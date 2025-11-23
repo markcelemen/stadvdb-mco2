@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Seller Dashboard - Products & Orders</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4}
+    body{margin:0;padding:20px;background:#f5f7fb;color:#111}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+    h1{font-size:20px;margin:0}
+    .container{display:grid;grid-template-columns:1fr 420px;gap:20px}
+    .card{background:#fff;padding:14px;border-radius:8px;box-shadow:0 1px 4px rgba(20,20,40,0.05)}
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    th,td{padding:8px;border-bottom:1px solid #eef0f5;text-align:left}
+    th{background:#fafbfe;font-weight:600;font-size:12px;color:#556}
+    .actions button{margin-right:6px}
+    .btn{background:#1f6feb;color:#fff;border:none;padding:8px 10px;border-radius:6px;cursor:pointer}
+    .btn.ghost{background:#fff;color:#1f6feb;border:1px solid #d6e5ff}
+    .btn.danger{background:#ff6b6b}
+    .small{padding:6px 8px;font-size:13px}
+    .muted{color:#667}
+    .flex{display:flex;gap:8px;align-items:center}
+    .img-thumb{width:48px;height:48px;object-fit:cover;border-radius:6px;border:1px solid #eee}
+    .form-row{display:flex;gap:8px;margin-bottom:8px}
+    .form-row input,.form-row textarea{flex:1;padding:8px;border:1px solid #e6eaf2;border-radius:6px}
+    .modal{position:fixed;inset:0;background:rgba(6,10,20,0.4);display:flex;align-items:center;justify-content:center;z-index:40}
+    .modal .card{width:520px;max-width:calc(100% - 32px)}
+    .hidden{display:none}
+    .note{font-size:12px;color:#666;margin-top:6px}
+    .right{justify-self:end}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Seller Dashboard</h1>
+    <div class="flex">
+      <button id="addProductBtn" class="btn">Add Product</button>
+      <button id="resetDemo" class="btn ghost small">Reset Demo Data</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="card">
+      <h2 style="margin-top:0;font-size:15px">Products</h2>
+      <div id="productsWrapper">
+        <table id="productsTable" aria-live="polite">
+          <thead>
+            <tr><th>Product</th><th>Price</th><th>Stock</th><th class="right">Actions</th></tr>
+          </thead>
+          <tbody id="productsBody"></tbody>
+        </table>
+      </div>
+      <p class="note">Products are stored locally for demo. Use Edit to modify or Delete to remove.</p>
+    </section>
+
+    <aside class="card">
+      <h2 style="margin-top:0;font-size:15px">Orders</h2>
+      <div id="ordersWrapper">
+        <table id="ordersTable">
+          <thead>
+            <tr><th>Order #</th><th>Customer</th><th>Quantity</th><th>Total</th><th class="right">Actions</th></tr>
+          </thead>
+          <tbody id="ordersBody"></tbody>
+        </table>
+      </div>
+      <p class="note">View order details or delete an order.</p>
+    </aside>
+
+    <aside class="card">
+      <h2 style="margin-top:0;font-size:15px">Flash Sales</h2>
+      <div id="flashSalesWrapper">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <div class="muted">Create and manage flash sales</div>
+          <button id="addFlashSaleBtn" class="btn small">Add Flash Sale</button>
+        </div>
+        <table id="flashSalesTable">
+          <thead>
+            <tr><th>Name</th><th>Starts</th><th>Ends</th><th class="right">Actions</th></tr>
+          </thead>
+          <tbody id="flashSalesBody"></tbody>
+        </table>
+      </div>
+      <p class="note">Associate products with a flash sale. Deleting a flash sale removes the association.</p>
+    </aside>
+
+    <aside class="card" style="display:none"></aside> <!-- placeholder to keep grid layout consistent -->
+  </div>
+
+  <!-- Product Modal -->
+  <div id="productModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="card">
+      <h3 id="modalTitle">Add Product</h3>
+      <form id="productForm">
+        <input type="hidden" id="productId" />
+        <div class="form-row">
+          <input id="productName" placeholder="Product name" required />
+          <input id="productPrice" type="number" step="0.01" placeholder="Price" required />
+        </div>
+        <div class="form-row">
+          <input id="productStock" type="number" placeholder="Stock" required />
+          <input id="productImage" placeholder="Image URL (optional)" />
+        </div>
+        <div class="form-row">
+          <textarea id="productDesc" rows="3" placeholder="Short description"></textarea>
+        </div>
+        <div style="display:flex;justify-content:flex-end;gap:8px">
+          <button type="button" id="cancelModal" class="btn ghost small">Cancel</button>
+          <button type="submit" class="btn small">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order View Modal -->
+  <div id="orderModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="card">
+      <h3>Order Details</h3>
+      <div id="orderDetails"></div>
+      <div style="display:flex;justify-content:flex-end;margin-top:12px;gap:8px">
+        <button id="closeOrder" class="btn ghost small">Close</button>
+        <button id="deleteOrderBtn" class="btn danger small">Delete Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flash Sale Modal -->
+  <div id="flashSaleModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="card">
+      <h3 id="flashModalTitle">Add Flash Sale</h3>
+      <form id="flashSaleForm">
+        <input type="hidden" id="flashSaleId" />
+        <div class="form-row">
+          <input id="flashSaleName" placeholder="Flash sale name" required />
+        </div>
+        <div class="form-row">
+          <label style="flex:1">
+            Start
+            <input id="flashSaleStart" type="datetime-local" required style="width:100%;box-sizing:border-box;margin-top:6px"/>
+          </label>
+          <label style="flex:1">
+            End
+            <input id="flashSaleEnd" type="datetime-local" required style="width:100%;box-sizing:border-box;margin-top:6px"/>
+          </label>
+        </div>
+        <div style="margin-bottom:8px;font-size:13px;color:#444">Select products to include:</div>
+        <div id="flashSaleProducts" style="max-height:220px;overflow:auto;border:1px solid #eef2fa;padding:8px;border-radius:6px;margin-bottom:8px"></div>
+
+        <div style="display:flex;justify-content:flex-end;gap:8px">
+          <button type="button" id="cancelFlashSale" class="btn ghost small">Cancel</button>
+          <button type="submit" class="btn small">Post Flash Sale</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/seller_view.js"></script>
+</body>
+</html>
