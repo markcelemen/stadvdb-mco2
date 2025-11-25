@@ -46,7 +46,7 @@
       <div id="productsWrapper">
         <table id="productsTable" aria-live="polite">
           <thead>
-            <tr><th>Product</th><th>Price</th><th>Stock</th><th class="right">Actions</th></tr>
+            <tr><th>Product</th><th>Original Price</th><th>Discounted Price</th><th>Stock</th><th class="right">Actions</th></tr>
           </thead>
           <tbody id="productsBody"></tbody>
         </table>
@@ -59,7 +59,7 @@
       <div id="ordersWrapper">
         <table id="ordersTable">
           <thead>
-            <tr><th>Order #</th><th>Customer</th><th>Quantity</th><th>Total</th><th class="right">Actions</th></tr>
+            <tr><th>Order #</th><th>Product</th><th>Customer</th><th>Quantity</th><th>Total</th><th class="right">Actions</th></tr>
           </thead>
           <tbody id="ordersBody"></tbody>
         </table>
@@ -95,10 +95,13 @@
         <input type="hidden" id="productId" />
         <div class="form-row">
           <input id="productName" placeholder="Product name" required />
-          <input id="productPrice" type="number" step="0.01" placeholder="Price" required />
+          <input id="productOriginalPrice" type="number" step="0.01" placeholder="Original Price" required />
         </div>
         <div class="form-row">
+          <input id="productPrice" type="number" step="0.01" placeholder="Discounted Price" required />
           <input id="productStock" type="number" placeholder="Stock" required />
+        </div>
+        <div class="form-row">
           <input id="productImage" placeholder="Image URL (optional)" />
         </div>
         <div class="form-row">

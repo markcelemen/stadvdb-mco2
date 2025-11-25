@@ -10,6 +10,7 @@ const cartRoutes = require('./routes/cart');
 const orderRoutes = require('./routes/orders');
 // const analyticsRoutes = require('./routes/analytics'); // for the OLAP queries
 const flashSaleRoutes = require('./routes/flashSales');
+const sellerRoutes = require('./routes/seller');
 
 // Middleware
 app.use(cors());
@@ -23,6 +24,11 @@ app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
 // app.use('/api/analytics', analyticsRoutes); // for the OLAP queries
 app.use('/api/flash-sales', flashSaleRoutes);
+app.use('/api/seller', sellerRoutes);
+
+app.get('/seller', (req, res) => {
+    res.sendFile('seller_view.html', { root: '../frontend' });
+});
 
 // Health check
 app.get('/api/health', (req, res) => {
