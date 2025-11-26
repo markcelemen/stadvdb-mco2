@@ -6,6 +6,8 @@
     <title>FlashSale - Online Shopping</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <img src="images/...">
 </head>
 <body>
     <!-- Header -->
@@ -168,38 +170,28 @@
             </div>
         </section>
 
-        <!-- Analytics Section -->
-        <section class="analytics-section">
-            <h2 class="analytics-title">📊 Sales Analytics Dashboard</h2>
-            <div class="reports-grid">
-                <div class="report-card">
-                    <div class="report-header">
-                        <div class="report-icon">📈</div>
-                        <h3 class="report-title">Top Selling Products</h3>
-                    </div>
-                    <p class="report-description">Real-time ranking of best-selling items based on sales volume and revenue</p>
-                    <div class="chart-placeholder">Product Performance Chart</div>
+        <section id="analytics">
+            <div class="charts-container">
+                <div class="chart-box">
+                    <h2>Top 10 Selling Products</h2>
+                    <canvas id="topProductsChart"></canvas>
                 </div>
 
-                <div class="report-card">
-                    <div class="report-header">
-                        <div class="report-icon">🏷️</div>
-                        <h3 class="report-title">Category Performance</h3>
-                    </div>
-                    <p class="report-description">Sales distribution across different product categories and departments</p>
-                    <div class="chart-placeholder">Category Sales Chart</div>
+                <div class="chart-box">
+                    <h2>Sales by Category</h2>
+                    <canvas id="salesByCategoryChart"></canvas>
                 </div>
 
-                <div class="report-card">
-                    <div class="report-header">
-                        <div class="report-icon">🔥</div>
-                        <h3 class="report-title">Flash Sale Analytics</h3>
-                    </div>
-                    <p class="report-description">Performance metrics for flash sales including conversion rates and peak hours</p>
-                    <div class="chart-placeholder">Flash Sale Performance Chart</div>
+                <div class="chart-box">
+                    <h2>Flash Sale Performance</h2>
+                    <canvas id="flashSaleChart"></canvas>
                 </div>
             </div>
         </section>
+
+        <!-- App Scripts -->
+        <script type="module" src="js/app.js"></script>
+        <script type="module" src="js/analytics.js"></script>
     </div>
 
     <!-- Footer -->

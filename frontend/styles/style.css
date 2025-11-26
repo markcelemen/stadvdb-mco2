@@ -552,6 +552,27 @@ body {
     margin-top: 5px;
 }
 
+.charts-container {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    gap: 20px;       /* spacing between charts */
+    justify-content: space-between; /* spread out horizontally */
+}
+
+.chart-box {
+    flex: 1 1 30%;    /* grow/shrink, base width ~30% */
+    min-width: 300px; /* prevent too small charts */
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.chart-box canvas {
+    width: 100% !important;
+    height: 300px !important; /* fixed height for consistency */
+}
+
 @keyframes slideIn {
     from {
         transform: translateX(400px);

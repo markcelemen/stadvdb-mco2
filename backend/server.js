@@ -1,59 +1,28 @@
 const express = require('express');
-const cors = require('cors');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const cors = require('cors');
+const path = require('path');
+const analyticsRoutes = require('./routes/analytics');  // <-- THIS
 
-// Import routes
-const productRoutes = require('./routes/products');
-const authRoutes = require('./routes/auth');
-const cartRoutes = require('./routes/cart');
-const orderRoutes = require('./routes/orders');
-// const analyticsRoutes = require('./routes/analytics'); // for the OLAP queries
-const flashSaleRoutes = require('./routes/flashSales');
-
-// Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('../frontend'));
 
-// Mount routes
-app.use('/api/products', productRoutes);
-app.use('/api/auth', authRoutes);
-app.use('/api/cart', cartRoutes);
-app.use('/api/orders', orderRoutes);
-// app.use('/api/analytics', analyticsRoutes); // for the OLAP queries
-app.use('/api/flash-sales', flashSaleRoutes);
+// MOUNT THE ROUTE
+app.use('/api/analytics', analyticsRoutes);
 
-// Health check
-app.get('/api/health', (req, res) => {
-    res.json({
-        success: true,
-        message: 'FlashSale API is running',
-        timestamp: new Date().toISOString()
-    });
+// Also mount other routes
+app.use('/api/products', require('./routes/products'));
+app.use('/api/cart', require('./routes/cart'));
+app.use('/api/auth', require('./routes/auth'));
+
+// Serve frontend
+app.use(express.static(path.join(__dirname, '../frontend')));
+
+// Fallback for frontend routing
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
-// 404 handler
-app.use((req, res) => {
-    res.status(404).json({
-        success: false,
-        message: 'Endpoint not found'
-    });
-});
-
-// Error handler
-app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).json({
-        success: false,
-        message: 'Internal server error',
-        error: process.env.NODE_ENV === 'development' ? err.message : undefined
-    });
-});
-
-// Start server
-app.listen(PORT, () => {
-    console.log(`FlashSale API Server running on port ${PORT}`);
-    console.log(`API Base URL: http://localhost:${PORT}/api`);
-    console.log(`Frontend URL: http://localhost:${PORT}`);
-});
+app.listen(3000, () =>
+    console.log("Server running on http://localhost:3000")
+);
