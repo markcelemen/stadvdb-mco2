@@ -1,7 +1,3 @@
-// frontend/app.js
-import { loadProducts } from './products.js';
-import { currentUser, updateUserUI } from './auth.js';
-import { loadTopProducts, loadSalesByCategory, loadHourlySales } from './analytics.js';
 // API Configuration
 const API_BASE_URL = 'http://localhost:3000/api';
 
@@ -432,14 +428,26 @@ function startCountdownTimer() {
     setInterval(updateTimer, 1000);
 }
 
-/* Initialization */
+// Make functions globally available
+window.addToCart = addToCart;
+window.removeFromCart = removeFromCart;
+window.showLoginModal = showLoginModal;
+window.showRegisterModal = showRegisterModal;
+window.closeModal = closeModal;
+window.handleLogin = handleLogin;
+window.handleRegister = handleRegister;
+window.logout = logout;
 
+/* Initialization */
 document.addEventListener('DOMContentLoaded', async () => {
     updateUserUI();
     await loadProducts({ flashSale: true });
-
-    // Load analytics dashboards
-    await loadTopProducts();
-    await loadSalesByCategory();
-    await loadHourlySales();
+    
+    if (currentUser) {
+        await loadCart();
+    }
+    
+    setupSearch();
+    setupCategoryFilters();
+    startCountdownTimer();
 });

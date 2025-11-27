@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const analyticsRoutes = require('./routes/analytics');  // <-- THIS
 const dotenv = require('dotenv');
 const path = require('path');
 
