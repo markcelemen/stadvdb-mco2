@@ -1,12 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-
-
 const dotenv = require('dotenv');
 const path = require('path');
+
 dotenv.config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 const setupDatabase = require('./db/setup');
 
@@ -15,26 +14,27 @@ const productRoutes = require('./routes/products');
 const authRoutes = require('./routes/auth');
 const cartRoutes = require('./routes/cart');
 const orderRoutes = require('./routes/orders');
-// const analyticsRoutes = require('./routes/analytics'); // for the OLAP queries
+const analyticsRoutes = require('./routes/analytics'); // uncommented
 const flashSaleRoutes = require('./routes/flashSales');
 const sellerRoutes = require('./routes/seller');
 
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('../frontend'));
+app.use(express.static(path.join(__dirname, '../frontend')));
 
 // Mount routes
 app.use('/api/products', productRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
-// app.use('/api/analytics', analyticsRoutes); // for the OLAP queries
+app.use('/api/analytics', analyticsRoutes); // uncommented
 app.use('/api/flash-sales', flashSaleRoutes);
 app.use('/api/seller', sellerRoutes);
 
+// Serve seller dashboard
 app.get('/seller', (req, res) => {
-    res.sendFile('seller_view.html', { root: '../frontend' });
+    res.sendFile('seller_view.html', { root: path.join(__dirname, '../frontend') });
 });
 
 // Health check
@@ -48,10 +48,7 @@ app.get('/api/health', (req, res) => {
 
 // 404 handler
 app.use((req, res) => {
-    res.status(404).json({
-        success: false,
-        message: 'Endpoint not found'
-    });
+    res.status(404).json({ success: false, message: 'Endpoint not found' });
 });
 
 // Error handler
@@ -69,6 +66,5 @@ app.listen(PORT, () => {
     console.log(`FlashSale API Server running on port ${PORT}`);
     console.log(`API Base URL: http://localhost:${PORT}/api`);
     console.log(`Frontend URL: http://localhost:${PORT}`);
-
     setupDatabase();
 });

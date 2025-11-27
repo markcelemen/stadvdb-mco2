@@ -1,6 +1,8 @@
 // API Base URL
 const API_BASE = 'http://localhost:3000/api/seller';
 
+import { loadTopProducts, loadSalesByCategory, loadHourlySales } from './analytics.js';
+
 // Get current user from localStorage
 let currentUser = null;
 try {
@@ -497,3 +499,9 @@ $('flashSalesBody').addEventListener('click', async e=>{
     await fetchOrders();
     await fetchFlashSales();
 })();
+
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadTopProducts();
+    await loadSalesByCategory();
+    await loadHourlySales();
+});
