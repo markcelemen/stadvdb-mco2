@@ -1,58 +1,59 @@
-CREATE TABLE Users(
-    user_id int,
-    user_name varchar(100),
-    email varchar(100),
-    user_pw varchar(100), # password
+CREATE TABLE IF NOT EXISTS Users(
+    user_id INT AUTO_INCREMENT,
+    user_name VARCHAR(100),
+    email VARCHAR(100),
+    user_pw VARCHAR(100),
     user_role ENUM('SELLER', 'BUYER'),
-    PRIMARY KEY (user_id)
+    PRIMARY KEY (user_id),
+    UNIQUE KEY (email)
 );
 
-CREATE TABLE FlashSales(
-    flash_sale_id int,
-    name varchar(100),
-    start_time datetime,
-    end_time datetime,
+CREATE TABLE IF NOT EXISTS FlashSales(
+    flash_sale_id INT AUTO_INCREMENT,
+    name VARCHAR(100),
+    start_time DATETIME,
+    end_time DATETIME,
     PRIMARY KEY (flash_sale_id)
 );
 
-CREATE TABLE Products(
-    product_id int,
-    seller_id int,
-    product_name varchar(100),
-    category varchar(100),
-    product_desc varchar(256),
-    price decimal(8,2),
-    original_price decimal(8,2),
-    discount_rate decimal(4,2), #percentage
-    quantity_stock int,
-    flash_sale_id int,
+CREATE TABLE IF NOT EXISTS Products(
+    product_id INT AUTO_INCREMENT,
+    seller_id INT,
+    product_name VARCHAR(100),
+    category VARCHAR(100),
+    product_desc VARCHAR(256),
+    price DECIMAL(8,2),
+    original_price DECIMAL(8,2),
+    discount_rate DECIMAL(4,2),
+    quantity_stock INT,
+    flash_sale_id INT,
     PRIMARY KEY (product_id),
     FOREIGN KEY (flash_sale_id) REFERENCES FlashSales(flash_sale_id)
 );
 
-CREATE TABLE Orders(
-    order_id int,
-    buyer_id int,
-    created_at datetime,
+CREATE TABLE IF NOT EXISTS Orders(
+    order_id INT AUTO_INCREMENT,
+    buyer_id INT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (order_id),
     FOREIGN KEY (buyer_id) REFERENCES Users(user_id)
 );
 
-CREATE TABLE OrderItems(
-    order_items_id int,
-    order_id int,
-    product_id int,
-    quantity_sold int,
+CREATE TABLE IF NOT EXISTS OrderItems(
+    order_items_id INT AUTO_INCREMENT,
+    order_id INT,
+    product_id INT,
+    quantity_sold INT,
     PRIMARY KEY (order_items_id),
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
 
-CREATE TABLE CartItems(
-    cart_item_id int,
-    user_id int,
-    product_id int,
-    quantity_added int,
+CREATE TABLE IF NOT EXISTS CartItems(
+    cart_item_id INT AUTO_INCREMENT,
+    user_id INT,
+    product_id INT,
+    quantity_added INT,
     PRIMARY KEY (cart_item_id),
     FOREIGN KEY (user_id) REFERENCES Users(user_id),
     FOREIGN KEY (product_id) REFERENCES Products(product_id)

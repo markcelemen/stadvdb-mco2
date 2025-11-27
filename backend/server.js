@@ -1,7 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
+
+const dotenv = require('dotenv');
+const path = require('path');
+dotenv.config({ path: path.resolve(__dirname, '.env') });
+
+const setupDatabase = require('./db/setup');
 
 // Import routes
 const productRoutes = require('./routes/products');
@@ -62,4 +68,6 @@ app.listen(PORT, () => {
     console.log(`FlashSale API Server running on port ${PORT}`);
     console.log(`API Base URL: http://localhost:${PORT}/api`);
     console.log(`Frontend URL: http://localhost:${PORT}`);
+
+    setupDatabase();
 });

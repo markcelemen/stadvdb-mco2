@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { products, orders, orderCounter } = require('../data/store');
+const pool = require('../db/pool');
 
 // GET all products for seller
 router.get('/products', (req, res) => {
