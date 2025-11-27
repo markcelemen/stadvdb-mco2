@@ -1,7 +1,3 @@
-// frontend/auth.js
-import { apiCall } from './api.js';
-import { loadCart } from './cart.js';
-
 export let currentUser = JSON.parse(localStorage.getItem('currentUser')) || null;
 
 export function setCurrentUser(user) {
