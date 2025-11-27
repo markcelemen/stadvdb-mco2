@@ -1,6 +1,20 @@
 // API Base URL
 const API_BASE = 'http://localhost:3000/api/seller';
 
+// Get current user from localStorage
+let currentUser = null;
+try {
+    currentUser = JSON.parse(localStorage.getItem('currentUser'));
+} catch (e) {
+    console.error('Failed to parse currentUser from localStorage:', e);
+}
+
+// Check if user is a seller
+if (!currentUser || currentUser.role !== 'SELLER') {
+    alert('You must be logged in as a seller to access this page');
+    window.location.href = '/';
+}
+
 // Utilities
 const $ = id => document.getElementById(id);
 
@@ -14,7 +28,11 @@ let flashSales = [];
 // API Helper Functions
 async function fetchProducts() {
     try {
-        const response = await fetch(`${API_BASE}/products`);
+        if (!currentUser || !currentUser.id) {
+            throw new Error('No seller ID found');
+        }
+        
+        const response = await fetch(`${API_BASE}/products?sellerId=${currentUser.id}`);
         const data = await response.json();
         if (data.success) {
             products = data.products;
@@ -28,7 +46,11 @@ async function fetchProducts() {
 
 async function fetchOrders() {
     try {
-        const response = await fetch(`${API_BASE}/orders`);
+        if (!currentUser || !currentUser.id) {
+            throw new Error('No seller ID found');
+        }
+        
+        const response = await fetch(`${API_BASE}/orders?sellerId=${currentUser.id}`);
         const data = await response.json();
         if (data.success) {
             orders = data.orders;
@@ -42,7 +64,11 @@ async function fetchOrders() {
 
 async function fetchFlashSales() {
     try {
-        const response = await fetch(`${API_BASE}/flash-sales`);
+        if (!currentUser || !currentUser.id) {
+            throw new Error('No seller ID found');
+        }
+        
+        const response = await fetch(`${API_BASE}/flash-sales?sellerId=${currentUser.id}`);
         const data = await response.json();
         if (data.success) {
             flashSales = data.flashSales;
@@ -151,6 +177,7 @@ function openProductModal(editProduct){
         $('modalTitle').textContent = 'Edit Product';
         $('productId').value = editProduct.id;
         $('productName').value = editProduct.name;
+        $('productCategory').value = editProduct.category || '';
         $('productOriginalPrice').value = editProduct.originalPrice || editProduct.currentPrice;
         $('productPrice').value = editProduct.currentPrice;
         $('productStock').value = editProduct.stock;
@@ -171,6 +198,7 @@ $('productForm').addEventListener('submit', async e=>{
     e.preventDefault();
     const id = $('productId').value;
     const name = $('productName').value.trim();
+    const category = $('productCategory').value.trim();
     const originalPrice = parseFloat($('productOriginalPrice').value) || 0;
     const price = parseFloat($('productPrice').value) || 0;
     const stock = parseInt($('productStock').value) || 0;
@@ -178,15 +206,19 @@ $('productForm').addEventListener('submit', async e=>{
     const desc = $('productDesc').value.trim();
     
     if(!name){ alert('Product name is required'); return }
+    if(!currentUser || !currentUser.id){ alert('Seller ID not found'); return }
 
     try {
         const productData = {
             name,
+            category,
             originalPrice,
             price,
+            discount: originalPrice > price ? ((originalPrice - price) / originalPrice * 100).toFixed(2) : 0,
             stock,
             image,
-            desc
+            desc,
+            sellerId: currentUser.id // Add seller ID
         };
 
         let response;
@@ -232,7 +264,7 @@ $('productsBody').addEventListener('click', async e=>{
     } else if(action === 'delete'){
         if(confirm('Delete this product?')) {
             try {
-                const response = await fetch(`${API_BASE}/products/${id}`, {
+                const response = await fetch(`${API_BASE}/products/${id}?sellerId=${currentUser.id}`, {
                     method: 'DELETE'
                 });
                 const data = await response.json();
@@ -262,7 +294,7 @@ $('ordersBody').addEventListener('click', async e=>{
     } else if(action === 'delete' && o){
         if(confirm('Delete this order?')) {
             try {
-                const response = await fetch(`${API_BASE}/orders/${id}`, {
+                const response = await fetch(`${API_BASE}/orders/${id}?sellerId=${currentUser.id}`, {
                     method: 'DELETE'
                 });
                 const data = await response.json();
@@ -302,7 +334,7 @@ $('deleteOrderBtn').addEventListener('click', async ()=>{
     if(!id) return;
     if(confirm('Delete this order?')){
         try {
-            const response = await fetch(`${API_BASE}/orders/${id}`, {
+            const response = await fetch(`${API_BASE}/orders/${id}?sellerId=${currentUser.id}`, {
                 method: 'DELETE'
             });
             const data = await response.json();
@@ -385,7 +417,8 @@ $('flashSaleForm').addEventListener('submit', async e=>{
             name,
             startTime: new Date(startVal).toISOString(),
             endTime: new Date(endVal).toISOString(),
-            productIds: selected
+            productIds: selected,
+            sellerId: currentUser.id // Add sellerId
         };
 
         const response = await fetch(`${API_BASE}/flash-sales`, {
@@ -433,7 +466,7 @@ $('flashSalesBody').addEventListener('click', async e=>{
     } else if(action === 'delete-flash' && f){
         if(confirm('Delete this flash sale?')) {
             try {
-                const response = await fetch(`${API_BASE}/flash-sales/${id}`, {
+                const response = await fetch(`${API_BASE}/flash-sales/${id}?sellerId=${currentUser.id}`, {
                     method: 'DELETE'
                 });
                 const data = await response.json();
@@ -448,15 +481,6 @@ $('flashSalesBody').addEventListener('click', async e=>{
                 alert('Failed to delete flash sale');
             }
         }
-    }
-});
-
-// Reset demo data
-$('resetDemo').addEventListener('click', async ()=>{
-    if(confirm('Reload all data from server?')){
-        await fetchProducts();
-        await fetchOrders();
-        await fetchFlashSales();
     }
 });
 

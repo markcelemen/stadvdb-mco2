@@ -1,9 +1,10 @@
 CREATE TABLE IF NOT EXISTS Users(
     user_id INT AUTO_INCREMENT,
-    user_name VARCHAR(100),
-    email VARCHAR(100),
-    user_pw VARCHAR(100),
-    user_role ENUM('SELLER', 'BUYER'),
+    user_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    user_pw VARCHAR(255) NOT NULL,
+    user_role ENUM('SELLER', 'BUYER') NOT NULL DEFAULT 'BUYER',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (user_id),
     UNIQUE KEY (email)
 );

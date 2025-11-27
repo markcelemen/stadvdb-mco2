@@ -1,70 +1,115 @@
 const express = require('express');
 const router = express.Router();
-const { users, carts } = require('../data/store');
+const pool = require('../db/pool');
 
 // Register user
-router.post('/register', (req, res) => {
-    const { email, password, name } = req.body;
+router.post('/register', async (req, res) => {
+    try {
+        const { email, password, name, role } = req.body;
 
-    if (!email || !password || !name) {
-        return res.status(400).json({
+        if (!email || !password || !name || !role) {
+            return res.status(400).json({
+                success: false,
+                message: 'All fields are required'
+            });
+        }
+
+        if (!['SELLER', 'BUYER'].includes(role)) {
+            return res.status(400).json({
+                success: false,
+                message: 'Invalid role. Must be SELLER or BUYER'
+            });
+        }
+
+        // Check if user already exists
+        const [existing] = await pool.query(
+            'SELECT user_id FROM Users WHERE email = ?',
+            [email]
+        );
+
+        if (existing.length > 0) {
+            return res.status(400).json({
+                success: false,
+                message: 'User already exists'
+            });
+        }
+
+        // Insert new user (In production, hash password with bcrypt!)
+        const [result] = await pool.query(
+            'INSERT INTO Users (user_name, email, user_pw, user_role) VALUES (?, ?, ?, ?)',
+            [name, email, password, role]
+        );
+
+        const [newUser] = await pool.query(
+            'SELECT user_id, user_name, email, user_role FROM Users WHERE user_id = ?',
+            [result.insertId]
+        );
+
+        res.status(201).json({
+            success: true,
+            data: {
+                id: newUser[0].user_id,
+                name: newUser[0].user_name,
+                email: newUser[0].email,
+                role: newUser[0].user_role
+            },
+            message: 'User registered successfully'
+        });
+    } catch (error) {
+        console.error('Registration error:', error);
+        res.status(500).json({
             success: false,
-            message: 'All fields are required'
+            message: 'Registration failed',
+            error: error.message
         });
     }
-
-    const existingUser = users.find(u => u.email === email);
-    if (existingUser) {
-        return res.status(400).json({
-            success: false,
-            message: 'User already exists'
-        });
-    }
-
-    const newUser = {
-        id: users.length + 1,
-        email,
-        name,
-        password, // In production, hash this with bcrypt!
-        createdAt: new Date().toISOString()
-    };
-
-    users.push(newUser);
-    carts[newUser.id] = [];
-
-    res.status(201).json({
-        success: true,
-        data: {
-            id: newUser.id,
-            email: newUser.email,
-            name: newUser.name
-        },
-        message: 'User registered successfully'
-    });
 });
 
 // Login user
-router.post('/login', (req, res) => {
-    const { email, password } = req.body;
+router.post('/login', async (req, res) => {
+    try {
+        const { email, password } = req.body;
 
-    const user = users.find(u => u.email === email && u.password === password);
+        if (!email || !password) {
+            return res.status(400).json({
+                success: false,
+                message: 'Email and password are required'
+            });
+        }
 
-    if (!user) {
-        return res.status(401).json({
+        // Find user (In production, compare hashed passwords!)
+        const [users] = await pool.query(
+            'SELECT user_id, user_name, email, user_role FROM Users WHERE email = ? AND user_pw = ?',
+            [email, password]
+        );
+
+        if (users.length === 0) {
+            return res.status(401).json({
+                success: false,
+                message: 'Invalid credentials'
+            });
+        }
+
+        const user = users[0];
+
+        res.json({
+            success: true,
+            data: {
+                id: user.user_id,
+                name: user.user_name,
+                email: user.email,
+                role: user.user_role
+            },
+            message: 'Login successful'
+        });
+    } catch (error) {
+        console.error('Login error:', error);
+        res.status(500).json({
             success: false,
-            message: 'Invalid credentials'
+            message: 'Login failed',
+            error: error.message
         });
     }
-
-    res.json({
-        success: true,
-        data: {
-            id: user.id,
-            email: user.email,
-            name: user.name
-        },
-        message: 'Login successful'
-    });
 });
 
 module.exports = router;
