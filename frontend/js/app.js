@@ -214,6 +214,11 @@ function showRegisterModal() {
                 <input type="text" id="registerName" placeholder="Full Name" required>
                 <input type="email" id="registerEmail" placeholder="Email" required>
                 <input type="password" id="registerPassword" placeholder="Password" required>
+                <select id="registerRole" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <option value="">Select Role</option>
+                    <option value="BUYER">Buyer</option>
+                    <option value="SELLER">Seller</option>
+                </select>
                 <button type="submit">Register</button>
             </form>
             <p>Already have an account? <a href="#" onclick="showLoginModal()">Login</a></p>
@@ -263,9 +268,15 @@ async function handleRegister(event) {
     const name = document.getElementById('registerName').value;
     const email = document.getElementById('registerEmail').value;
     const password = document.getElementById('registerPassword').value;
+    const role = document.getElementById('registerRole').value;
+
+    if (!role) {
+        showNotification('Please select a role', 'error');
+        return;
+    }
 
     try {
-        const result = await apiCall('/auth/register', 'POST', { name, email, password });
+        const result = await apiCall('/auth/register', 'POST', { name, email, password, role });
         currentUser = result.data;
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
         
@@ -292,12 +303,49 @@ function updateUserUI() {
         if (currentUser) {
             accountButton.innerHTML = `
                 <span class="action-icon">👤</span>
-                <span>${currentUser.name}</span>
+                <span>${currentUser.name} (${currentUser.role})</span>
             `;
             accountButton.onclick = () => {
-                if (confirm('Do you want to logout?')) {
-                    logout();
+                // Show options menu
+                const menu = document.createElement('div');
+                menu.style.cssText = `
+                    position: absolute;
+                    top: 50px;
+                    right: 20px;
+                    background: white;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    padding: 10px;
+                    z-index: 9000;
+                `;
+                
+                let menuContent = '';
+                
+                if (currentUser.role === 'SELLER') {
+                    menuContent += `<button onclick="window.location.href='/seller'" style="display: block; width: 100%; padding: 10px; margin: 5px 0; background: #1f6feb; color: white; border: none; border-radius: 5px; cursor: pointer;">Seller Dashboard</button>`;
                 }
+                
+                menuContent += `<button onclick="logout(); document.body.removeChild(this.parentElement)" style="display: block; width: 100%; padding: 10px; margin: 5px 0; background: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer;">Logout</button>`;
+                
+                menu.innerHTML = menuContent;
+                
+                // Remove existing menu if any
+                const existingMenu = document.querySelector('.user-menu');
+                if (existingMenu) existingMenu.remove();
+                
+                menu.className = 'user-menu';
+                document.body.appendChild(menu);
+                
+                // Close menu when clicking outside
+                setTimeout(() => {
+                    document.addEventListener('click', function closeMenu(e) {
+                        if (!menu.contains(e.target) && !accountButton.contains(e.target)) {
+                            menu.remove();
+                            document.removeEventListener('click', closeMenu);
+                        }
+                    });
+                }, 100);
             };
         } else {
             accountButton.innerHTML = `

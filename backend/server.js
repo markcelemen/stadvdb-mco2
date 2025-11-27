@@ -1,7 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const PORT = process.env.PORT || 3000;
+
+
+const dotenv = require('dotenv');
+const path = require('path');
+dotenv.config();
+const PORT = process.env.PORT;
+
+const setupDatabase = require('./db/setup');
 
 // Import routes
 const productRoutes = require('./routes/products');
@@ -10,6 +17,7 @@ const cartRoutes = require('./routes/cart');
 const orderRoutes = require('./routes/orders');
 // const analyticsRoutes = require('./routes/analytics'); // for the OLAP queries
 const flashSaleRoutes = require('./routes/flashSales');
+const sellerRoutes = require('./routes/seller');
 
 // Middleware
 app.use(cors());
@@ -23,6 +31,11 @@ app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
 // app.use('/api/analytics', analyticsRoutes); // for the OLAP queries
 app.use('/api/flash-sales', flashSaleRoutes);
+app.use('/api/seller', sellerRoutes);
+
+app.get('/seller', (req, res) => {
+    res.sendFile('seller_view.html', { root: '../frontend' });
+});
 
 // Health check
 app.get('/api/health', (req, res) => {
@@ -56,4 +69,6 @@ app.listen(PORT, () => {
     console.log(`FlashSale API Server running on port ${PORT}`);
     console.log(`API Base URL: http://localhost:${PORT}/api`);
     console.log(`Frontend URL: http://localhost:${PORT}`);
+
+    setupDatabase();
 });
