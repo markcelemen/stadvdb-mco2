@@ -1,6 +1,7 @@
 const express = require('express');
-const cors = require('cors');
 const app = express();
+const cors = require('cors');
+const analyticsRoutes = require('./routes/analytics');  // <-- THIS
 const dotenv = require('dotenv');
 const path = require('path');
 
@@ -18,9 +19,11 @@ const analyticsRoutes = require('./routes/analytics'); // uncommented
 const flashSaleRoutes = require('./routes/flashSales');
 const sellerRoutes = require('./routes/seller');
 
-// Middleware
 app.use(cors());
 app.use(express.json());
+
+// MOUNT THE ROUTE
+app.use('/api/analytics', analyticsRoutes);
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 // Mount routes
@@ -37,28 +40,19 @@ app.get('/seller', (req, res) => {
     res.sendFile('seller_view.html', { root: path.join(__dirname, '../frontend') });
 });
 
-// Health check
-app.get('/api/health', (req, res) => {
-    res.json({
-        success: true,
-        message: 'FlashSale API is running',
-        timestamp: new Date().toISOString()
-    });
-});
+// Also mount other routes
+app.use('/api/products', require('./routes/products'));
+app.use('/api/cart', require('./routes/cart'));
+app.use('/api/auth', require('./routes/auth'));
 
 // 404 handler
 app.use((req, res) => {
     res.status(404).json({ success: false, message: 'Endpoint not found' });
 });
 
-// Error handler
-app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).json({
-        success: false,
-        message: 'Internal server error',
-        error: process.env.NODE_ENV === 'development' ? err.message : undefined
-    });
+// Fallback for frontend routing
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
 // Start server
