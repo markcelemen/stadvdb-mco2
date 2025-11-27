@@ -279,15 +279,25 @@ router.delete('/products/:id', async (req, res) => {
             return res.status(400).json({ success: false, message: 'sellerId query parameter is required' });
         }
 
-        // Verify product belongs to seller before deleting
-        const [result] = await pool.query(`
-            DELETE FROM Products 
-            WHERE product_id = ? AND seller_id = ?
-        `, [productId, parseInt(sellerId)]);
+        // Verify product belongs to seller
+        const [existing] = await pool.query(
+            'SELECT product_id FROM Products WHERE product_id = ? AND seller_id = ?',
+            [productId, parseInt(sellerId)]
+        );
 
-        if (result.affectedRows === 0) {
+        if (existing.length === 0) {
             return res.status(404).json({ success: false, message: 'Product not found or not owned by seller' });
         }
+
+        // Delete related records first
+        await pool.query('DELETE FROM CartItems WHERE product_id = ?', [productId]);
+        await pool.query('DELETE FROM OrderItems WHERE product_id = ?', [productId]);
+
+        // Now delete the product
+        const [result] = await pool.query(
+            'DELETE FROM Products WHERE product_id = ? AND seller_id = ?',
+            [productId, parseInt(sellerId)]
+        );
 
         res.json({ success: true, message: 'Product deleted successfully' });
     } catch (error) {
