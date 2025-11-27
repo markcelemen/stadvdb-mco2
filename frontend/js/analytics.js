@@ -1,7 +1,7 @@
 // frontend/js/analytics.js
 import { apiCall } from './api.js';
 
-let topProductsChart, salesByCategoryChart, flashSaleChart;
+let topProductsChart, salesByCategoryChart, hourlySalesChart;
 
 export async function loadTopProducts() {
     const result = await apiCall('/analytics/top-products');
@@ -25,6 +25,7 @@ export async function loadTopProducts() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             plugins: { title: { display: true, text: 'Top 10 Selling Products' } }
         }
     });
@@ -54,37 +55,60 @@ export async function loadSalesByCategory() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             plugins: { title: { display: true, text: 'Sales by Category' } }
         }
     });
 }
 
-export async function loadFlashSalePerformance(flashSaleId = 1) {
-    const result = await apiCall(`/analytics/flash-sale/${flashSaleId}`);
+export async function loadHourlySales() {
+    const result = await apiCall("/analytics/hourly-sales");
+    const data = result.data;
 
-    const labels = result.data.map(s => s.t_hour + ':00');
-    const quantities = result.data.map(s => s.quantity_sold);
+    // Initialize arrays for all 24 hours
+    const values = Array(24).fill(0);
+    const count = Array(24).fill(0); // optional if you want averages
 
-    const ctx = document.querySelector('#flashSaleChart').getContext('2d');
+    // Fill in sales data
+    data.forEach(d => {
+        const hour = d.t_hour;
+        values[hour] += d.avg_sales; // if API already gives avg, this is fine
+        count[hour] += 1;
+    });
 
-    if (flashSaleChart) flashSaleChart.destroy();
+    // If API is giving totals instead of averages, uncomment:
+    // for (let i = 0; i < 24; i++) {
+    //     if (count[i] > 0) values[i] = values[i] / count[i];
+    // }
 
-    flashSaleChart = new Chart(ctx, {
-        type: 'line',
+    const labels = Array.from({ length: 24 }, (_, i) => `${i}:00`);
+
+    const ctx = document.getElementById("hourlySalesChart").getContext("2d");
+
+    if (hourlySalesChart) hourlySalesChart.destroy();
+
+    hourlySalesChart = new Chart(ctx, {
+        type: "line",
         data: {
             labels,
             datasets: [{
-                label: 'Quantity Sold',
-                data: quantities,
-                borderColor: 'rgba(255, 99, 132, 1)',
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                label: "Average Sales per Hour",
+                data: values,
+                borderColor: "rgba(75, 192, 192, 1)",
+                backgroundColor: "rgba(75, 192, 192, 0.2)",
                 fill: true,
-                tension: 0.2
+                tension: 0.3
             }]
         },
         options: {
             responsive: true,
-            plugins: { title: { display: true, text: `Flash Sale Performance (ID: ${flashSaleId})` } }
+            maintainAspectRatio: false,
+            plugins: {
+                title: { display: true, text: "Hourly Average Sales" }
+            },
+            scales: {
+                y: { beginAtZero: true }
+            }
         }
     });
 }
@@ -93,5 +117,5 @@ export async function loadFlashSalePerformance(flashSaleId = 1) {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadTopProducts();
     await loadSalesByCategory();
-    await loadFlashSalePerformance();
+    await loadHourlySales();
 });

@@ -43,38 +43,27 @@ async function getSalesByCategory() {
     }
 }
 
-// Report 3: Flash Sale Performance
-async function getFlashSalePerformance(flashSaleId) {
+// Report 3: Hourly sales
+// backend/analytics.js
+async function getHourlySales() {
     try {
-        const [flashSale] = await pool.query(`
-            SELECT start_time_id, end_time_id
-            FROM DimFlashSale
-            WHERE flash_sale_id = ?
-        `, [flashSaleId]);
-
-        if (flashSale.length === 0) return [];
-
-        const { start_time_id, end_time_id } = flashSale[0];
-
-        const [sales] = await pool.query(`
-            SELECT 
-                f.product_id,
-                p.product_name,
-                SUM(f.quantity_sold) AS quantity_sold,
-                SUM(f.total_sale) AS total_sales_amount,
-                t.t_hour
-            FROM FactOrders f
-            JOIN DimProduct p ON f.product_id = p.product_id
-            JOIN DimTime t ON f.time_id = t.time_id
-            WHERE f.flash_sale_id = ?
-            AND f.time_id BETWEEN ? AND ?
-            GROUP BY f.product_id, p.product_name, t.t_hour
-            ORDER BY t.t_hour ASC
-        `, [flashSaleId, start_time_id, end_time_id]);
-
-        return sales;
+        const [rows] = await pool.query(`
+            SELECT h.hour AS t_hour,
+                COALESCE(AVG(f.total_sale), 0) AS avg_sales
+            FROM (SELECT 0 AS hour UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3
+                UNION ALL SELECT 4 UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7
+                UNION ALL SELECT 8 UNION ALL SELECT 9 UNION ALL SELECT 10 UNION ALL SELECT 11
+                UNION ALL SELECT 12 UNION ALL SELECT 13 UNION ALL SELECT 14 UNION ALL SELECT 15
+                UNION ALL SELECT 16 UNION ALL SELECT 17 UNION ALL SELECT 18 UNION ALL SELECT 19
+                UNION ALL SELECT 20 UNION ALL SELECT 21 UNION ALL SELECT 22 UNION ALL SELECT 23) h
+            LEFT JOIN DimTime t ON t.t_hour = h.hour
+            LEFT JOIN FactOrders f ON f.time_id = t.time_id
+            GROUP BY h.hour
+            ORDER BY h.hour;
+        `);
+        return rows;
     } catch (error) {
-        console.error('Error fetching Flash Sale Performance:', error);
+        console.error('Error fetching hourly average sales:', error);
         throw error;
     }
 }
@@ -83,5 +72,5 @@ async function getFlashSalePerformance(flashSaleId) {
 module.exports = {
     getTop10SellingItems,
     getSalesByCategory,
-    getFlashSalePerformance
+    getHourlySales
 };

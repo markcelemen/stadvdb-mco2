@@ -41,24 +41,15 @@ router.get('/sales-by-category', async (req, res) => {
     }
 });
 
+// Route: Hourly Sales
 
-// Route: Flash Sale Performance
-
-router.get('/flash-sale/:id', async (req, res) => {
-    const flashSaleId = req.params.id;
+router.get("/hourly-sales", async (req, res) => {
     try {
-        const data = await analytics.getFlashSalePerformance(flashSaleId);
-        res.json({
-            success: true,
-            report: `Flash Sale Performance for ID ${flashSaleId}`,
-            data
-        });
-    } catch (error) {
-        res.status(500).json({
-            success: false,
-            message: 'Failed to fetch Flash Sale Performance',
-            error: error.message
-        });
+        const data = await analytics.getHourlySales(); 
+        res.json({ success: true, data });
+    } catch (err) {
+        console.error("Hourly sales line API error:", err);
+        res.status(500).json({ success: false, message: "Server error." });
     }
 });
 

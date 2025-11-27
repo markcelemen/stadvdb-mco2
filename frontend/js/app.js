@@ -1,7 +1,7 @@
 // frontend/app.js
 import { loadProducts } from './products.js';
 import { currentUser, updateUserUI } from './auth.js';
-import { loadTopProducts, loadSalesByCategory, loadFlashSalePerformance } from './analytics.js';
+import { loadTopProducts, loadSalesByCategory, loadHourlySales } from './analytics.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     updateUserUI();
@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load analytics dashboards
     await loadTopProducts();
     await loadSalesByCategory();
-    await loadFlashSalePerformance();
+    await loadHourlySales();
 });
