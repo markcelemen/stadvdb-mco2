@@ -37,6 +37,10 @@ CREATE TABLE DimFlashSale(
     FOREIGN KEY (end_time_id) REFERENCES DimTime(time_id)
 );
 
+-- Insert a row for "No Flash Sale" with flash_sale_id = 0
+INSERT INTO DimFlashSale (flash_sale_id, name, start_time_id, end_time_id)
+VALUES (0, 'No Flash Sale', NULL, NULL);
+
 CREATE TABLE FactOrders(
     order_id int,
     product_id int,

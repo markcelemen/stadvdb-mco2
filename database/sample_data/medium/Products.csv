@@ -1,0 +1,1001 @@
+product_id,seller_id,product_name,category,product_desc,price,original_price,discount_rate,quantity_stock,flash_sale_id
+1,6,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,196.57,401.68,0.51,322,0
+2,87,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,206.45,489.3,0.58,312,0
+3,33,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,292.19,343.45,0.15,300,0
+4,61,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,80.91,126.26,0.36,366,5
+5,7,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,130.65,205.97,0.37,115,0
+6,26,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,385.58,427.36,0.1,426,0
+7,68,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,160.18,316.93,0.49,130,0
+8,45,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,186.8,374.6,0.5,439,18
+9,82,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,152.38,194.1,0.21,473,39
+10,95,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,284.16,319.28,0.11,360,44
+11,27,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,209.4,455.16,0.54,27,9
+12,2,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,168.43,229.51,0.27,477,0
+13,57,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",105.85,217.2,0.51,167,0
+14,7,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,296.55,337.04,0.12,144,39
+15,3,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,147.37,186.03,0.21,366,26
+16,31,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,165.35,198.1,0.17,104,0
+17,48,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,352.07,488.66,0.28,147,0
+18,14,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,84.51,147.83,0.43,7,0
+19,77,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,191.74,244.92,0.22,399,0
+20,54,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",332.86,409.21,0.19,299,0
+21,10,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,135.72,291.95,0.54,464,0
+22,56,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",227.8,431.44,0.47,57,31
+23,71,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",224.33,484.82,0.54,179,41
+24,73,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,220.65,276.55,0.2,190,0
+25,29,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,200.92,376.02,0.47,340,31
+26,22,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,186.45,220.94,0.16,340,41
+27,78,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,365.01,436.94,0.16,195,0
+28,70,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,134.24,255.26,0.47,85,0
+29,6,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,91.05,221.4,0.59,457,0
+30,53,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,253.43,494.06,0.49,385,0
+31,73,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,67.44,147.1,0.54,279,18
+32,93,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",82.12,133.84,0.39,65,18
+33,72,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,22.56,48.92,0.54,219,22
+34,18,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,104.13,133.76,0.22,148,48
+35,9,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,20.09,25.25,0.2,459,0
+36,25,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,38.96,63.23,0.38,127,0
+37,77,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,269.3,292.3,0.08,187,44
+38,44,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,197.87,314.51,0.37,298,10
+39,24,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,144.19,338.94,0.57,333,22
+40,65,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,284.6,355.34,0.2,69,14
+41,68,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,209.34,340.83,0.39,338,12
+42,45,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,76.75,89.0,0.14,376,10
+43,33,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,227.61,246.62,0.08,106,37
+44,88,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,205.6,242.78,0.15,374,49
+45,65,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,268.55,376.01,0.29,404,17
+46,73,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,134.15,216.22,0.38,408,0
+47,56,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,176.06,356.01,0.51,91,0
+48,94,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,155.73,171.69,0.09,437,3
+49,86,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,174.26,292.2,0.4,294,16
+50,77,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,16.47,34.84,0.53,269,18
+51,60,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,154.84,180.05,0.14,490,24
+52,67,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,241.72,371.22,0.35,493,0
+53,54,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,180.98,192.31,0.06,475,38
+54,13,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",186.9,351.37,0.47,259,26
+55,41,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,17.35,23.84,0.27,133,12
+56,92,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,31.73,43.78,0.28,51,0
+57,77,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,314.79,437.98,0.28,230,0
+58,14,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,132.25,188.5,0.3,206,0
+59,57,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,55.63,92.89,0.4,231,48
+60,74,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,143.38,232.91,0.38,401,0
+61,89,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,252.17,460.16,0.45,373,0
+62,19,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",213.96,250.26,0.15,192,5
+63,45,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,180.42,288.49,0.37,486,0
+64,26,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,170.42,207.92,0.18,60,0
+65,31,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,445.89,496.25,0.1,330,0
+66,95,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,52.45,89.73,0.42,485,8
+67,84,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,132.62,147.73,0.1,134,0
+68,98,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,235.48,317.33,0.26,87,35
+69,91,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,220.13,266.66,0.17,162,0
+70,79,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,196.03,245.17,0.2,201,0
+71,51,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,242.38,294.72,0.18,227,21
+72,24,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,87.33,101.65,0.14,125,0
+73,11,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,278.68,435.65,0.36,24,31
+74,65,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,60.41,116.17,0.48,497,0
+75,56,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,147.73,172.31,0.14,325,37
+76,40,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,9.38,10.4,0.1,370,0
+77,54,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,440.84,492.94,0.11,464,0
+78,3,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,405.65,439.18,0.08,113,0
+79,29,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,426.93,454.91,0.06,476,0
+80,73,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,241.69,458.07,0.47,395,49
+81,29,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,317.93,384.71,0.17,220,0
+82,57,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,97.02,207.75,0.53,78,16
+83,93,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",199.33,258.98,0.23,219,3
+84,40,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",201.47,431.13,0.53,164,19
+85,94,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,175.26,229.34,0.24,465,0
+86,90,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,79.69,111.62,0.29,387,0
+87,50,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",178.89,251.69,0.29,5,0
+88,41,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,174.52,378.31,0.54,213,3
+89,54,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,173.71,292.93,0.41,357,0
+90,25,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",46.91,53.41,0.12,75,30
+91,46,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,154.97,278.25,0.44,367,0
+92,38,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,349.35,438.01,0.2,132,2
+93,54,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,243.13,494.06,0.51,494,30
+94,33,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",195.88,446.07,0.56,244,24
+95,67,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,224.29,424.9,0.47,343,10
+96,90,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,65.77,132.98,0.51,355,0
+97,8,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,217.12,257.94,0.16,317,30
+98,50,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,148.98,287.74,0.48,393,0
+99,57,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,30.65,42.09,0.27,204,31
+100,9,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,254.66,277.0,0.08,77,25
+101,73,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,9.25,15.16,0.39,65,0
+102,44,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,167.62,246.17,0.32,482,12
+103,88,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,212.87,452.57,0.53,364,0
+104,40,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",56.88,82.03,0.31,94,38
+105,17,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,68.36,93.87,0.27,233,0
+106,35,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,140.22,206.75,0.32,487,8
+107,76,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,126.89,249.71,0.49,242,39
+108,20,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,249.76,397.61,0.37,69,0
+109,50,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,269.07,329.05,0.18,99,0
+110,34,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,240.95,444.44,0.46,334,0
+111,39,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,199.36,334.53,0.4,373,0
+112,78,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,274.57,401.31,0.32,408,25
+113,25,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,88.23,151.03,0.42,423,0
+114,98,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,282.63,448.81,0.37,68,0
+115,6,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,27.99,47.04,0.4,211,0
+116,79,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,44.06,74.01,0.4,365,39
+117,54,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,96.54,202.91,0.52,110,43
+118,71,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,228.7,443.25,0.48,481,27
+119,21,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,91.46,206.41,0.56,357,18
+120,18,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,227.06,253.09,0.1,348,0
+121,50,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,110.04,168.45,0.35,233,0
+122,47,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,407.67,452.02,0.1,192,0
+123,22,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,138.93,260.34,0.47,400,0
+124,32,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,197.58,330.29,0.4,355,32
+125,9,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,183.1,210.49,0.13,30,0
+126,6,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,274.87,431.85,0.36,211,39
+127,98,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,239.29,448.62,0.47,213,0
+128,3,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,245.09,293.07,0.16,7,0
+129,92,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,421.7,454.02,0.07,397,35
+130,22,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",237.88,340.27,0.3,421,13
+131,83,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,280.24,374.37,0.25,244,16
+132,70,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,250.61,485.01,0.48,482,0
+133,89,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",50.96,107.04,0.52,369,37
+134,39,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,69.85,85.67,0.18,450,28
+135,35,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,40.6,50.69,0.2,180,7
+136,24,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,302.87,328.48,0.08,60,0
+137,93,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,176.58,235.8,0.25,331,0
+138,31,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,98.78,178.71,0.45,253,0
+139,82,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,323.36,385.35,0.16,266,0
+140,21,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",142.3,226.44,0.37,126,0
+141,34,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,439.98,476.7,0.08,431,19
+142,30,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,56.87,75.53,0.25,144,16
+143,25,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,132.01,208.21,0.37,111,0
+144,11,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",30.95,43.65,0.29,308,49
+145,90,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,256.11,323.26,0.21,461,0
+146,9,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",44.29,92.12,0.52,95,24
+147,64,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,191.7,263.75,0.27,369,20
+148,3,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,244.66,495.46,0.51,200,0
+149,71,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,125.69,299.25,0.58,123,0
+150,12,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,206.01,453.15,0.55,320,39
+151,52,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",22.83,49.9,0.54,143,0
+152,54,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,254.89,427.52,0.4,335,0
+153,26,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,365.49,455.54,0.2,316,0
+154,9,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,263.81,445.99,0.41,142,20
+155,22,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,137.78,160.1,0.14,413,48
+156,63,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,219.48,234.29,0.06,72,10
+157,83,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,273.53,313.86,0.13,55,0
+158,2,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,55.92,74.01,0.24,299,23
+159,20,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,334.86,374.97,0.11,46,9
+160,66,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,218.69,427.96,0.49,208,0
+161,71,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,243.1,418.76,0.42,405,40
+162,7,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,109.81,193.02,0.43,370,0
+163,93,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",168.89,287.63,0.41,56,15
+164,90,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,259.9,318.15,0.18,494,31
+165,14,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,181.74,307.67,0.41,40,37
+166,17,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,142.87,305.57,0.53,432,1
+167,71,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,190.92,263.44,0.28,352,13
+168,38,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,172.08,326.28,0.47,346,0
+169,43,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,63.55,82.72,0.23,130,0
+170,93,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,8.36,10.76,0.22,242,0
+171,83,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,313.2,458.28,0.32,132,0
+172,82,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",287.97,349.38,0.18,450,0
+173,86,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,215.83,238.7,0.1,155,0
+174,48,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,80.46,109.66,0.27,287,0
+175,11,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",32.66,44.79,0.27,176,24
+176,3,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,44.7,55.01,0.19,204,0
+177,40,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,214.15,301.59,0.29,9,14
+178,1,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,271.81,287.7,0.06,182,46
+179,93,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,247.79,435.34,0.43,346,38
+180,23,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",52.1,100.06,0.48,299,0
+181,55,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,45.11,109.97,0.59,245,0
+182,34,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,86.5,97.8,0.12,275,35
+183,2,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,70.18,78.39,0.1,223,0
+184,32,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,342.98,450.44,0.24,207,0
+185,80,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,303.74,397.52,0.24,463,0
+186,94,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,126.2,272.83,0.54,293,0
+187,21,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,26.0,37.37,0.3,395,20
+188,17,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,50.88,72.63,0.3,257,34
+189,53,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",307.27,391.2,0.21,172,0
+190,57,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,151.59,164.3,0.08,456,0
+191,20,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,143.64,212.6,0.32,330,0
+192,1,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,149.07,188.67,0.21,436,0
+193,40,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,319.71,431.54,0.26,149,0
+194,35,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",283.13,361.44,0.22,247,0
+195,66,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,21.27,25.83,0.18,92,21
+196,26,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,93.06,141.54,0.34,45,44
+197,13,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,396.54,496.99,0.2,449,0
+198,73,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,167.14,224.02,0.25,106,34
+199,15,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,202.45,255.77,0.21,74,46
+200,35,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,91.74,138.53,0.34,199,0
+201,9,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,93.85,140.1,0.33,312,41
+202,21,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,44.48,58.97,0.25,427,27
+203,10,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,172.12,344.9,0.5,368,0
+204,71,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,285.16,452.3,0.37,204,0
+205,60,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",26.64,32.98,0.19,335,32
+206,82,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,86.8,128.33,0.32,423,0
+207,69,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,36.8,52.94,0.3,106,23
+208,2,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,18.66,33.6,0.44,283,46
+209,50,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,89.84,151.43,0.41,126,29
+210,24,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,158.93,243.17,0.35,357,50
+211,83,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,325.09,463.77,0.3,388,0
+212,54,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,209.8,401.64,0.48,53,0
+213,60,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,78.28,177.01,0.56,418,0
+214,53,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,40.55,74.77,0.46,224,3
+215,26,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,26.55,42.89,0.38,186,15
+216,10,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,328.03,369.13,0.11,206,0
+217,96,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,127.88,174.21,0.27,311,0
+218,72,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,317.56,411.62,0.23,42,37
+219,10,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,106.25,144.69,0.27,387,3
+220,73,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,258.45,380.32,0.32,30,17
+221,40,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,81.35,91.34,0.11,399,49
+222,65,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",126.55,214.49,0.41,183,37
+223,10,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,175.01,187.92,0.07,365,0
+224,60,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,213.05,238.55,0.11,252,0
+225,30,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,131.15,148.87,0.12,20,12
+226,92,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,52.77,63.56,0.17,136,46
+227,22,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,269.76,302.72,0.11,190,0
+228,31,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,109.86,200.74,0.45,100,12
+229,32,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,75.82,155.11,0.51,487,41
+230,79,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,186.29,220.34,0.15,390,0
+231,57,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,277.92,452.23,0.39,69,0
+232,99,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,157.3,359.5,0.56,397,22
+233,43,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,47.02,104.99,0.55,235,0
+234,13,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,87.13,114.81,0.24,298,15
+235,65,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,49.55,56.76,0.13,171,18
+236,65,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,220.21,498.05,0.56,429,0
+237,66,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,219.74,301.94,0.27,111,33
+238,75,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,140.87,217.89,0.35,129,0
+239,35,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,16.54,20.19,0.18,269,34
+240,7,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,161.29,218.87,0.26,106,0
+241,7,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,398.62,450.8,0.12,10,0
+242,13,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,186.68,276.43,0.32,88,0
+243,87,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,196.39,236.37,0.17,288,0
+244,2,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,401.89,479.04,0.16,225,25
+245,87,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,214.92,334.96,0.36,242,0
+246,14,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,50.09,86.14,0.42,291,38
+247,62,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,311.73,482.04,0.35,262,0
+248,85,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",66.62,80.16,0.17,324,0
+249,92,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,207.4,302.59,0.31,414,34
+250,25,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,173.43,188.56,0.08,497,0
+251,58,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,88.87,173.91,0.49,75,35
+252,73,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,4.49,10.82,0.59,137,0
+253,88,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,321.38,456.5,0.3,73,0
+254,18,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,290.02,315.62,0.08,132,0
+255,39,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,26.8,33.7,0.2,45,0
+256,80,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,343.58,437.39,0.21,35,25
+257,55,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,452.08,483.88,0.07,448,47
+258,37,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,161.83,249.18,0.35,82,0
+259,43,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,327.28,489.6,0.33,138,0
+260,93,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,110.21,267.4,0.59,486,0
+261,12,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,136.37,172.01,0.21,11,0
+262,42,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,404.75,484.89,0.17,42,0
+263,9,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,131.54,159.15,0.17,149,26
+264,12,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,237.02,266.06,0.11,57,47
+265,56,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",249.65,472.44,0.47,287,49
+266,59,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,111.24,136.72,0.19,406,0
+267,13,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,258.64,275.44,0.06,243,45
+268,15,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,39.72,88.72,0.55,316,0
+269,12,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,80.13,100.25,0.2,193,21
+270,73,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",39.9,91.76,0.57,164,46
+271,89,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",58.84,64.27,0.08,321,0
+272,84,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,170.3,286.27,0.41,290,8
+273,38,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,346.87,408.29,0.15,146,41
+274,83,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,269.39,490.52,0.45,446,14
+275,91,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,65.14,92.63,0.3,307,4
+276,86,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,32.87,59.08,0.44,145,40
+277,35,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,138.53,338.75,0.59,295,0
+278,93,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,267.45,425.9,0.37,134,0
+279,14,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,107.69,115.82,0.07,434,16
+280,59,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",341.0,499.28,0.32,358,47
+281,45,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,25.67,33.17,0.23,152,23
+282,24,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,120.07,169.25,0.29,223,0
+283,58,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,197.03,397.04,0.5,451,0
+284,40,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,88.97,99.07,0.1,237,0
+285,38,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",32.14,69.72,0.54,470,0
+286,46,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,94.96,156.85,0.39,199,0
+287,76,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",266.25,469.1,0.43,4,0
+288,6,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,131.23,231.89,0.43,317,15
+289,81,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,133.08,242.62,0.45,448,0
+290,45,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,337.72,391.48,0.14,302,22
+291,91,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",128.77,191.63,0.33,392,25
+292,36,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,220.11,425.77,0.48,33,10
+293,84,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,27.44,50.35,0.45,41,16
+294,61,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,149.85,248.15,0.4,235,0
+295,90,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,158.06,343.9,0.54,137,0
+296,89,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,44.81,53.38,0.16,249,0
+297,12,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,109.16,219.81,0.5,184,17
+298,63,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,343.39,466.54,0.26,378,0
+299,27,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,33.58,45.26,0.26,469,27
+300,35,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,198.06,278.41,0.29,349,0
+301,58,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,110.97,125.18,0.11,60,0
+302,18,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,290.93,331.22,0.12,178,42
+303,53,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,332.65,469.78,0.29,206,0
+304,16,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,270.11,285.23,0.05,489,26
+305,35,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,354.33,427.71,0.17,171,34
+306,98,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",190.2,329.02,0.42,174,0
+307,65,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,268.59,294.19,0.09,401,33
+308,26,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,129.87,150.2,0.14,306,50
+309,59,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,296.34,428.5,0.31,397,18
+310,40,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,12.15,22.54,0.46,402,0
+311,87,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,72.62,153.44,0.53,499,0
+312,100,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,155.83,275.43,0.43,52,0
+313,76,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",15.88,30.21,0.47,203,41
+314,84,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",270.99,431.9,0.37,416,0
+315,65,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,199.91,235.84,0.15,134,0
+316,85,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,345.92,405.34,0.15,253,0
+317,79,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,109.6,176.96,0.38,45,15
+318,20,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,73.98,159.58,0.54,73,0
+319,27,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,172.0,186.85,0.08,470,26
+320,6,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,441.89,466.0,0.05,335,0
+321,19,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,191.03,312.59,0.39,220,0
+322,93,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,22.48,33.85,0.34,437,0
+323,86,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,38.09,81.17,0.53,129,14
+324,1,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",97.45,125.7,0.22,73,48
+325,36,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,212.42,290.85,0.27,409,0
+326,33,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",204.29,293.44,0.3,267,0
+327,14,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,25.17,53.13,0.53,44,3
+328,73,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,125.13,139.94,0.11,231,8
+329,84,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,253.21,429.59,0.41,357,16
+330,28,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,19.38,46.84,0.59,197,49
+331,72,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,60.82,133.15,0.54,349,0
+332,84,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,105.78,251.7,0.58,352,0
+333,45,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,274.24,297.81,0.08,142,0
+334,100,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,26.83,31.03,0.14,201,38
+335,98,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,16.37,23.57,0.31,109,0
+336,4,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,89.01,147.33,0.4,48,3
+337,34,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,40.82,43.72,0.07,311,0
+338,5,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,139.22,204.27,0.32,171,22
+339,51,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,159.15,273.96,0.42,159,0
+340,54,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,152.99,210.64,0.27,238,0
+341,23,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,217.74,258.01,0.16,242,0
+342,91,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,198.59,402.64,0.51,114,0
+343,41,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,128.42,139.15,0.08,45,0
+344,85,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,412.86,495.85,0.17,28,34
+345,89,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,20.84,48.58,0.57,372,0
+346,13,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,257.9,329.3,0.22,142,41
+347,92,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,212.39,239.81,0.11,76,0
+348,48,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,237.72,322.39,0.26,119,0
+349,13,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,301.69,331.77,0.09,297,45
+350,90,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,343.91,434.71,0.21,218,41
+351,95,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,41.76,45.42,0.08,141,37
+352,14,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,18.34,19.67,0.07,141,0
+353,9,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,127.88,249.03,0.49,333,0
+354,41,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,170.23,280.84,0.39,281,0
+355,35,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",100.81,185.58,0.46,389,0
+356,27,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,43.13,71.16,0.39,126,0
+357,93,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",13.16,25.46,0.48,88,0
+358,74,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,58.55,98.78,0.41,93,8
+359,56,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",36.55,54.09,0.32,13,0
+360,24,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,134.28,243.07,0.45,311,0
+361,49,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,316.23,397.2,0.2,460,31
+362,19,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,131.52,240.79,0.45,483,0
+363,5,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,49.44,67.13,0.26,493,0
+364,24,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,342.29,440.44,0.22,278,0
+365,98,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,272.45,498.12,0.45,239,0
+366,99,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,103.27,117.27,0.12,383,17
+367,92,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,63.87,117.36,0.46,385,13
+368,24,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,120.76,129.72,0.07,320,0
+369,60,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,149.08,175.12,0.15,360,0
+370,40,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,232.49,475.54,0.51,258,35
+371,11,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,311.52,475.83,0.35,185,0
+372,7,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,156.74,165.42,0.05,71,0
+373,8,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,65.83,132.4,0.5,365,0
+374,16,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,309.11,366.6,0.16,384,45
+375,30,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,391.4,417.52,0.06,431,0
+376,97,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,127.47,270.43,0.53,401,24
+377,91,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,251.94,498.79,0.49,471,0
+378,20,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,78.85,102.06,0.23,111,16
+379,88,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,60.57,67.33,0.1,317,49
+380,36,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,265.55,338.22,0.21,274,0
+381,85,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,156.14,205.59,0.24,191,18
+382,8,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,191.79,464.95,0.59,260,34
+383,72,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,279.94,412.78,0.32,335,0
+384,56,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,162.17,230.94,0.3,243,0
+385,94,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,54.43,134.65,0.6,409,0
+386,71,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,383.73,448.71,0.14,30,0
+387,67,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,16.26,31.96,0.49,384,0
+388,26,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,236.15,431.62,0.45,108,13
+389,78,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,130.6,228.88,0.43,427,0
+390,14,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,217.41,308.89,0.3,351,0
+391,74,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,71.89,85.3,0.16,214,0
+392,54,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,200.96,267.28,0.25,292,22
+393,60,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,309.8,482.72,0.36,341,30
+394,100,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,274.43,429.57,0.36,48,0
+395,27,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,96.16,105.33,0.09,375,47
+396,100,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,136.05,316.85,0.57,368,0
+397,86,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,227.01,340.63,0.33,175,0
+398,45,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,248.82,388.47,0.36,394,8
+399,24,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,180.4,219.31,0.18,404,0
+400,28,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,135.42,327.34,0.59,186,0
+401,19,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,216.22,334.11,0.35,38,29
+402,38,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,196.02,224.86,0.13,486,0
+403,5,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,193.15,458.59,0.58,315,0
+404,67,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,340.57,460.79,0.26,206,15
+405,15,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,112.72,252.7,0.55,81,0
+406,46,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",56.1,72.29,0.22,176,0
+407,85,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,134.41,216.0,0.38,152,0
+408,58,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,63.44,73.97,0.14,10,34
+409,16,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,287.43,333.49,0.14,194,0
+410,16,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",117.06,129.82,0.1,437,6
+411,5,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,30.53,42.2,0.28,261,31
+412,29,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,185.86,209.93,0.11,376,0
+413,69,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,183.16,348.59,0.47,480,27
+414,54,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,186.11,400.16,0.53,259,0
+415,53,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,115.1,128.79,0.11,22,0
+416,32,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,298.7,316.5,0.06,452,10
+417,73,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,49.52,79.38,0.38,264,0
+418,42,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,457.48,499.39,0.08,341,0
+419,46,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,149.88,293.17,0.49,324,47
+420,15,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,50.22,113.16,0.56,491,0
+421,13,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,41.9,101.41,0.59,73,0
+422,41,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,22.42,37.06,0.4,382,48
+423,97,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,73.17,88.56,0.17,361,32
+424,9,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,175.03,326.09,0.46,57,43
+425,30,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,259.05,351.4,0.26,326,21
+426,70,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,193.65,478.15,0.59,11,1
+427,4,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,325.39,373.3,0.13,478,0
+428,28,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,250.05,498.24,0.5,353,0
+429,27,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,103.13,159.13,0.35,134,0
+430,36,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,153.87,336.46,0.54,40,0
+431,13,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,57.88,66.21,0.13,363,0
+432,96,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",55.81,69.62,0.2,369,0
+433,26,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,139.29,296.51,0.53,363,10
+434,80,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,137.38,196.24,0.3,335,32
+435,88,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,358.66,420.16,0.15,179,24
+436,93,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,130.26,271.82,0.52,105,0
+437,97,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,176.89,223.16,0.21,371,35
+438,46,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,52.68,79.65,0.34,489,2
+439,95,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,226.34,429.23,0.47,144,39
+440,66,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,176.47,286.3,0.38,438,0
+441,10,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,318.08,415.04,0.23,179,44
+442,62,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,337.72,389.35,0.13,212,0
+443,92,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,245.7,373.16,0.34,297,9
+444,29,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,361.34,481.46,0.25,407,0
+445,97,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",14.81,31.27,0.53,354,45
+446,97,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,217.29,303.14,0.28,133,37
+447,47,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,118.29,189.73,0.38,244,46
+448,65,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,52.9,115.28,0.54,287,16
+449,39,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,200.8,401.56,0.5,436,0
+450,21,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,168.48,222.22,0.24,493,16
+451,40,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,88.87,194.17,0.54,249,45
+452,19,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,143.45,211.42,0.32,125,0
+453,86,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,191.87,370.82,0.48,485,0
+454,74,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,80.91,198.52,0.59,174,0
+455,78,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,180.0,250.23,0.28,109,0
+456,33,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,274.04,487.93,0.44,195,44
+457,16,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,363.1,412.63,0.12,477,1
+458,98,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,190.74,307.64,0.38,162,22
+459,14,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,108.45,234.27,0.54,97,4
+460,75,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,140.36,185.27,0.24,159,0
+461,28,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,165.37,254.21,0.35,331,0
+462,94,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,110.75,190.79,0.42,39,19
+463,88,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,136.89,297.65,0.54,469,0
+464,45,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,320.32,353.17,0.09,42,14
+465,63,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,239.43,380.49,0.37,108,0
+466,72,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,81.06,99.42,0.18,242,34
+467,11,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,279.77,407.88,0.31,120,0
+468,37,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,135.85,311.94,0.56,368,19
+469,45,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,32.93,44.29,0.26,130,35
+470,6,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,16.84,32.59,0.48,72,0
+471,22,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,282.32,462.01,0.39,372,45
+472,94,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,374.1,437.77,0.15,238,31
+473,18,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,79.72,131.42,0.39,133,7
+474,83,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,228.08,314.73,0.28,91,0
+475,55,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",211.39,453.07,0.53,204,46
+476,7,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,76.99,177.03,0.57,498,0
+477,84,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,365.31,454.27,0.2,462,0
+478,98,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,290.22,358.72,0.19,292,27
+479,100,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,293.71,422.32,0.3,22,5
+480,51,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,95.42,112.41,0.15,193,47
+481,31,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,149.5,326.37,0.54,30,11
+482,35,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,17.1,25.86,0.34,452,49
+483,31,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,118.84,267.87,0.56,75,0
+484,100,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,255.2,445.17,0.43,394,0
+485,2,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,201.49,339.4,0.41,50,0
+486,25,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,89.65,103.87,0.14,74,0
+487,77,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,140.29,216.44,0.35,241,41
+488,50,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,168.83,297.26,0.43,8,9
+489,21,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,291.97,376.21,0.22,403,0
+490,11,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,110.28,119.95,0.08,95,0
+491,94,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,179.78,348.4,0.48,286,0
+492,76,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,64.59,71.34,0.09,306,0
+493,98,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",60.62,96.7,0.37,286,33
+494,85,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,268.16,412.48,0.35,142,27
+495,8,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,385.69,410.43,0.06,122,0
+496,51,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,51.28,59.29,0.14,358,25
+497,57,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,208.75,471.39,0.56,283,0
+498,2,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,133.76,244.47,0.45,143,5
+499,28,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,119.55,153.98,0.22,107,0
+500,26,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,26.88,51.52,0.48,162,5
+501,25,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,339.32,416.04,0.18,240,24
+502,72,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,156.53,290.09,0.46,439,8
+503,20,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,131.93,143.63,0.08,288,0
+504,24,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,385.97,445.67,0.13,72,0
+505,5,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,362.2,466.09,0.22,330,0
+506,59,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,265.76,348.15,0.24,139,0
+507,40,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,63.38,130.94,0.52,356,0
+508,27,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,37.0,78.9,0.53,393,37
+509,10,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,338.4,419.9,0.19,102,31
+510,100,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,270.59,482.77,0.44,181,20
+511,92,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,114.74,121.02,0.05,397,13
+512,48,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,10.9,20.07,0.46,327,0
+513,7,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,114.48,167.83,0.32,5,0
+514,81,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,311.15,423.9,0.27,79,10
+515,38,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,45.12,48.61,0.07,345,44
+516,25,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,251.88,292.91,0.14,354,0
+517,69,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,108.11,135.12,0.2,352,41
+518,64,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",103.85,118.46,0.12,383,0
+519,97,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,181.93,394.21,0.54,128,0
+520,77,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,295.41,338.33,0.13,155,0
+521,1,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,127.48,153.65,0.17,75,27
+522,96,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,267.76,294.96,0.09,286,0
+523,16,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,87.55,143.28,0.39,294,45
+524,43,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,213.55,489.13,0.56,179,3
+525,22,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,228.54,490.55,0.53,176,0
+526,58,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,114.02,275.31,0.59,244,0
+527,86,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,72.17,128.15,0.44,56,14
+528,89,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,370.73,484.75,0.24,82,0
+529,60,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,62.54,110.45,0.43,416,34
+530,43,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,220.91,464.94,0.52,136,0
+531,26,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,383.25,489.99,0.22,426,0
+532,43,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,304.61,376.09,0.19,430,0
+533,88,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,391.49,442.94,0.12,108,0
+534,93,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,238.65,475.21,0.5,76,43
+535,50,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,46.62,89.34,0.48,267,0
+536,16,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,182.61,413.42,0.56,384,4
+537,4,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,260.23,372.63,0.3,263,0
+538,58,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",189.19,291.53,0.35,5,29
+539,15,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,205.94,338.94,0.39,59,36
+540,20,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,146.17,179.04,0.18,186,0
+541,98,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,93.69,142.92,0.34,102,0
+542,30,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,199.46,345.81,0.42,65,3
+543,3,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,101.36,152.83,0.34,464,37
+544,18,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,159.02,199.19,0.2,421,29
+545,35,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,37.32,45.11,0.17,308,49
+546,28,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,124.14,248.37,0.5,75,0
+547,32,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,41.39,52.25,0.21,485,0
+548,44,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,40.36,83.45,0.52,125,0
+549,26,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,345.68,479.43,0.28,407,28
+550,35,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,261.14,451.79,0.42,474,32
+551,99,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,55.99,88.42,0.37,323,30
+552,53,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,103.45,178.81,0.42,50,0
+553,47,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,235.2,333.62,0.29,334,0
+554,79,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,112.05,149.76,0.25,308,38
+555,14,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,236.63,298.17,0.21,245,0
+556,74,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,154.76,185.91,0.17,365,0
+557,49,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,64.36,97.04,0.34,244,26
+558,84,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,232.75,263.7,0.12,177,9
+559,45,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,226.0,300.07,0.25,188,37
+560,50,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,322.74,378.42,0.15,111,0
+561,6,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,279.82,456.42,0.39,407,10
+562,29,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,192.57,208.04,0.07,466,0
+563,13,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,254.99,396.64,0.36,24,0
+564,93,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,89.78,151.79,0.41,151,0
+565,45,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,112.93,215.01,0.47,150,0
+566,49,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,448.68,483.38,0.07,357,11
+567,49,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,126.64,257.17,0.51,39,0
+568,76,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,257.76,275.07,0.06,376,12
+569,47,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,332.99,395.04,0.16,191,0
+570,27,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",95.14,126.96,0.25,291,31
+571,81,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",161.09,170.63,0.06,498,14
+572,11,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",83.8,123.07,0.32,138,0
+573,52,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,54.07,89.71,0.4,44,0
+574,97,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,247.99,469.7,0.47,79,25
+575,34,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,294.86,499.95,0.41,71,0
+576,12,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",134.53,262.69,0.49,251,0
+577,45,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,77.87,110.6,0.3,263,42
+578,37,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,236.0,422.36,0.44,98,1
+579,49,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,159.38,176.03,0.09,246,0
+580,2,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,239.0,261.23,0.09,257,0
+581,22,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,331.55,459.79,0.28,72,18
+582,17,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,316.12,365.76,0.14,384,9
+583,55,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,187.65,405.56,0.54,117,44
+584,80,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",37.5,45.99,0.18,321,33
+585,55,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,208.15,404.61,0.49,183,0
+586,38,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,204.92,389.07,0.47,277,0
+587,85,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,354.78,380.33,0.07,271,23
+588,10,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,239.81,457.02,0.48,224,6
+589,36,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,21.41,52.94,0.6,146,13
+590,39,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,193.25,296.44,0.35,195,6
+591,8,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,239.93,430.49,0.44,389,37
+592,21,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,212.26,397.29,0.47,29,16
+593,20,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,228.45,448.14,0.49,330,0
+594,79,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,344.8,492.75,0.3,163,0
+595,26,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,182.91,362.44,0.5,240,0
+596,42,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,113.06,233.62,0.52,352,38
+597,73,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",28.16,36.83,0.24,182,0
+598,36,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,260.38,388.45,0.33,115,44
+599,51,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,215.75,259.18,0.17,427,46
+600,33,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,69.54,158.9,0.56,47,0
+601,86,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,189.69,359.06,0.47,164,27
+602,57,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,200.46,237.24,0.16,120,44
+603,14,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,167.0,319.23,0.48,319,8
+604,18,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,202.5,487.59,0.58,420,15
+605,50,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,463.69,498.97,0.07,271,18
+606,57,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,38.65,95.86,0.6,50,0
+607,83,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,54.42,65.42,0.17,277,2
+608,60,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,349.99,480.93,0.27,354,0
+609,8,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,46.84,65.04,0.28,470,41
+610,57,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,169.13,294.37,0.43,291,44
+611,22,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,361.01,495.21,0.27,427,43
+612,61,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,215.34,233.7,0.08,129,47
+613,67,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,59.8,70.45,0.15,434,4
+614,30,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",94.71,132.66,0.29,126,30
+615,61,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,39.12,87.45,0.55,371,5
+616,37,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,186.43,233.52,0.2,209,0
+617,99,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,36.59,66.99,0.45,176,0
+618,24,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",197.59,312.48,0.37,457,1
+619,83,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,175.34,342.91,0.49,216,26
+620,89,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,83.26,150.4,0.45,245,0
+621,92,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,302.67,339.89,0.11,167,0
+622,40,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,153.2,231.18,0.34,163,0
+623,76,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,287.12,334.14,0.14,130,0
+624,47,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,146.55,235.16,0.38,486,9
+625,11,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,78.11,87.07,0.1,287,0
+626,88,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,186.68,322.15,0.42,324,32
+627,73,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",195.74,211.4,0.07,239,0
+628,67,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,310.58,381.68,0.19,325,49
+629,89,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,45.23,103.07,0.56,376,0
+630,18,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,120.88,254.66,0.53,31,20
+631,91,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,275.12,465.47,0.41,329,16
+632,96,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,403.95,425.92,0.05,127,20
+633,4,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,304.98,343.26,0.11,432,0
+634,7,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,207.62,421.62,0.51,109,0
+635,69,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,184.68,194.56,0.05,44,0
+636,60,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,292.31,492.6,0.41,482,13
+637,97,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,165.47,243.64,0.32,317,0
+638,89,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,82.02,176.41,0.54,110,4
+639,1,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,16.78,22.72,0.26,481,15
+640,26,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,224.31,293.7,0.24,423,31
+641,20,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,244.12,257.84,0.05,26,42
+642,74,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,239.18,351.39,0.32,105,0
+643,96,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,294.58,443.96,0.34,278,0
+644,8,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,113.06,154.24,0.27,214,0
+645,49,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",44.69,51.44,0.13,75,27
+646,49,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,60.62,127.24,0.52,284,0
+647,42,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",397.12,470.51,0.16,250,32
+648,46,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,137.64,157.31,0.13,470,0
+649,35,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",36.41,71.48,0.49,30,0
+650,23,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",87.98,216.42,0.59,361,0
+651,38,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,52.87,67.68,0.22,130,0
+652,73,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,375.89,453.58,0.17,91,28
+653,21,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,156.53,303.07,0.48,387,0
+654,93,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,310.8,341.75,0.09,31,1
+655,62,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,300.81,438.4,0.31,114,0
+656,79,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,163.16,323.12,0.5,16,0
+657,3,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,127.01,308.34,0.59,40,0
+658,44,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,316.22,366.28,0.14,206,25
+659,7,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,77.54,108.89,0.29,147,49
+660,95,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,23.94,26.98,0.11,274,50
+661,50,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,13.37,23.81,0.44,272,0
+662,44,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,14.75,28.79,0.49,317,50
+663,60,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,45.79,64.89,0.29,184,43
+664,21,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,165.57,266.94,0.38,60,0
+665,68,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,119.82,215.83,0.44,149,0
+666,52,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,222.63,323.88,0.31,28,11
+667,86,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,220.66,234.75,0.06,116,5
+668,8,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",59.06,66.22,0.11,428,38
+669,22,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,141.55,193.52,0.27,290,0
+670,57,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,65.06,145.45,0.55,189,44
+671,63,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,223.48,278.1,0.2,40,0
+672,26,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,121.17,136.78,0.11,187,0
+673,16,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,343.33,409.9,0.16,132,14
+674,45,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,218.86,268.66,0.19,387,0
+675,15,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,173.77,205.63,0.15,453,0
+676,88,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,203.13,340.43,0.4,136,0
+677,4,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",307.27,415.17,0.26,500,37
+678,23,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",152.77,248.52,0.39,487,0
+679,12,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,129.87,171.46,0.24,164,0
+680,100,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,127.81,190.48,0.33,294,0
+681,55,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,230.76,423.37,0.45,99,5
+682,85,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,99.51,199.12,0.5,366,32
+683,75,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,50.98,74.69,0.32,34,0
+684,98,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,245.7,326.02,0.25,36,0
+685,5,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,195.75,324.25,0.4,180,39
+686,87,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,46.08,99.25,0.54,330,6
+687,59,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,165.25,232.01,0.29,461,0
+688,78,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,426.51,465.16,0.08,467,0
+689,14,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,182.44,194.29,0.06,388,0
+690,70,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",379.53,477.32,0.2,278,0
+691,8,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,194.36,294.59,0.34,238,24
+692,25,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,89.29,105.01,0.15,323,25
+693,93,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,45.17,62.41,0.28,448,0
+694,82,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,73.36,101.8,0.28,75,36
+695,81,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,353.35,436.95,0.19,28,48
+696,45,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,201.52,223.08,0.1,311,0
+697,12,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,144.84,255.21,0.43,408,0
+698,18,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,269.06,479.94,0.44,154,0
+699,89,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,461.66,490.36,0.06,369,26
+700,84,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",131.37,282.6,0.54,482,0
+701,38,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,143.34,239.07,0.4,206,23
+702,99,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,144.55,200.36,0.28,356,33
+703,84,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",37.0,78.45,0.53,298,0
+704,57,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,12.38,25.62,0.52,381,48
+705,31,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",18.99,33.1,0.43,10,13
+706,88,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,7.42,16.09,0.54,209,10
+707,75,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,231.16,389.98,0.41,197,0
+708,10,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,51.39,92.79,0.45,371,0
+709,65,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,251.2,303.05,0.17,249,18
+710,52,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",66.0,91.84,0.28,52,19
+711,90,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",217.7,466.71,0.53,259,8
+712,85,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,7.21,14.89,0.52,223,0
+713,6,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,95.52,102.51,0.07,432,0
+714,68,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,198.38,361.02,0.45,21,33
+715,19,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,34.39,44.55,0.23,439,0
+716,14,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,184.58,225.81,0.18,39,0
+717,25,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,89.25,209.76,0.57,244,0
+718,30,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,386.69,489.62,0.21,417,41
+719,55,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,166.83,229.29,0.27,427,0
+720,4,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,144.87,318.43,0.55,211,0
+721,35,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",86.62,176.01,0.51,100,0
+722,92,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,282.59,417.02,0.32,173,4
+723,76,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,149.72,212.13,0.29,106,46
+724,34,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",46.23,53.64,0.14,142,0
+725,80,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,115.61,155.28,0.26,112,2
+726,25,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,303.23,447.3,0.32,226,0
+727,53,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,155.08,184.22,0.16,477,13
+728,33,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,135.82,230.75,0.41,478,0
+729,11,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,16.29,25.99,0.37,458,9
+730,2,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,294.43,462.84,0.36,456,38
+731,16,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,188.35,312.89,0.4,479,0
+732,40,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,310.76,356.19,0.13,96,0
+733,79,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,213.86,248.46,0.14,156,0
+734,22,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,72.79,102.03,0.29,122,20
+735,16,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,36.69,68.68,0.47,401,13
+736,80,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,236.3,482.36,0.51,353,20
+737,23,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,371.0,416.02,0.11,474,0
+738,94,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,204.13,242.82,0.16,157,0
+739,56,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,228.39,348.87,0.35,334,0
+740,55,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,335.79,362.32,0.07,344,23
+741,50,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,64.18,91.44,0.3,13,11
+742,32,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,51.39,71.95,0.29,150,19
+743,94,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,282.24,344.93,0.18,400,0
+744,98,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,283.27,319.1,0.11,359,0
+745,80,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,16.44,17.94,0.08,383,0
+746,82,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,199.16,351.55,0.43,321,0
+747,99,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,237.35,393.33,0.4,275,13
+748,29,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,257.73,423.55,0.39,393,32
+749,29,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,33.13,51.01,0.35,400,0
+750,17,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,27.37,65.14,0.58,11,24
+751,11,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,16.2,26.01,0.38,378,39
+752,64,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,245.32,267.45,0.08,237,5
+753,2,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,104.84,122.07,0.14,469,21
+754,77,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,136.37,283.54,0.52,192,0
+755,25,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,179.15,242.21,0.26,493,16
+756,20,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,59.35,98.32,0.4,180,0
+757,59,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,39.97,50.22,0.2,150,20
+758,44,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,85.02,110.18,0.23,168,6
+759,98,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,195.69,326.58,0.4,44,37
+760,65,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,202.65,492.54,0.59,42,40
+761,72,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",307.98,417.34,0.26,207,0
+762,27,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,168.56,314.12,0.46,176,32
+763,87,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,131.05,259.44,0.49,279,0
+764,88,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,91.18,133.36,0.32,107,50
+765,69,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,252.65,329.13,0.23,420,4
+766,67,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,310.29,327.81,0.05,348,0
+767,18,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,126.91,262.12,0.52,293,2
+768,87,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,206.56,477.23,0.57,375,0
+769,64,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",309.9,398.65,0.22,180,0
+770,83,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,387.01,441.37,0.12,240,13
+771,100,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,173.46,364.17,0.52,283,0
+772,21,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",301.66,358.12,0.16,165,0
+773,22,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,210.16,225.82,0.07,214,32
+774,35,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,24.12,39.98,0.4,208,0
+775,45,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,106.02,112.67,0.06,297,0
+776,25,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,410.12,467.67,0.12,477,0
+777,47,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,174.7,200.2,0.13,399,0
+778,35,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,45.11,106.65,0.58,212,0
+779,62,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,210.89,340.79,0.38,492,0
+780,79,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,158.78,387.08,0.59,287,0
+781,36,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,72.59,120.13,0.4,447,20
+782,70,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,108.43,260.72,0.58,215,0
+783,24,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,401.67,446.73,0.1,414,47
+784,55,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,306.28,477.42,0.36,34,0
+785,79,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,139.28,275.83,0.5,48,0
+786,62,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,323.48,490.82,0.34,113,28
+787,82,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,248.67,267.1,0.07,156,15
+788,41,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,261.85,281.07,0.07,218,49
+789,23,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,120.97,136.96,0.12,435,20
+790,31,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,61.04,82.97,0.26,276,44
+791,11,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,242.03,257.15,0.06,188,0
+792,20,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,102.54,190.74,0.46,151,0
+793,12,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,273.51,299.74,0.09,397,0
+794,83,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,213.44,465.35,0.54,337,43
+795,26,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,238.33,386.22,0.38,91,14
+796,47,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,213.33,456.43,0.53,138,24
+797,86,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",113.76,272.03,0.58,144,0
+798,91,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,173.86,194.32,0.11,284,38
+799,11,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,30.59,34.29,0.11,435,0
+800,94,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,121.97,147.57,0.17,343,32
+801,78,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,39.73,66.64,0.4,446,26
+802,41,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",233.86,294.43,0.21,403,19
+803,27,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,86.17,90.74,0.05,298,27
+804,73,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,155.31,212.21,0.27,14,0
+805,63,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,38.75,80.24,0.52,484,0
+806,63,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,235.19,326.9,0.28,246,0
+807,47,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,153.47,163.51,0.06,105,23
+808,7,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,52.38,90.2,0.42,281,0
+809,100,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",323.96,448.57,0.28,463,10
+810,2,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,266.53,297.96,0.11,411,0
+811,74,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,129.54,276.13,0.53,235,0
+812,79,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,234.96,496.6,0.53,7,0
+813,25,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",129.31,310.78,0.58,109,0
+814,14,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,246.32,488.53,0.5,439,0
+815,3,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,253.26,448.17,0.43,466,0
+816,29,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,150.3,236.09,0.36,298,0
+817,74,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,181.11,331.01,0.45,250,0
+818,70,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",360.25,390.83,0.08,244,0
+819,11,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,418.59,465.85,0.1,488,0
+820,88,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,26.71,55.08,0.52,136,0
+821,61,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,48.25,73.0,0.34,4,27
+822,45,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,206.77,237.87,0.13,441,37
+823,33,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,54.01,116.25,0.54,238,16
+824,1,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,287.45,401.62,0.28,45,0
+825,56,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,241.5,268.7,0.1,418,30
+826,74,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,187.51,282.12,0.34,328,14
+827,84,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,316.3,401.71,0.21,340,8
+828,61,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,205.76,300.56,0.32,482,40
+829,99,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,278.42,335.07,0.17,133,4
+830,25,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,142.5,282.08,0.49,121,0
+831,27,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,151.09,205.84,0.27,444,0
+832,41,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,117.18,257.77,0.55,427,0
+833,44,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",142.08,177.8,0.2,480,0
+834,16,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,120.19,230.55,0.48,139,22
+835,56,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,46.02,84.27,0.45,410,40
+836,8,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",247.97,294.66,0.16,311,32
+837,56,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,240.42,307.76,0.22,234,4
+838,19,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",207.66,316.25,0.34,230,5
+839,78,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",136.97,163.55,0.16,317,0
+840,2,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",97.79,129.68,0.25,62,46
+841,84,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,295.02,369.33,0.2,130,29
+842,83,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,73.33,91.9,0.2,126,0
+843,89,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,286.48,350.42,0.18,356,0
+844,31,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,105.49,263.32,0.6,495,0
+845,60,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,68.65,75.81,0.09,102,22
+846,92,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,369.05,432.6,0.15,256,0
+847,98,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,171.16,395.25,0.57,29,0
+848,53,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,49.69,59.79,0.17,205,8
+849,22,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,285.63,479.82,0.4,363,6
+850,9,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,105.29,170.7,0.38,335,32
+851,92,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,210.84,439.17,0.52,466,0
+852,90,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,21.18,51.28,0.59,229,0
+853,87,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,160.82,288.86,0.44,325,45
+854,18,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,114.46,124.93,0.08,355,0
+855,49,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,58.26,141.17,0.59,500,41
+856,46,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,213.61,404.71,0.47,364,0
+857,53,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,229.99,345.02,0.33,360,0
+858,30,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,194.99,311.92,0.37,240,29
+859,5,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,212.12,294.23,0.28,39,0
+860,24,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,211.88,387.85,0.45,470,0
+861,63,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,285.13,476.77,0.4,389,5
+862,54,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,151.62,164.4,0.08,29,31
+863,17,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,319.27,449.52,0.29,411,28
+864,58,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,216.72,276.18,0.22,8,39
+865,88,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,440.71,493.31,0.11,233,0
+866,82,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,139.37,227.15,0.39,85,0
+867,61,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,219.74,444.21,0.51,2,24
+868,77,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,100.63,198.8,0.49,485,28
+869,68,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,12.13,19.25,0.37,254,0
+870,45,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,41.47,75.83,0.45,40,0
+871,61,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,259.7,464.4,0.44,381,0
+872,22,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,218.23,389.79,0.44,176,9
+873,59,Zara Jacket,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,34.11,82.36,0.59,155,46
+874,63,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,215.43,442.23,0.51,235,20
+875,2,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",262.68,437.34,0.4,204,27
+876,35,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,10.55,13.53,0.22,108,0
+877,78,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,276.03,296.62,0.07,447,4
+878,22,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,338.36,375.21,0.1,379,0
+879,25,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,266.11,444.73,0.4,37,45
+880,51,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,55.28,68.48,0.19,324,40
+881,100,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,202.61,312.81,0.35,216,0
+882,14,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,222.48,399.65,0.44,301,26
+883,73,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,295.17,355.11,0.17,422,0
+884,43,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,239.7,258.67,0.07,120,0
+885,9,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,216.34,276.4,0.22,3,0
+886,8,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,433.51,465.45,0.07,498,0
+887,34,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,93.44,229.55,0.59,201,25
+888,56,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,129.05,144.79,0.11,218,32
+889,65,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,411.88,446.82,0.08,225,15
+890,33,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,360.51,489.19,0.26,292,0
+891,72,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,69.74,126.08,0.45,8,35
+892,36,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,163.96,210.02,0.22,21,20
+893,52,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,156.46,353.96,0.56,107,27
+894,76,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,88.0,108.83,0.19,180,14
+895,81,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,99.83,200.18,0.5,445,8
+896,72,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,236.51,264.39,0.11,472,25
+897,100,H&M T-Shirt,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,176.58,402.2,0.56,5,11
+898,35,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,13.23,26.61,0.5,173,0
+899,80,MacBook Pro,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,116.22,126.24,0.08,345,23
+900,63,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,78.61,194.62,0.6,265,4
+901,61,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",268.39,474.64,0.43,246,26
+902,78,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,101.42,146.61,0.31,2,29
+903,42,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,48.17,63.06,0.24,290,0
+904,91,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,328.38,375.41,0.13,5,0
+905,43,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,450.66,493.02,0.09,388,0
+906,29,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,220.58,494.89,0.55,442,0
+907,85,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,35.78,56.79,0.37,391,0
+908,76,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,6.49,12.18,0.47,278,40
+909,1,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,132.61,242.27,0.45,281,0
+910,60,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,189.11,465.29,0.59,150,38
+911,33,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,286.45,342.62,0.16,142,0
+912,20,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",232.55,300.49,0.23,100,0
+913,66,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",230.33,245.13,0.06,295,15
+914,23,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,314.12,443.93,0.29,84,0
+915,32,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,151.77,251.03,0.4,196,0
+916,45,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,72.33,130.69,0.45,80,2
+917,82,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,325.12,350.9,0.07,448,0
+918,18,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,119.24,251.46,0.53,469,0
+919,33,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,357.8,430.84,0.17,335,0
+920,67,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,310.32,490.02,0.37,106,33
+921,92,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,208.43,269.06,0.23,439,0
+922,90,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,168.87,201.54,0.16,162,1
+923,80,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,19.93,44.89,0.56,206,0
+924,9,Ikea Sofa,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,99.57,209.2,0.52,135,0
+925,94,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,413.26,438.66,0.06,348,0
+926,17,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,370.03,435.48,0.15,73,31
+927,47,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,401.13,488.8,0.18,462,0
+928,98,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,35.35,40.2,0.12,453,0
+929,42,HP Spectre,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,16.27,30.06,0.46,132,49
+930,65,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,66.74,161.73,0.59,33,50
+931,68,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,103.46,160.57,0.36,204,0
+932,26,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,161.27,283.41,0.43,27,0
+933,33,1984,Books,An engaging and thought-provoking book that will captivate readers of all ages.,192.76,213.07,0.1,369,44
+934,16,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",296.24,323.28,0.08,430,0
+935,4,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,12.1,13.92,0.13,367,0
+936,73,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,374.07,443.18,0.16,403,36
+937,27,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",295.89,413.75,0.28,491,0
+938,62,AirPods Pro,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,100.1,189.46,0.47,322,0
+939,50,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",63.32,120.44,0.47,306,20
+940,67,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,219.4,429.91,0.49,108,0
+941,85,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,199.3,231.81,0.14,175,29
+942,86,To Kill a Mockingbird,Books,An engaging and thought-provoking book that will captivate readers of all ages.,177.74,202.48,0.12,453,22
+943,24,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",227.11,434.51,0.48,138,0
+944,39,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,27.96,41.37,0.32,297,0
+945,97,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",8.49,10.17,0.17,17,0
+946,38,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,159.47,365.2,0.56,255,0
+947,87,Instant Pot,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,157.93,350.49,0.55,216,30
+948,82,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,200.83,270.48,0.26,210,4
+949,1,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,167.2,264.22,0.37,22,0
+950,23,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,194.87,221.33,0.12,92,0
+951,93,Levi's Jeans,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,245.65,432.5,0.43,179,1
+952,34,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,163.21,248.53,0.34,214,21
+953,64,Samsung Galaxy Watch,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,281.21,336.21,0.16,331,13
+954,33,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,129.65,267.29,0.51,406,0
+955,94,Ninja Blender,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,275.73,316.29,0.13,159,0
+956,92,Jabra Elite 85h,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,158.66,223.03,0.29,423,25
+957,94,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,240.99,353.52,0.32,175,0
+958,68,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,253.97,463.8,0.45,4,44
+959,75,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,419.33,454.63,0.08,276,0
+960,91,Garmin Fenix 7,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,106.65,178.9,0.4,19,0
+961,58,KitchenAid Mixer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,339.12,480.99,0.29,3,0
+962,100,Philips Airfryer,Kitchen Appliances,Essential kitchen appliance to simplify your cooking and save time.,165.31,250.39,0.34,214,0
+963,6,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,63.4,67.06,0.05,338,0
+964,41,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,196.04,269.29,0.27,117,38
+965,11,Pixel 7,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",235.85,289.3,0.18,384,0
+966,55,Puma RS-X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,122.26,248.9,0.51,328,0
+967,31,Lenovo ThinkPad,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,183.01,323.97,0.44,116,0
+968,43,Fossil Gen 6,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,288.48,470.63,0.39,79,50
+969,23,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,179.08,264.06,0.32,334,22
+970,93,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,297.08,372.07,0.2,456,46
+971,5,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,98.62,230.84,0.57,91,32
+972,76,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,219.38,410.32,0.47,470,18
+973,43,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,242.13,431.34,0.44,454,0
+974,86,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,125.4,169.55,0.26,477,0
+975,80,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,262.55,471.38,0.44,90,9
+976,5,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,170.18,197.51,0.14,345,37
+977,54,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,153.5,355.33,0.57,136,40
+978,1,Apple Watch Series 8,Watches,A stylish smartwatch with advanced health tracking and customizable watch faces.,234.48,297.42,0.21,268,12
+979,46,Wayfair Bed Frame,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,104.26,120.14,0.13,136,13
+980,1,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,210.34,494.01,0.57,462,14
+981,56,Nerf Blaster,Toys,Fun and creative toys that inspire imagination and endless hours of play.,106.53,119.63,0.11,275,0
+982,6,Ashley Dining Table,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,192.01,349.97,0.45,49,0
+983,43,West Elm Chair,Furniture,Modern and elegant furniture to enhance the look and feel of your home.,252.31,266.56,0.05,325,0
+984,93,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,26.97,38.74,0.3,136,0
+985,19,Hot Wheels Track,Toys,Fun and creative toys that inspire imagination and endless hours of play.,209.97,361.18,0.42,119,25
+986,51,Uniqlo Hoodie,Clothing,Trendy and high-quality clothing that combines style and comfort for any occasion.,199.35,362.06,0.45,438,0
+987,93,Sony WH-1000XM4,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,324.64,384.74,0.16,17,50
+988,26,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,340.02,381.32,0.11,226,0
+989,25,Barbie Dreamhouse,Toys,Fun and creative toys that inspire imagination and endless hours of play.,253.24,444.29,0.43,235,5
+990,69,OnePlus 11,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",140.44,331.11,0.58,300,0
+991,9,The Catcher in the Rye,Books,An engaging and thought-provoking book that will captivate readers of all ages.,30.67,59.87,0.49,124,4
+992,93,Bose QC45,Headphones,Premium noise-cancelling headphones with crystal-clear sound and long-lasting comfort.,238.55,395.26,0.4,415,0
+993,38,Reebok Nano X,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,352.07,490.38,0.28,164,0
+994,88,iPhone 14,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",159.74,329.28,0.51,150,0
+995,85,Nike Air Max,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,267.46,299.32,0.11,92,0
+996,6,The Great Gatsby,Books,An engaging and thought-provoking book that will captivate readers of all ages.,223.01,290.35,0.23,14,35
+997,47,Galaxy S21,Smartphones,"A high-performance smartphone with cutting-edge features, perfect for staying connected and productive.",92.85,125.94,0.26,166,45
+998,25,Dell XPS 13,Laptops,A sleek and powerful laptop designed for professionals and gamers alike.,207.91,310.14,0.33,436,49
+999,55,LEGO Star Wars,Toys,Fun and creative toys that inspire imagination and endless hours of play.,203.41,247.83,0.18,410,13
+1000,58,Adidas Ultraboost,Shoes,Durable and comfortable shoes designed for both sports and casual wear.,256.12,449.0,0.43,271,44

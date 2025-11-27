@@ -1,0 +1,1001 @@
+product_id,product_name,category,original_price
+1,1984,Books,401.68
+2,Barbie Dreamhouse,Toys,489.3
+3,AirPods Pro,Headphones,343.45
+4,Dell XPS 13,Laptops,126.26
+5,Puma RS-X,Shoes,205.97
+6,Ashley Dining Table,Furniture,427.36
+7,Uniqlo Hoodie,Clothing,316.93
+8,Nerf Blaster,Toys,374.6
+9,Philips Airfryer,Kitchen Appliances,194.1
+10,Levi's Jeans,Clothing,319.28
+11,West Elm Chair,Furniture,455.16
+12,Fossil Gen 6,Watches,229.51
+13,iPhone 14,Smartphones,217.2
+14,H&M T-Shirt,Clothing,337.04
+15,Jabra Elite 85h,Headphones,186.03
+16,Ashley Dining Table,Furniture,198.1
+17,The Catcher in the Rye,Books,488.66
+18,Sony WH-1000XM4,Headphones,147.83
+19,LEGO Star Wars,Toys,244.92
+20,Pixel 7,Smartphones,409.21
+21,West Elm Chair,Furniture,291.95
+22,Pixel 7,Smartphones,431.44
+23,iPhone 14,Smartphones,484.82
+24,Apple Watch Series 8,Watches,276.55
+25,Ashley Dining Table,Furniture,376.02
+26,Ashley Dining Table,Furniture,220.94
+27,Reebok Nano X,Shoes,436.94
+28,Zara Jacket,Clothing,255.26
+29,The Catcher in the Rye,Books,221.4
+30,Ashley Dining Table,Furniture,494.06
+31,Apple Watch Series 8,Watches,147.1
+32,Pixel 7,Smartphones,133.84
+33,Nerf Blaster,Toys,48.92
+34,Philips Airfryer,Kitchen Appliances,133.76
+35,AirPods Pro,Headphones,25.25
+36,Levi's Jeans,Clothing,63.23
+37,H&M T-Shirt,Clothing,292.3
+38,Philips Airfryer,Kitchen Appliances,314.51
+39,HP Spectre,Laptops,338.94
+40,Philips Airfryer,Kitchen Appliances,355.34
+41,Instant Pot,Kitchen Appliances,340.83
+42,Dell XPS 13,Laptops,89.0
+43,Dell XPS 13,Laptops,246.62
+44,To Kill a Mockingbird,Books,242.78
+45,KitchenAid Mixer,Kitchen Appliances,376.01
+46,H&M T-Shirt,Clothing,216.22
+47,Nerf Blaster,Toys,356.01
+48,LEGO Star Wars,Toys,171.69
+49,Nike Air Max,Shoes,292.2
+50,Hot Wheels Track,Toys,34.84
+51,Hot Wheels Track,Toys,180.05
+52,The Great Gatsby,Books,371.22
+53,Zara Jacket,Clothing,192.31
+54,iPhone 14,Smartphones,351.37
+55,Uniqlo Hoodie,Clothing,23.84
+56,Apple Watch Series 8,Watches,43.78
+57,Levi's Jeans,Clothing,437.98
+58,Uniqlo Hoodie,Clothing,188.5
+59,West Elm Chair,Furniture,92.89
+60,Nike Air Max,Shoes,232.91
+61,HP Spectre,Laptops,460.16
+62,Galaxy S21,Smartphones,250.26
+63,Samsung Galaxy Watch,Watches,288.49
+64,Ninja Blender,Kitchen Appliances,207.92
+65,H&M T-Shirt,Clothing,496.25
+66,1984,Books,89.73
+67,1984,Books,147.73
+68,KitchenAid Mixer,Kitchen Appliances,317.33
+69,Fossil Gen 6,Watches,266.66
+70,Ashley Dining Table,Furniture,245.17
+71,1984,Books,294.72
+72,Garmin Fenix 7,Watches,101.65
+73,Barbie Dreamhouse,Toys,435.65
+74,AirPods Pro,Headphones,116.17
+75,Fossil Gen 6,Watches,172.31
+76,Ikea Sofa,Furniture,10.4
+77,Jabra Elite 85h,Headphones,492.94
+78,Reebok Nano X,Shoes,439.18
+79,H&M T-Shirt,Clothing,454.91
+80,LEGO Star Wars,Toys,458.07
+81,H&M T-Shirt,Clothing,384.71
+82,Philips Airfryer,Kitchen Appliances,207.75
+83,iPhone 14,Smartphones,258.98
+84,Galaxy S21,Smartphones,431.13
+85,Ninja Blender,Kitchen Appliances,229.34
+86,Ashley Dining Table,Furniture,111.62
+87,OnePlus 11,Smartphones,251.69
+88,West Elm Chair,Furniture,378.31
+89,Samsung Galaxy Watch,Watches,292.93
+90,iPhone 14,Smartphones,53.41
+91,West Elm Chair,Furniture,278.25
+92,Nike Air Max,Shoes,438.01
+93,Instant Pot,Kitchen Appliances,494.06
+94,Pixel 7,Smartphones,446.07
+95,Wayfair Bed Frame,Furniture,424.9
+96,Wayfair Bed Frame,Furniture,132.98
+97,Barbie Dreamhouse,Toys,257.94
+98,Levi's Jeans,Clothing,287.74
+99,Bose QC45,Headphones,42.09
+100,Wayfair Bed Frame,Furniture,277.0
+101,Barbie Dreamhouse,Toys,15.16
+102,Nerf Blaster,Toys,246.17
+103,Lenovo ThinkPad,Laptops,452.57
+104,Pixel 7,Smartphones,82.03
+105,Adidas Ultraboost,Shoes,93.87
+106,HP Spectre,Laptops,206.75
+107,Apple Watch Series 8,Watches,249.71
+108,Philips Airfryer,Kitchen Appliances,397.61
+109,Fossil Gen 6,Watches,329.05
+110,Instant Pot,Kitchen Appliances,444.44
+111,MacBook Pro,Laptops,334.53
+112,Zara Jacket,Clothing,401.31
+113,West Elm Chair,Furniture,151.03
+114,Wayfair Bed Frame,Furniture,448.81
+115,The Great Gatsby,Books,47.04
+116,Adidas Ultraboost,Shoes,74.01
+117,Wayfair Bed Frame,Furniture,202.91
+118,To Kill a Mockingbird,Books,443.25
+119,Puma RS-X,Shoes,206.41
+120,Ashley Dining Table,Furniture,253.09
+121,West Elm Chair,Furniture,168.45
+122,To Kill a Mockingbird,Books,452.02
+123,Garmin Fenix 7,Watches,260.34
+124,KitchenAid Mixer,Kitchen Appliances,330.29
+125,Fossil Gen 6,Watches,210.49
+126,Instant Pot,Kitchen Appliances,431.85
+127,The Great Gatsby,Books,448.62
+128,To Kill a Mockingbird,Books,293.07
+129,LEGO Star Wars,Toys,454.02
+130,Galaxy S21,Smartphones,340.27
+131,Nerf Blaster,Toys,374.37
+132,Ashley Dining Table,Furniture,485.01
+133,iPhone 14,Smartphones,107.04
+134,Nike Air Max,Shoes,85.67
+135,H&M T-Shirt,Clothing,50.69
+136,Adidas Ultraboost,Shoes,328.48
+137,Hot Wheels Track,Toys,235.8
+138,To Kill a Mockingbird,Books,178.71
+139,HP Spectre,Laptops,385.35
+140,Pixel 7,Smartphones,226.44
+141,HP Spectre,Laptops,476.7
+142,The Great Gatsby,Books,75.53
+143,Ikea Sofa,Furniture,208.21
+144,Pixel 7,Smartphones,43.65
+145,H&M T-Shirt,Clothing,323.26
+146,Pixel 7,Smartphones,92.12
+147,Ninja Blender,Kitchen Appliances,263.75
+148,KitchenAid Mixer,Kitchen Appliances,495.46
+149,Jabra Elite 85h,Headphones,299.25
+150,Zara Jacket,Clothing,453.15
+151,Galaxy S21,Smartphones,49.9
+152,Ashley Dining Table,Furniture,427.52
+153,Ninja Blender,Kitchen Appliances,455.54
+154,West Elm Chair,Furniture,445.99
+155,Nerf Blaster,Toys,160.1
+156,The Great Gatsby,Books,234.29
+157,Levi's Jeans,Clothing,313.86
+158,Nike Air Max,Shoes,74.01
+159,Zara Jacket,Clothing,374.97
+160,Barbie Dreamhouse,Toys,427.96
+161,H&M T-Shirt,Clothing,418.76
+162,Nerf Blaster,Toys,193.02
+163,iPhone 14,Smartphones,287.63
+164,Barbie Dreamhouse,Toys,318.15
+165,To Kill a Mockingbird,Books,307.67
+166,Apple Watch Series 8,Watches,305.57
+167,Puma RS-X,Shoes,263.44
+168,Ikea Sofa,Furniture,326.28
+169,Lenovo ThinkPad,Laptops,82.72
+170,Ikea Sofa,Furniture,10.76
+171,Apple Watch Series 8,Watches,458.28
+172,Pixel 7,Smartphones,349.38
+173,Levi's Jeans,Clothing,238.7
+174,Adidas Ultraboost,Shoes,109.66
+175,Galaxy S21,Smartphones,44.79
+176,Ashley Dining Table,Furniture,55.01
+177,Ikea Sofa,Furniture,301.59
+178,Puma RS-X,Shoes,287.7
+179,Puma RS-X,Shoes,435.34
+180,Galaxy S21,Smartphones,100.06
+181,Nike Air Max,Shoes,109.97
+182,KitchenAid Mixer,Kitchen Appliances,97.8
+183,To Kill a Mockingbird,Books,78.39
+184,MacBook Pro,Laptops,450.44
+185,MacBook Pro,Laptops,397.52
+186,The Great Gatsby,Books,272.83
+187,Ashley Dining Table,Furniture,37.37
+188,Sony WH-1000XM4,Headphones,72.63
+189,Pixel 7,Smartphones,391.2
+190,AirPods Pro,Headphones,164.3
+191,Apple Watch Series 8,Watches,212.6
+192,HP Spectre,Laptops,188.67
+193,HP Spectre,Laptops,431.54
+194,Galaxy S21,Smartphones,361.44
+195,Ninja Blender,Kitchen Appliances,25.83
+196,The Catcher in the Rye,Books,141.54
+197,The Great Gatsby,Books,496.99
+198,Nerf Blaster,Toys,224.02
+199,LEGO Star Wars,Toys,255.77
+200,Philips Airfryer,Kitchen Appliances,138.53
+201,Ashley Dining Table,Furniture,140.1
+202,West Elm Chair,Furniture,58.97
+203,Adidas Ultraboost,Shoes,344.9
+204,Fossil Gen 6,Watches,452.3
+205,iPhone 14,Smartphones,32.98
+206,KitchenAid Mixer,Kitchen Appliances,128.33
+207,Lenovo ThinkPad,Laptops,52.94
+208,Samsung Galaxy Watch,Watches,33.6
+209,Nerf Blaster,Toys,151.43
+210,Jabra Elite 85h,Headphones,243.17
+211,KitchenAid Mixer,Kitchen Appliances,463.77
+212,Garmin Fenix 7,Watches,401.64
+213,Uniqlo Hoodie,Clothing,177.01
+214,To Kill a Mockingbird,Books,74.77
+215,Jabra Elite 85h,Headphones,42.89
+216,Apple Watch Series 8,Watches,369.13
+217,Nike Air Max,Shoes,174.21
+218,Adidas Ultraboost,Shoes,411.62
+219,Sony WH-1000XM4,Headphones,144.69
+220,Garmin Fenix 7,Watches,380.32
+221,Ikea Sofa,Furniture,91.34
+222,OnePlus 11,Smartphones,214.49
+223,KitchenAid Mixer,Kitchen Appliances,187.92
+224,Ashley Dining Table,Furniture,238.55
+225,Samsung Galaxy Watch,Watches,148.87
+226,West Elm Chair,Furniture,63.56
+227,1984,Books,302.72
+228,To Kill a Mockingbird,Books,200.74
+229,Ninja Blender,Kitchen Appliances,155.11
+230,Ashley Dining Table,Furniture,220.34
+231,Instant Pot,Kitchen Appliances,452.23
+232,Bose QC45,Headphones,359.5
+233,Uniqlo Hoodie,Clothing,104.99
+234,Ikea Sofa,Furniture,114.81
+235,Jabra Elite 85h,Headphones,56.76
+236,Levi's Jeans,Clothing,498.05
+237,Adidas Ultraboost,Shoes,301.94
+238,Ninja Blender,Kitchen Appliances,217.89
+239,Barbie Dreamhouse,Toys,20.19
+240,Nike Air Max,Shoes,218.87
+241,The Great Gatsby,Books,450.8
+242,Barbie Dreamhouse,Toys,276.43
+243,Philips Airfryer,Kitchen Appliances,236.37
+244,Dell XPS 13,Laptops,479.04
+245,Philips Airfryer,Kitchen Appliances,334.96
+246,Lenovo ThinkPad,Laptops,86.14
+247,Apple Watch Series 8,Watches,482.04
+248,OnePlus 11,Smartphones,80.16
+249,KitchenAid Mixer,Kitchen Appliances,302.59
+250,1984,Books,188.56
+251,Levi's Jeans,Clothing,173.91
+252,Lenovo ThinkPad,Laptops,10.82
+253,KitchenAid Mixer,Kitchen Appliances,456.5
+254,Bose QC45,Headphones,315.62
+255,KitchenAid Mixer,Kitchen Appliances,33.7
+256,The Great Gatsby,Books,437.39
+257,The Catcher in the Rye,Books,483.88
+258,West Elm Chair,Furniture,249.18
+259,Zara Jacket,Clothing,489.6
+260,Ninja Blender,Kitchen Appliances,267.4
+261,Apple Watch Series 8,Watches,172.01
+262,MacBook Pro,Laptops,484.89
+263,Ninja Blender,Kitchen Appliances,159.15
+264,Bose QC45,Headphones,266.06
+265,iPhone 14,Smartphones,472.44
+266,Fossil Gen 6,Watches,136.72
+267,1984,Books,275.44
+268,Fossil Gen 6,Watches,88.72
+269,Nerf Blaster,Toys,100.25
+270,iPhone 14,Smartphones,91.76
+271,OnePlus 11,Smartphones,64.27
+272,Adidas Ultraboost,Shoes,286.27
+273,KitchenAid Mixer,Kitchen Appliances,408.29
+274,Apple Watch Series 8,Watches,490.52
+275,Zara Jacket,Clothing,92.63
+276,Hot Wheels Track,Toys,59.08
+277,Puma RS-X,Shoes,338.75
+278,Dell XPS 13,Laptops,425.9
+279,Uniqlo Hoodie,Clothing,115.82
+280,iPhone 14,Smartphones,499.28
+281,Levi's Jeans,Clothing,33.17
+282,Apple Watch Series 8,Watches,169.25
+283,Hot Wheels Track,Toys,397.04
+284,The Catcher in the Rye,Books,99.07
+285,Pixel 7,Smartphones,69.72
+286,1984,Books,156.85
+287,Pixel 7,Smartphones,469.1
+288,Jabra Elite 85h,Headphones,231.89
+289,Philips Airfryer,Kitchen Appliances,242.62
+290,Zara Jacket,Clothing,391.48
+291,Galaxy S21,Smartphones,191.63
+292,The Great Gatsby,Books,425.77
+293,Levi's Jeans,Clothing,50.35
+294,To Kill a Mockingbird,Books,248.15
+295,Apple Watch Series 8,Watches,343.9
+296,Nike Air Max,Shoes,53.38
+297,Instant Pot,Kitchen Appliances,219.81
+298,Lenovo ThinkPad,Laptops,466.54
+299,HP Spectre,Laptops,45.26
+300,To Kill a Mockingbird,Books,278.41
+301,Nerf Blaster,Toys,125.18
+302,Bose QC45,Headphones,331.22
+303,Ashley Dining Table,Furniture,469.78
+304,To Kill a Mockingbird,Books,285.23
+305,The Great Gatsby,Books,427.71
+306,Galaxy S21,Smartphones,329.02
+307,1984,Books,294.19
+308,Nike Air Max,Shoes,150.2
+309,Zara Jacket,Clothing,428.5
+310,Bose QC45,Headphones,22.54
+311,MacBook Pro,Laptops,153.44
+312,Fossil Gen 6,Watches,275.43
+313,Pixel 7,Smartphones,30.21
+314,Pixel 7,Smartphones,431.9
+315,The Catcher in the Rye,Books,235.84
+316,LEGO Star Wars,Toys,405.34
+317,Bose QC45,Headphones,176.96
+318,The Great Gatsby,Books,159.58
+319,Puma RS-X,Shoes,186.85
+320,The Great Gatsby,Books,466.0
+321,Ikea Sofa,Furniture,312.59
+322,Ikea Sofa,Furniture,33.85
+323,Ikea Sofa,Furniture,81.17
+324,OnePlus 11,Smartphones,125.7
+325,Philips Airfryer,Kitchen Appliances,290.85
+326,OnePlus 11,Smartphones,293.44
+327,Levi's Jeans,Clothing,53.13
+328,The Great Gatsby,Books,139.94
+329,Lenovo ThinkPad,Laptops,429.59
+330,Reebok Nano X,Shoes,46.84
+331,Zara Jacket,Clothing,133.15
+332,Lenovo ThinkPad,Laptops,251.7
+333,MacBook Pro,Laptops,297.81
+334,The Great Gatsby,Books,31.03
+335,Dell XPS 13,Laptops,23.57
+336,Uniqlo Hoodie,Clothing,147.33
+337,MacBook Pro,Laptops,43.72
+338,The Great Gatsby,Books,204.27
+339,HP Spectre,Laptops,273.96
+340,Ashley Dining Table,Furniture,210.64
+341,Garmin Fenix 7,Watches,258.01
+342,Puma RS-X,Shoes,402.64
+343,LEGO Star Wars,Toys,139.15
+344,HP Spectre,Laptops,495.85
+345,Garmin Fenix 7,Watches,48.58
+346,Dell XPS 13,Laptops,329.3
+347,Barbie Dreamhouse,Toys,239.81
+348,Instant Pot,Kitchen Appliances,322.39
+349,Levi's Jeans,Clothing,331.77
+350,Instant Pot,Kitchen Appliances,434.71
+351,Nerf Blaster,Toys,45.42
+352,Ninja Blender,Kitchen Appliances,19.67
+353,Levi's Jeans,Clothing,249.03
+354,Instant Pot,Kitchen Appliances,280.84
+355,iPhone 14,Smartphones,185.58
+356,1984,Books,71.16
+357,Galaxy S21,Smartphones,25.46
+358,Barbie Dreamhouse,Toys,98.78
+359,Galaxy S21,Smartphones,54.09
+360,LEGO Star Wars,Toys,243.07
+361,The Catcher in the Rye,Books,397.2
+362,Uniqlo Hoodie,Clothing,240.79
+363,Nike Air Max,Shoes,67.13
+364,Dell XPS 13,Laptops,440.44
+365,H&M T-Shirt,Clothing,498.12
+366,Lenovo ThinkPad,Laptops,117.27
+367,Uniqlo Hoodie,Clothing,117.36
+368,Zara Jacket,Clothing,129.72
+369,Zara Jacket,Clothing,175.12
+370,Instant Pot,Kitchen Appliances,475.54
+371,H&M T-Shirt,Clothing,475.83
+372,Apple Watch Series 8,Watches,165.42
+373,Adidas Ultraboost,Shoes,132.4
+374,Ikea Sofa,Furniture,366.6
+375,Nerf Blaster,Toys,417.52
+376,Uniqlo Hoodie,Clothing,270.43
+377,Garmin Fenix 7,Watches,498.79
+378,Dell XPS 13,Laptops,102.06
+379,Sony WH-1000XM4,Headphones,67.33
+380,H&M T-Shirt,Clothing,338.22
+381,Nike Air Max,Shoes,205.59
+382,Ikea Sofa,Furniture,464.95
+383,KitchenAid Mixer,Kitchen Appliances,412.78
+384,Ikea Sofa,Furniture,230.94
+385,Jabra Elite 85h,Headphones,134.65
+386,West Elm Chair,Furniture,448.71
+387,Wayfair Bed Frame,Furniture,31.96
+388,West Elm Chair,Furniture,431.62
+389,Ninja Blender,Kitchen Appliances,228.88
+390,Uniqlo Hoodie,Clothing,308.89
+391,Wayfair Bed Frame,Furniture,85.3
+392,H&M T-Shirt,Clothing,267.28
+393,Reebok Nano X,Shoes,482.72
+394,Ninja Blender,Kitchen Appliances,429.57
+395,Bose QC45,Headphones,105.33
+396,Samsung Galaxy Watch,Watches,316.85
+397,Instant Pot,Kitchen Appliances,340.63
+398,Nerf Blaster,Toys,388.47
+399,AirPods Pro,Headphones,219.31
+400,1984,Books,327.34
+401,LEGO Star Wars,Toys,334.11
+402,Levi's Jeans,Clothing,224.86
+403,Ashley Dining Table,Furniture,458.59
+404,Bose QC45,Headphones,460.79
+405,Wayfair Bed Frame,Furniture,252.7
+406,Galaxy S21,Smartphones,72.29
+407,Lenovo ThinkPad,Laptops,216.0
+408,KitchenAid Mixer,Kitchen Appliances,73.97
+409,KitchenAid Mixer,Kitchen Appliances,333.49
+410,Galaxy S21,Smartphones,129.82
+411,H&M T-Shirt,Clothing,42.2
+412,Dell XPS 13,Laptops,209.93
+413,LEGO Star Wars,Toys,348.59
+414,HP Spectre,Laptops,400.16
+415,West Elm Chair,Furniture,128.79
+416,KitchenAid Mixer,Kitchen Appliances,316.5
+417,H&M T-Shirt,Clothing,79.38
+418,HP Spectre,Laptops,499.39
+419,Samsung Galaxy Watch,Watches,293.17
+420,Garmin Fenix 7,Watches,113.16
+421,West Elm Chair,Furniture,101.41
+422,KitchenAid Mixer,Kitchen Appliances,37.06
+423,1984,Books,88.56
+424,Nerf Blaster,Toys,326.09
+425,The Great Gatsby,Books,351.4
+426,The Great Gatsby,Books,478.15
+427,The Catcher in the Rye,Books,373.3
+428,Apple Watch Series 8,Watches,498.24
+429,The Great Gatsby,Books,159.13
+430,Ninja Blender,Kitchen Appliances,336.46
+431,HP Spectre,Laptops,66.21
+432,Galaxy S21,Smartphones,69.62
+433,Reebok Nano X,Shoes,296.51
+434,Jabra Elite 85h,Headphones,196.24
+435,MacBook Pro,Laptops,420.16
+436,Reebok Nano X,Shoes,271.82
+437,Philips Airfryer,Kitchen Appliances,223.16
+438,Ikea Sofa,Furniture,79.65
+439,The Great Gatsby,Books,429.23
+440,HP Spectre,Laptops,286.3
+441,HP Spectre,Laptops,415.04
+442,Zara Jacket,Clothing,389.35
+443,Levi's Jeans,Clothing,373.16
+444,AirPods Pro,Headphones,481.46
+445,Pixel 7,Smartphones,31.27
+446,HP Spectre,Laptops,303.14
+447,1984,Books,189.73
+448,The Great Gatsby,Books,115.28
+449,Fossil Gen 6,Watches,401.56
+450,LEGO Star Wars,Toys,222.22
+451,Instant Pot,Kitchen Appliances,194.17
+452,Uniqlo Hoodie,Clothing,211.42
+453,Sony WH-1000XM4,Headphones,370.82
+454,Philips Airfryer,Kitchen Appliances,198.52
+455,Uniqlo Hoodie,Clothing,250.23
+456,1984,Books,487.93
+457,Lenovo ThinkPad,Laptops,412.63
+458,Reebok Nano X,Shoes,307.64
+459,Lenovo ThinkPad,Laptops,234.27
+460,Ikea Sofa,Furniture,185.27
+461,Fossil Gen 6,Watches,254.21
+462,Nike Air Max,Shoes,190.79
+463,Levi's Jeans,Clothing,297.65
+464,1984,Books,353.17
+465,Fossil Gen 6,Watches,380.49
+466,Zara Jacket,Clothing,99.42
+467,Bose QC45,Headphones,407.88
+468,Levi's Jeans,Clothing,311.94
+469,LEGO Star Wars,Toys,44.29
+470,Hot Wheels Track,Toys,32.59
+471,Lenovo ThinkPad,Laptops,462.01
+472,Jabra Elite 85h,Headphones,437.77
+473,Garmin Fenix 7,Watches,131.42
+474,The Great Gatsby,Books,314.73
+475,Galaxy S21,Smartphones,453.07
+476,KitchenAid Mixer,Kitchen Appliances,177.03
+477,KitchenAid Mixer,Kitchen Appliances,454.27
+478,Jabra Elite 85h,Headphones,358.72
+479,The Catcher in the Rye,Books,422.32
+480,West Elm Chair,Furniture,112.41
+481,Zara Jacket,Clothing,326.37
+482,Samsung Galaxy Watch,Watches,25.86
+483,Nike Air Max,Shoes,267.87
+484,Barbie Dreamhouse,Toys,445.17
+485,1984,Books,339.4
+486,Fossil Gen 6,Watches,103.87
+487,Nerf Blaster,Toys,216.44
+488,Fossil Gen 6,Watches,297.26
+489,Dell XPS 13,Laptops,376.21
+490,Levi's Jeans,Clothing,119.95
+491,Zara Jacket,Clothing,348.4
+492,Lenovo ThinkPad,Laptops,71.34
+493,Galaxy S21,Smartphones,96.7
+494,Ikea Sofa,Furniture,412.48
+495,Apple Watch Series 8,Watches,410.43
+496,Lenovo ThinkPad,Laptops,59.29
+497,Reebok Nano X,Shoes,471.39
+498,H&M T-Shirt,Clothing,244.47
+499,West Elm Chair,Furniture,153.98
+500,Lenovo ThinkPad,Laptops,51.52
+501,Dell XPS 13,Laptops,416.04
+502,HP Spectre,Laptops,290.09
+503,Ninja Blender,Kitchen Appliances,143.63
+504,Wayfair Bed Frame,Furniture,445.67
+505,Wayfair Bed Frame,Furniture,466.09
+506,LEGO Star Wars,Toys,348.15
+507,The Great Gatsby,Books,130.94
+508,Ashley Dining Table,Furniture,78.9
+509,Jabra Elite 85h,Headphones,419.9
+510,Ninja Blender,Kitchen Appliances,482.77
+511,Uniqlo Hoodie,Clothing,121.02
+512,Bose QC45,Headphones,20.07
+513,Fossil Gen 6,Watches,167.83
+514,Zara Jacket,Clothing,423.9
+515,Nerf Blaster,Toys,48.61
+516,Lenovo ThinkPad,Laptops,292.91
+517,Uniqlo Hoodie,Clothing,135.12
+518,OnePlus 11,Smartphones,118.46
+519,Puma RS-X,Shoes,394.21
+520,Ikea Sofa,Furniture,338.33
+521,Hot Wheels Track,Toys,153.65
+522,Nerf Blaster,Toys,294.96
+523,Lenovo ThinkPad,Laptops,143.28
+524,Fossil Gen 6,Watches,489.13
+525,Samsung Galaxy Watch,Watches,490.55
+526,Lenovo ThinkPad,Laptops,275.31
+527,Philips Airfryer,Kitchen Appliances,128.15
+528,Reebok Nano X,Shoes,484.75
+529,KitchenAid Mixer,Kitchen Appliances,110.45
+530,Instant Pot,Kitchen Appliances,464.94
+531,Bose QC45,Headphones,489.99
+532,Nike Air Max,Shoes,376.09
+533,West Elm Chair,Furniture,442.94
+534,Nerf Blaster,Toys,475.21
+535,1984,Books,89.34
+536,AirPods Pro,Headphones,413.42
+537,Barbie Dreamhouse,Toys,372.63
+538,OnePlus 11,Smartphones,291.53
+539,AirPods Pro,Headphones,338.94
+540,Samsung Galaxy Watch,Watches,179.04
+541,H&M T-Shirt,Clothing,142.92
+542,Hot Wheels Track,Toys,345.81
+543,Philips Airfryer,Kitchen Appliances,152.83
+544,HP Spectre,Laptops,199.19
+545,Zara Jacket,Clothing,45.11
+546,Barbie Dreamhouse,Toys,248.37
+547,Apple Watch Series 8,Watches,52.25
+548,Nike Air Max,Shoes,83.45
+549,Zara Jacket,Clothing,479.43
+550,Dell XPS 13,Laptops,451.79
+551,Uniqlo Hoodie,Clothing,88.42
+552,Philips Airfryer,Kitchen Appliances,178.81
+553,To Kill a Mockingbird,Books,333.62
+554,Bose QC45,Headphones,149.76
+555,Wayfair Bed Frame,Furniture,298.17
+556,Zara Jacket,Clothing,185.91
+557,Apple Watch Series 8,Watches,97.04
+558,KitchenAid Mixer,Kitchen Appliances,263.7
+559,Philips Airfryer,Kitchen Appliances,300.07
+560,LEGO Star Wars,Toys,378.42
+561,The Catcher in the Rye,Books,456.42
+562,1984,Books,208.04
+563,Jabra Elite 85h,Headphones,396.64
+564,West Elm Chair,Furniture,151.79
+565,Ninja Blender,Kitchen Appliances,215.01
+566,Nike Air Max,Shoes,483.38
+567,KitchenAid Mixer,Kitchen Appliances,257.17
+568,Sony WH-1000XM4,Headphones,275.07
+569,Bose QC45,Headphones,395.04
+570,OnePlus 11,Smartphones,126.96
+571,OnePlus 11,Smartphones,170.63
+572,Pixel 7,Smartphones,123.07
+573,1984,Books,89.71
+574,Fossil Gen 6,Watches,469.7
+575,H&M T-Shirt,Clothing,499.95
+576,OnePlus 11,Smartphones,262.69
+577,Wayfair Bed Frame,Furniture,110.6
+578,Jabra Elite 85h,Headphones,422.36
+579,Garmin Fenix 7,Watches,176.03
+580,Philips Airfryer,Kitchen Appliances,261.23
+581,KitchenAid Mixer,Kitchen Appliances,459.79
+582,Instant Pot,Kitchen Appliances,365.76
+583,Hot Wheels Track,Toys,405.56
+584,Galaxy S21,Smartphones,45.99
+585,Puma RS-X,Shoes,404.61
+586,MacBook Pro,Laptops,389.07
+587,LEGO Star Wars,Toys,380.33
+588,Uniqlo Hoodie,Clothing,457.02
+589,Ninja Blender,Kitchen Appliances,52.94
+590,Bose QC45,Headphones,296.44
+591,West Elm Chair,Furniture,430.49
+592,Ikea Sofa,Furniture,397.29
+593,Barbie Dreamhouse,Toys,448.14
+594,LEGO Star Wars,Toys,492.75
+595,Adidas Ultraboost,Shoes,362.44
+596,LEGO Star Wars,Toys,233.62
+597,OnePlus 11,Smartphones,36.83
+598,Samsung Galaxy Watch,Watches,388.45
+599,Nike Air Max,Shoes,259.18
+600,Bose QC45,Headphones,158.9
+601,Garmin Fenix 7,Watches,359.06
+602,KitchenAid Mixer,Kitchen Appliances,237.24
+603,The Catcher in the Rye,Books,319.23
+604,Uniqlo Hoodie,Clothing,487.59
+605,Lenovo ThinkPad,Laptops,498.97
+606,Adidas Ultraboost,Shoes,95.86
+607,Hot Wheels Track,Toys,65.42
+608,KitchenAid Mixer,Kitchen Appliances,480.93
+609,Reebok Nano X,Shoes,65.04
+610,Adidas Ultraboost,Shoes,294.37
+611,Apple Watch Series 8,Watches,495.21
+612,Dell XPS 13,Laptops,233.7
+613,Instant Pot,Kitchen Appliances,70.45
+614,iPhone 14,Smartphones,132.66
+615,Samsung Galaxy Watch,Watches,87.45
+616,Wayfair Bed Frame,Furniture,233.52
+617,LEGO Star Wars,Toys,66.99
+618,OnePlus 11,Smartphones,312.48
+619,Bose QC45,Headphones,342.91
+620,Jabra Elite 85h,Headphones,150.4
+621,Nerf Blaster,Toys,339.89
+622,Puma RS-X,Shoes,231.18
+623,Nerf Blaster,Toys,334.14
+624,KitchenAid Mixer,Kitchen Appliances,235.16
+625,Ikea Sofa,Furniture,87.07
+626,KitchenAid Mixer,Kitchen Appliances,322.15
+627,Galaxy S21,Smartphones,211.4
+628,Wayfair Bed Frame,Furniture,381.68
+629,The Catcher in the Rye,Books,103.07
+630,KitchenAid Mixer,Kitchen Appliances,254.66
+631,LEGO Star Wars,Toys,465.47
+632,KitchenAid Mixer,Kitchen Appliances,425.92
+633,Ashley Dining Table,Furniture,343.26
+634,Apple Watch Series 8,Watches,421.62
+635,Dell XPS 13,Laptops,194.56
+636,Samsung Galaxy Watch,Watches,492.6
+637,Ikea Sofa,Furniture,243.64
+638,Instant Pot,Kitchen Appliances,176.41
+639,Reebok Nano X,Shoes,22.72
+640,Adidas Ultraboost,Shoes,293.7
+641,Reebok Nano X,Shoes,257.84
+642,Adidas Ultraboost,Shoes,351.39
+643,MacBook Pro,Laptops,443.96
+644,Zara Jacket,Clothing,154.24
+645,Galaxy S21,Smartphones,51.44
+646,Barbie Dreamhouse,Toys,127.24
+647,iPhone 14,Smartphones,470.51
+648,Ninja Blender,Kitchen Appliances,157.31
+649,Pixel 7,Smartphones,71.48
+650,Pixel 7,Smartphones,216.42
+651,Uniqlo Hoodie,Clothing,67.68
+652,Jabra Elite 85h,Headphones,453.58
+653,Lenovo ThinkPad,Laptops,303.07
+654,H&M T-Shirt,Clothing,341.75
+655,Dell XPS 13,Laptops,438.4
+656,Philips Airfryer,Kitchen Appliances,323.12
+657,MacBook Pro,Laptops,308.34
+658,Nike Air Max,Shoes,366.28
+659,Fossil Gen 6,Watches,108.89
+660,Uniqlo Hoodie,Clothing,26.98
+661,Wayfair Bed Frame,Furniture,23.81
+662,Bose QC45,Headphones,28.79
+663,Jabra Elite 85h,Headphones,64.89
+664,Zara Jacket,Clothing,266.94
+665,Hot Wheels Track,Toys,215.83
+666,Sony WH-1000XM4,Headphones,323.88
+667,Ashley Dining Table,Furniture,234.75
+668,Pixel 7,Smartphones,66.22
+669,Barbie Dreamhouse,Toys,193.52
+670,To Kill a Mockingbird,Books,145.45
+671,Garmin Fenix 7,Watches,278.1
+672,Ikea Sofa,Furniture,136.78
+673,Instant Pot,Kitchen Appliances,409.9
+674,Garmin Fenix 7,Watches,268.66
+675,Reebok Nano X,Shoes,205.63
+676,Jabra Elite 85h,Headphones,340.43
+677,iPhone 14,Smartphones,415.17
+678,Pixel 7,Smartphones,248.52
+679,Zara Jacket,Clothing,171.46
+680,Lenovo ThinkPad,Laptops,190.48
+681,MacBook Pro,Laptops,423.37
+682,Nike Air Max,Shoes,199.12
+683,Ashley Dining Table,Furniture,74.69
+684,Adidas Ultraboost,Shoes,326.02
+685,1984,Books,324.25
+686,Hot Wheels Track,Toys,99.25
+687,LEGO Star Wars,Toys,232.01
+688,Sony WH-1000XM4,Headphones,465.16
+689,Fossil Gen 6,Watches,194.29
+690,Pixel 7,Smartphones,477.32
+691,Instant Pot,Kitchen Appliances,294.59
+692,Jabra Elite 85h,Headphones,105.01
+693,Zara Jacket,Clothing,62.41
+694,Puma RS-X,Shoes,101.8
+695,Levi's Jeans,Clothing,436.95
+696,The Catcher in the Rye,Books,223.08
+697,Barbie Dreamhouse,Toys,255.21
+698,Puma RS-X,Shoes,479.94
+699,Puma RS-X,Shoes,490.36
+700,Galaxy S21,Smartphones,282.6
+701,Uniqlo Hoodie,Clothing,239.07
+702,Apple Watch Series 8,Watches,200.36
+703,iPhone 14,Smartphones,78.45
+704,LEGO Star Wars,Toys,25.62
+705,OnePlus 11,Smartphones,33.1
+706,Instant Pot,Kitchen Appliances,16.09
+707,Garmin Fenix 7,Watches,389.98
+708,Hot Wheels Track,Toys,92.79
+709,Instant Pot,Kitchen Appliances,303.05
+710,Galaxy S21,Smartphones,91.84
+711,iPhone 14,Smartphones,466.71
+712,1984,Books,14.89
+713,Lenovo ThinkPad,Laptops,102.51
+714,Sony WH-1000XM4,Headphones,361.02
+715,LEGO Star Wars,Toys,44.55
+716,Fossil Gen 6,Watches,225.81
+717,HP Spectre,Laptops,209.76
+718,Ninja Blender,Kitchen Appliances,489.62
+719,Philips Airfryer,Kitchen Appliances,229.29
+720,Sony WH-1000XM4,Headphones,318.43
+721,Pixel 7,Smartphones,176.01
+722,Wayfair Bed Frame,Furniture,417.02
+723,West Elm Chair,Furniture,212.13
+724,Galaxy S21,Smartphones,53.64
+725,Barbie Dreamhouse,Toys,155.28
+726,Uniqlo Hoodie,Clothing,447.3
+727,Fossil Gen 6,Watches,184.22
+728,Dell XPS 13,Laptops,230.75
+729,Wayfair Bed Frame,Furniture,25.99
+730,Samsung Galaxy Watch,Watches,462.84
+731,Uniqlo Hoodie,Clothing,312.89
+732,Ashley Dining Table,Furniture,356.19
+733,Puma RS-X,Shoes,248.46
+734,Apple Watch Series 8,Watches,102.03
+735,Adidas Ultraboost,Shoes,68.68
+736,The Great Gatsby,Books,482.36
+737,Barbie Dreamhouse,Toys,416.02
+738,Nerf Blaster,Toys,242.82
+739,Adidas Ultraboost,Shoes,348.87
+740,Fossil Gen 6,Watches,362.32
+741,Samsung Galaxy Watch,Watches,91.44
+742,Nerf Blaster,Toys,71.95
+743,Nerf Blaster,Toys,344.93
+744,Sony WH-1000XM4,Headphones,319.1
+745,KitchenAid Mixer,Kitchen Appliances,17.94
+746,The Catcher in the Rye,Books,351.55
+747,Hot Wheels Track,Toys,393.33
+748,Ashley Dining Table,Furniture,423.55
+749,Bose QC45,Headphones,51.01
+750,Sony WH-1000XM4,Headphones,65.14
+751,Hot Wheels Track,Toys,26.01
+752,Philips Airfryer,Kitchen Appliances,267.45
+753,Puma RS-X,Shoes,122.07
+754,Hot Wheels Track,Toys,283.54
+755,1984,Books,242.21
+756,Instant Pot,Kitchen Appliances,98.32
+757,Hot Wheels Track,Toys,50.22
+758,Ashley Dining Table,Furniture,110.18
+759,Levi's Jeans,Clothing,326.58
+760,LEGO Star Wars,Toys,492.54
+761,Galaxy S21,Smartphones,417.34
+762,To Kill a Mockingbird,Books,314.12
+763,Puma RS-X,Shoes,259.44
+764,HP Spectre,Laptops,133.36
+765,KitchenAid Mixer,Kitchen Appliances,329.13
+766,Nike Air Max,Shoes,327.81
+767,Dell XPS 13,Laptops,262.12
+768,Dell XPS 13,Laptops,477.23
+769,Galaxy S21,Smartphones,398.65
+770,MacBook Pro,Laptops,441.37
+771,Apple Watch Series 8,Watches,364.17
+772,Pixel 7,Smartphones,358.12
+773,KitchenAid Mixer,Kitchen Appliances,225.82
+774,Dell XPS 13,Laptops,39.98
+775,Dell XPS 13,Laptops,112.67
+776,Puma RS-X,Shoes,467.67
+777,MacBook Pro,Laptops,200.2
+778,KitchenAid Mixer,Kitchen Appliances,106.65
+779,The Great Gatsby,Books,340.79
+780,LEGO Star Wars,Toys,387.08
+781,Lenovo ThinkPad,Laptops,120.13
+782,Jabra Elite 85h,Headphones,260.72
+783,Adidas Ultraboost,Shoes,446.73
+784,LEGO Star Wars,Toys,477.42
+785,Adidas Ultraboost,Shoes,275.83
+786,To Kill a Mockingbird,Books,490.82
+787,AirPods Pro,Headphones,267.1
+788,Hot Wheels Track,Toys,281.07
+789,1984,Books,136.96
+790,Adidas Ultraboost,Shoes,82.97
+791,Bose QC45,Headphones,257.15
+792,Apple Watch Series 8,Watches,190.74
+793,Instant Pot,Kitchen Appliances,299.74
+794,The Catcher in the Rye,Books,465.35
+795,Nerf Blaster,Toys,386.22
+796,Apple Watch Series 8,Watches,456.43
+797,Galaxy S21,Smartphones,272.03
+798,Uniqlo Hoodie,Clothing,194.32
+799,Nerf Blaster,Toys,34.29
+800,Samsung Galaxy Watch,Watches,147.57
+801,Lenovo ThinkPad,Laptops,66.64
+802,Pixel 7,Smartphones,294.43
+803,LEGO Star Wars,Toys,90.74
+804,Samsung Galaxy Watch,Watches,212.21
+805,Ninja Blender,Kitchen Appliances,80.24
+806,Jabra Elite 85h,Headphones,326.9
+807,Instant Pot,Kitchen Appliances,163.51
+808,Philips Airfryer,Kitchen Appliances,90.2
+809,Galaxy S21,Smartphones,448.57
+810,1984,Books,297.96
+811,Fossil Gen 6,Watches,276.13
+812,AirPods Pro,Headphones,496.6
+813,OnePlus 11,Smartphones,310.78
+814,Ikea Sofa,Furniture,488.53
+815,Instant Pot,Kitchen Appliances,448.17
+816,Instant Pot,Kitchen Appliances,236.09
+817,Fossil Gen 6,Watches,331.01
+818,iPhone 14,Smartphones,390.83
+819,Hot Wheels Track,Toys,465.85
+820,Apple Watch Series 8,Watches,55.08
+821,LEGO Star Wars,Toys,73.0
+822,HP Spectre,Laptops,237.87
+823,Ashley Dining Table,Furniture,116.25
+824,MacBook Pro,Laptops,401.62
+825,HP Spectre,Laptops,268.7
+826,Uniqlo Hoodie,Clothing,282.12
+827,Zara Jacket,Clothing,401.71
+828,Uniqlo Hoodie,Clothing,300.56
+829,AirPods Pro,Headphones,335.07
+830,1984,Books,282.08
+831,Nike Air Max,Shoes,205.84
+832,Reebok Nano X,Shoes,257.77
+833,Galaxy S21,Smartphones,177.8
+834,The Catcher in the Rye,Books,230.55
+835,1984,Books,84.27
+836,Galaxy S21,Smartphones,294.66
+837,Lenovo ThinkPad,Laptops,307.76
+838,iPhone 14,Smartphones,316.25
+839,iPhone 14,Smartphones,163.55
+840,OnePlus 11,Smartphones,129.68
+841,Zara Jacket,Clothing,369.33
+842,Lenovo ThinkPad,Laptops,91.9
+843,West Elm Chair,Furniture,350.42
+844,Adidas Ultraboost,Shoes,263.32
+845,LEGO Star Wars,Toys,75.81
+846,The Great Gatsby,Books,432.6
+847,Samsung Galaxy Watch,Watches,395.25
+848,The Great Gatsby,Books,59.79
+849,Sony WH-1000XM4,Headphones,479.82
+850,Instant Pot,Kitchen Appliances,170.7
+851,Ashley Dining Table,Furniture,439.17
+852,HP Spectre,Laptops,51.28
+853,Bose QC45,Headphones,288.86
+854,Levi's Jeans,Clothing,124.93
+855,Ashley Dining Table,Furniture,141.17
+856,Bose QC45,Headphones,404.71
+857,Nerf Blaster,Toys,345.02
+858,Jabra Elite 85h,Headphones,311.92
+859,The Catcher in the Rye,Books,294.23
+860,MacBook Pro,Laptops,387.85
+861,Fossil Gen 6,Watches,476.77
+862,Bose QC45,Headphones,164.4
+863,Nike Air Max,Shoes,449.52
+864,Nerf Blaster,Toys,276.18
+865,KitchenAid Mixer,Kitchen Appliances,493.31
+866,1984,Books,227.15
+867,Uniqlo Hoodie,Clothing,444.21
+868,AirPods Pro,Headphones,198.8
+869,West Elm Chair,Furniture,19.25
+870,LEGO Star Wars,Toys,75.83
+871,Ashley Dining Table,Furniture,464.4
+872,Ashley Dining Table,Furniture,389.79
+873,Zara Jacket,Clothing,82.36
+874,Jabra Elite 85h,Headphones,442.23
+875,OnePlus 11,Smartphones,437.34
+876,Uniqlo Hoodie,Clothing,13.53
+877,Jabra Elite 85h,Headphones,296.62
+878,Levi's Jeans,Clothing,375.21
+879,Nerf Blaster,Toys,444.73
+880,Dell XPS 13,Laptops,68.48
+881,Barbie Dreamhouse,Toys,312.81
+882,Uniqlo Hoodie,Clothing,399.65
+883,Ashley Dining Table,Furniture,355.11
+884,AirPods Pro,Headphones,258.67
+885,Sony WH-1000XM4,Headphones,276.4
+886,AirPods Pro,Headphones,465.45
+887,KitchenAid Mixer,Kitchen Appliances,229.55
+888,West Elm Chair,Furniture,144.79
+889,Bose QC45,Headphones,446.82
+890,LEGO Star Wars,Toys,489.19
+891,To Kill a Mockingbird,Books,126.08
+892,HP Spectre,Laptops,210.02
+893,Nerf Blaster,Toys,353.96
+894,Philips Airfryer,Kitchen Appliances,108.83
+895,H&M T-Shirt,Clothing,200.18
+896,Instant Pot,Kitchen Appliances,264.39
+897,H&M T-Shirt,Clothing,402.2
+898,Lenovo ThinkPad,Laptops,26.61
+899,MacBook Pro,Laptops,126.24
+900,Puma RS-X,Shoes,194.62
+901,iPhone 14,Smartphones,474.64
+902,Nike Air Max,Shoes,146.61
+903,Dell XPS 13,Laptops,63.06
+904,The Great Gatsby,Books,375.41
+905,Ikea Sofa,Furniture,493.02
+906,Apple Watch Series 8,Watches,494.89
+907,Nike Air Max,Shoes,56.79
+908,LEGO Star Wars,Toys,12.18
+909,The Great Gatsby,Books,242.27
+910,Samsung Galaxy Watch,Watches,465.29
+911,The Great Gatsby,Books,342.62
+912,OnePlus 11,Smartphones,300.49
+913,Galaxy S21,Smartphones,245.13
+914,The Catcher in the Rye,Books,443.93
+915,Bose QC45,Headphones,251.03
+916,The Great Gatsby,Books,130.69
+917,Nike Air Max,Shoes,350.9
+918,Jabra Elite 85h,Headphones,251.46
+919,Nerf Blaster,Toys,430.84
+920,Levi's Jeans,Clothing,490.02
+921,Barbie Dreamhouse,Toys,269.06
+922,Philips Airfryer,Kitchen Appliances,201.54
+923,KitchenAid Mixer,Kitchen Appliances,44.89
+924,Ikea Sofa,Furniture,209.2
+925,Puma RS-X,Shoes,438.66
+926,Garmin Fenix 7,Watches,435.48
+927,Bose QC45,Headphones,488.8
+928,Nike Air Max,Shoes,40.2
+929,HP Spectre,Laptops,30.06
+930,1984,Books,161.73
+931,The Catcher in the Rye,Books,160.57
+932,The Catcher in the Rye,Books,283.41
+933,1984,Books,213.07
+934,iPhone 14,Smartphones,323.28
+935,The Catcher in the Rye,Books,13.92
+936,Apple Watch Series 8,Watches,443.18
+937,OnePlus 11,Smartphones,413.75
+938,AirPods Pro,Headphones,189.46
+939,OnePlus 11,Smartphones,120.44
+940,Puma RS-X,Shoes,429.91
+941,Wayfair Bed Frame,Furniture,231.81
+942,To Kill a Mockingbird,Books,202.48
+943,OnePlus 11,Smartphones,434.51
+944,Barbie Dreamhouse,Toys,41.37
+945,iPhone 14,Smartphones,10.17
+946,Garmin Fenix 7,Watches,365.2
+947,Instant Pot,Kitchen Appliances,350.49
+948,Levi's Jeans,Clothing,270.48
+949,West Elm Chair,Furniture,264.22
+950,Bose QC45,Headphones,221.33
+951,Levi's Jeans,Clothing,432.5
+952,Uniqlo Hoodie,Clothing,248.53
+953,Samsung Galaxy Watch,Watches,336.21
+954,Ninja Blender,Kitchen Appliances,267.29
+955,Ninja Blender,Kitchen Appliances,316.29
+956,Jabra Elite 85h,Headphones,223.03
+957,Philips Airfryer,Kitchen Appliances,353.52
+958,Nike Air Max,Shoes,463.8
+959,The Catcher in the Rye,Books,454.63
+960,Garmin Fenix 7,Watches,178.9
+961,KitchenAid Mixer,Kitchen Appliances,480.99
+962,Philips Airfryer,Kitchen Appliances,250.39
+963,West Elm Chair,Furniture,67.06
+964,Adidas Ultraboost,Shoes,269.29
+965,Pixel 7,Smartphones,289.3
+966,Puma RS-X,Shoes,248.9
+967,Lenovo ThinkPad,Laptops,323.97
+968,Fossil Gen 6,Watches,470.63
+969,Dell XPS 13,Laptops,264.06
+970,Nerf Blaster,Toys,372.07
+971,The Catcher in the Rye,Books,230.84
+972,LEGO Star Wars,Toys,410.32
+973,Hot Wheels Track,Toys,431.34
+974,The Catcher in the Rye,Books,169.55
+975,The Catcher in the Rye,Books,471.38
+976,Reebok Nano X,Shoes,197.51
+977,Hot Wheels Track,Toys,355.33
+978,Apple Watch Series 8,Watches,297.42
+979,Wayfair Bed Frame,Furniture,120.14
+980,Nerf Blaster,Toys,494.01
+981,Nerf Blaster,Toys,119.63
+982,Ashley Dining Table,Furniture,349.97
+983,West Elm Chair,Furniture,266.56
+984,Uniqlo Hoodie,Clothing,38.74
+985,Hot Wheels Track,Toys,361.18
+986,Uniqlo Hoodie,Clothing,362.06
+987,Sony WH-1000XM4,Headphones,384.74
+988,Adidas Ultraboost,Shoes,381.32
+989,Barbie Dreamhouse,Toys,444.29
+990,OnePlus 11,Smartphones,331.11
+991,The Catcher in the Rye,Books,59.87
+992,Bose QC45,Headphones,395.26
+993,Reebok Nano X,Shoes,490.38
+994,iPhone 14,Smartphones,329.28
+995,Nike Air Max,Shoes,299.32
+996,The Great Gatsby,Books,290.35
+997,Galaxy S21,Smartphones,125.94
+998,Dell XPS 13,Laptops,310.14
+999,LEGO Star Wars,Toys,247.83
+1000,Adidas Ultraboost,Shoes,449.0

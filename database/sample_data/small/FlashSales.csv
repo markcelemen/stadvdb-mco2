@@ -1,0 +1,11 @@
+flash_sale_id,name,start_time,end_time
+1,Fall Event,2024-04-20 17:56:45,2024-05-01 17:56:45
+2,Weekend Fall Sale,2025-03-09 15:03:10,2025-03-23 15:03:10
+3,Weekend Winter Discount,2024-05-16 22:04:15,2024-05-29 22:04:15
+4,One-Day Holiday Extravaganza,2024-01-08 14:04:32,2024-01-11 14:04:32
+5,Mega Back-to-School Discount,2025-04-27 15:48:59,2025-04-28 15:48:59
+6,One-Day Black Friday Sale,2025-06-26 20:39:22,2025-06-30 20:39:22
+7,Weekend Summer Event,2025-03-14 21:57:00,2025-03-18 21:57:00
+8,Summer Offer,2024-07-04 06:02:15,2024-07-14 06:02:15
+9,Ultimate Exclusive Sale,2025-10-25 09:12:17,2025-10-28 09:12:17
+10,Ultimate Winter Bonanza,2024-09-01 14:55:28,2024-09-04 14:55:28

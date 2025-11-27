@@ -1,0 +1,12 @@
+flash_sale_id,name,start_time_id,end_time_id
+0,No Flash Sale,0,0
+1,Fall Event,3,4
+2,Weekend Fall Sale,53,61
+3,Weekend Winter Discount,5,6
+4,One-Day Holiday Extravaganza,1,2
+5,Mega Back-to-School Discount,72,74
+6,One-Day Black Friday Sale,97,101
+7,Weekend Summer Event,55,57
+8,Summer Offer,7,8
+9,Ultimate Exclusive Sale,158,160
+10,Ultimate Winter Bonanza,9,10
