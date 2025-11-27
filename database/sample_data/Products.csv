@@ -1,0 +1,151 @@
+product_id,seller_id,product_name,category,product_desc,price,original_price,discount_rate,quantity_stock,flash_sale_id
+1,1,Webcam,Electronics,Webcam in Electronics category,16.20,18.00,10.00,7,1
+2,2,Laundry Detergent,Home,Laundry Detergent in Home category,22.40,28.00,20.00,14,2
+3,3,Sunscreen,Beauty,Sunscreen in Beauty category,28.00,40.00,30.00,21,3
+4,4,Puzzle,Toys,Puzzle in Toys category,50.00,50.00,0.00,28,4
+5,5,Novel,Books,Novel in Books category,15.30,17.00,10.00,35,5
+6,6,Cap,Fashion,Cap in Fashion category,21.60,27.00,20.00,42,6
+7,7,Yoga Mat,Sports,Yoga Mat in Sports category,26.60,38.00,30.00,49,7
+8,8,Olive Oil,Grocery,Olive Oil in Grocery category,60.00,60.00,0.00,56,8
+9,9,Dog Food,Pets,Dog Food in Pets category,18.90,21.00,10.00,63,9
+10,10,Plant Fertilizer,Garden,Plant Fertilizer in Garden category,28.80,36.00,20.00,70,10
+11,11,Headphones,Electronics,Headphones in Electronics category,35.00,50.00,30.00,77,1
+12,12,Shampoo,Home,Shampoo in Home category,68.00,68.00,0.00,84,2
+13,13,Sunscreen,Beauty,Sunscreen in Beauty category,27.00,30.00,10.00,91,3
+14,14,Board Game,Toys,Board Game in Toys category,44.00,55.00,20.00,98,4
+15,15,Novel,Books,Novel in Books category,49.00,70.00,30.00,105,5
+16,16,Jeans,Fashion,Jeans in Fashion category,80.00,80.00,0.00,112,6
+17,17,Yoga Mat,Sports,Yoga Mat in Sports category,31.50,35.00,10.00,119,7
+18,18,Tea,Grocery,Tea in Grocery category,56.00,70.00,20.00,126,8
+19,19,Dog Treats,Pets,Dog Treats in Pets category,49.00,70.00,30.00,133,9
+20,20,Garden Hose,Garden,Garden Hose in Garden category,96.00,96.00,0.00,140,10
+21,21,Bluetooth Speaker,Electronics,Bluetooth Speaker in Electronics category,27.00,30.00,10.00,147,1
+22,22,Laundry Detergent,Home,Laundry Detergent in Home category,52.00,65.00,20.00,154,2
+23,23,Shampoo,Beauty,Shampoo in Beauty category,35.00,50.00,30.00,161,3
+24,24,Puzzle,Toys,Puzzle in Toys category,84.00,84.00,0.00,168,4
+25,25,Comics,Books,Comics in Books category,36.00,40.00,10.00,175,5
+26,26,T-Shirt,Fashion,T-Shirt in Fashion category,56.00,70.00,20.00,182,6
+27,27,Dumbbells,Sports,Dumbbells in Sports category,56.00,80.00,30.00,189,7
+28,28,Coffee,Grocery,Coffee in Grocery category,112.00,112.00,0.00,196,8
+29,29,Cat Litter,Pets,Cat Litter in Pets category,36.00,40.00,10.00,3,9
+30,30,Pruning Shears,Garden,Pruning Shears in Garden category,64.00,80.00,20.00,10,10
+31,31,Keyboard,Electronics,Keyboard in Electronics category,70.00,100.00,30.00,17,1
+32,32,Laundry Detergent,Home,Laundry Detergent in Home category,120.00,120.00,0.00,24,2
+33,33,Shampoo,Beauty,Shampoo in Beauty category,45.00,50.00,10.00,31,3
+34,34,Puzzle,Toys,Puzzle in Toys category,80.00,100.00,20.00,38,4
+35,35,Notebook,Books,Notebook in Books category,70.00,100.00,30.00,45,5
+36,36,Cap,Fashion,Cap in Fashion category,140.00,140.00,0.00,52,6
+37,37,Dumbbells,Sports,Dumbbells in Sports category,54.00,60.00,10.00,59,7
+38,38,Coffee,Grocery,Coffee in Grocery category,96.00,120.00,20.00,66,8
+39,39,Cat Litter,Pets,Cat Litter in Pets category,70.00,100.00,30.00,73,9
+40,40,Pruning Shears,Garden,Pruning Shears in Garden category,160.00,160.00,0.00,80,10
+41,41,Bluetooth Speaker,Electronics,Bluetooth Speaker in Electronics category,54.00,60.00,10.00,87,1
+42,42,All-Purpose Cleaner,Home,All-Purpose Cleaner in Home category,96.00,120.00,20.00,94,2
+43,43,Lipstick,Beauty,Lipstick in Beauty category,70.00,100.00,30.00,101,3
+44,44,Puzzle,Toys,Puzzle in Toys category,160.00,160.00,0.00,108,4
+45,45,Cookbook,Books,Cookbook in Books category,63.00,70.00,10.00,115,5
+46,46,Jacket,Fashion,Jacket in Fashion category,104.00,130.00,20.00,122,6
+47,47,Tennis Balls,Sports,Tennis Balls in Sports category,91.00,130.00,30.00,129,7
+48,48,Olive Oil,Grocery,Olive Oil in Grocery category,208.00,208.00,0.00,136,8
+49,49,Dog Treats,Pets,Dog Treats in Pets category,72.00,80.00,10.00,143,9
+50,50,Watering Can,Garden,Watering Can in Garden category,120.00,150.00,20.00,150,10
+51,1,Webcam,Electronics,Webcam in Electronics category,63.00,90.00,30.00,157,1
+52,2,Dish Soap,Home,Dish Soap in Home category,192.00,192.00,0.00,164,2
+53,3,Face Wash,Beauty,Face Wash in Beauty category,81.00,90.00,10.00,171,3
+54,4,Action Figure,Toys,Action Figure in Toys category,144.00,180.00,20.00,178,4
+55,5,Cookbook,Books,Cookbook in Books category,105.00,150.00,30.00,185,5
+56,6,T-Shirt,Fashion,T-Shirt in Fashion category,240.00,240.00,0.00,192,6
+57,7,Water Bottle,Sports,Water Bottle in Sports category,108.00,120.00,10.00,199,7
+58,8,Tea,Grocery,Tea in Grocery category,192.00,240.00,20.00,6,8
+59,9,Dog Treats,Pets,Dog Treats in Pets category,105.00,150.00,30.00,13,9
+60,10,Pruning Shears,Garden,Pruning Shears in Garden category,320.00,320.00,0.00,20,10
+61,11,Mouse,Electronics,Mouse in Electronics category,108.00,120.00,10.00,27,1
+62,12,Dish Soap,Home,Dish Soap in Home category,192.00,240.00,20.00,34,2
+63,13,Shampoo,Beauty,Shampoo in Beauty category,105.00,150.00,30.00,41,3
+64,14,Puzzle,Toys,Puzzle in Toys category,320.00,320.00,0.00,48,4
+65,15,Novel,Books,Novel in Books category,99.00,110.00,10.00,55,5
+66,16,Cap,Fashion,Cap in Fashion category,176.00,220.00,20.00,62,6
+67,17,Tennis Balls,Sports,Tennis Balls in Sports category,147.00,210.00,30.00,69,7
+68,18,Pasta,Grocery,Pasta in Grocery category,416.00,416.00,0.00,76,8
+69,19,Pet Shampoo,Pets,Pet Shampoo in Pets category,126.00,140.00,10.00,83,9
+70,20,Plant Fertilizer,Garden,Plant Fertilizer in Garden category,192.00,240.00,20.00,90,10
+71,21,Mouse,Electronics,Mouse in Electronics category,147.00,210.00,30.00,97,1
+72,22,Paper Towels,Home,Paper Towels in Home category,384.00,384.00,0.00,104,2
+73,23,Lipstick,Beauty,Lipstick in Beauty category,135.00,150.00,10.00,111,3
+74,24,Puzzle,Toys,Puzzle in Toys category,240.00,300.00,20.00,118,4
+75,25,Notebook,Books,Notebook in Books category,210.00,300.00,30.00,125,5
+76,26,Sneakers,Fashion,Sneakers in Fashion category,480.00,480.00,0.00,132,6
+77,27,Water Bottle,Sports,Water Bottle in Sports category,162.00,180.00,10.00,139,7
+78,28,Tea,Grocery,Tea in Grocery category,272.00,340.00,20.00,146,8
+79,29,Dog Treats,Pets,Dog Treats in Pets category,210.00,300.00,30.00,153,9
+80,30,Watering Can,Garden,Watering Can in Garden category,640.00,640.00,0.00,160,10
+81,31,Bluetooth Speaker,Electronics,Bluetooth Speaker in Electronics category,162.00,180.00,10.00,167,1
+82,32,Shampoo,Home,Shampoo in Home category,272.00,340.00,20.00,174,2
+83,33,Moisturizer,Beauty,Moisturizer in Beauty category,210.00,300.00,30.00,181,3
+84,34,Board Game,Toys,Board Game in Toys category,640.00,640.00,0.00,188,4
+85,35,Novel,Books,Novel in Books category,198.00,220.00,10.00,195,5
+86,36,T-Shirt,Fashion,T-Shirt in Fashion category,352.00,440.00,20.00,2,6
+87,37,Water Bottle,Sports,Water Bottle in Sports category,273.00,390.00,30.00,9,7
+88,38,Tea,Grocery,Tea in Grocery category,832.00,832.00,0.00,16,8
+89,39,Dog Treats,Pets,Dog Treats in Pets category,252.00,280.00,10.00,23,9
+90,40,Pruning Shears,Garden,Pruning Shears in Garden category,384.00,480.00,20.00,30,10
+91,41,Keyboard,Electronics,Keyboard in Electronics category,273.00,390.00,30.00,37,1
+92,42,Trash Bags,Home,Trash Bags in Home category,768.00,768.00,0.00,44,2
+93,43,Moisturizer,Beauty,Moisturizer in Beauty category,243.00,270.00,10.00,51,3
+94,44,Puzzle,Toys,Puzzle in Toys category,432.00,540.00,20.00,58,4
+95,45,Comics,Books,Comics in Books category,315.00,450.00,30.00,65,5
+96,46,Sneakers,Fashion,Sneakers in Fashion category,960.00,960.00,0.00,72,6
+97,47,Dumbbells,Sports,Dumbbells in Sports category,288.00,320.00,10.00,79,7
+98,48,Tea,Grocery,Tea in Grocery category,448.00,560.00,20.00,86,8
+99,49,Dog Food,Pets,Dog Food in Pets category,315.00,450.00,30.00,93,9
+100,50,Watering Can,Garden,Watering Can in Garden category,1280.00,1280.00,0.00,100,10
+101,1,Headphones,Electronics,Headphones in Electronics category,288.00,320.00,10.00,107,1
+102,2,Laundry Detergent,Home,Laundry Detergent in Home category,448.00,560.00,20.00,114,2
+103,3,Moisturizer,Beauty,Moisturizer in Beauty category,315.00,450.00,30.00,121,3
+104,4,Action Figure,Toys,Action Figure in Toys category,1280.00,1280.00,0.00,128,4
+105,5,Cookbook,Books,Cookbook in Books category,297.00,330.00,10.00,135,5
+106,6,Jacket,Fashion,Jacket in Fashion category,528.00,660.00,20.00,142,6
+107,7,Tennis Balls,Sports,Tennis Balls in Sports category,441.00,630.00,30.00,149,7
+108,8,Cereal,Grocery,Cereal in Grocery category,1664.00,1664.00,0.00,156,8
+109,9,Dog Food,Pets,Dog Food in Pets category,342.00,380.00,10.00,163,9
+110,10,Plant Fertilizer,Garden,Plant Fertilizer in Garden category,448.00,560.00,20.00,170,10
+111,11,Mouse,Electronics,Mouse in Electronics category,441.00,630.00,30.00,177,1
+112,12,Paper Towels,Home,Paper Towels in Home category,1536.00,1536.00,0.00,184,2
+113,13,Shampoo,Beauty,Shampoo in Beauty category,351.00,390.00,10.00,191,3
+114,14,Building Blocks,Toys,Building Blocks in Toys category,576.00,720.00,20.00,198,4
+115,15,Cookbook,Books,Cookbook in Books category,735.00,1050.00,30.00,5,5
+116,16,Jacket,Fashion,Jacket in Fashion category,1920.00,1920.00,0.00,12,6
+117,17,Water Bottle,Sports,Water Bottle in Sports category,468.00,520.00,10.00,19,7
+118,18,Cereal,Grocery,Cereal in Grocery category,896.00,1120.00,20.00,26,8
+119,19,Pet Shampoo,Pets,Pet Shampoo in Pets category,735.00,1050.00,30.00,33,9
+120,20,Watering Can,Garden,Watering Can in Garden category,2560.00,2560.00,0.00,40,10
+121,21,Phone Charger,Electronics,Phone Charger in Electronics category,468.00,520.00,10.00,47,1
+122,22,Laundry Detergent,Home,Laundry Detergent in Home category,896.00,1120.00,20.00,54,2
+123,23,Lipstick,Beauty,Lipstick in Beauty category,735.00,1050.00,30.00,61,3
+124,24,Action Figure,Toys,Action Figure in Toys category,2560.00,2560.00,0.00,68,4
+125,25,Cookbook,Books,Cookbook in Books category,495.00,550.00,10.00,75,5
+126,26,Jeans,Fashion,Jeans in Fashion category,880.00,1100.00,20.00,82,6
+127,27,Dumbbells,Sports,Dumbbells in Sports category,693.00,990.00,30.00,89,7
+128,28,Coffee,Grocery,Coffee in Grocery category,3328.00,3328.00,0.00,96,8
+129,29,Dog Treats,Pets,Dog Treats in Pets category,558.00,620.00,10.00,103,9
+130,30,Plant Fertilizer,Garden,Plant Fertilizer in Garden category,896.00,1120.00,20.00,110,10
+131,31,USB Cable,Electronics,USB Cable in Electronics category,693.00,990.00,30.00,117,1
+132,32,Dish Soap,Home,Dish Soap in Home category,3072.00,3072.00,0.00,124,2
+133,33,Lipstick,Beauty,Lipstick in Beauty category,567.00,630.00,10.00,131,3
+134,34,Action Figure,Toys,Action Figure in Toys category,960.00,1200.00,20.00,138,4
+135,35,Comics,Books,Comics in Books category,945.00,1350.00,30.00,145,5
+136,36,Cap,Fashion,Cap in Fashion category,3840.00,3840.00,0.00,152,6
+137,37,Water Bottle,Sports,Water Bottle in Sports category,756.00,840.00,10.00,159,7
+138,38,Tea,Grocery,Tea in Grocery category,1536.00,1920.00,20.00,166,8
+139,39,Pet Shampoo,Pets,Pet Shampoo in Pets category,945.00,1350.00,30.00,173,9
+140,40,Plant Fertilizer,Garden,Plant Fertilizer in Garden category,5120.00,5120.00,0.00,180,10
+141,41,Headphones,Electronics,Headphones in Electronics category,756.00,840.00,10.00,187,1
+142,42,Paper Towels,Home,Paper Towels in Home category,1536.00,1920.00,20.00,194,2
+143,43,Shampoo,Beauty,Shampoo in Beauty category,945.00,1350.00,30.00,1,3
+144,44,Board Game,Toys,Board Game in Toys category,5120.00,5120.00,0.00,8,4
+145,45,Comics,Books,Comics in Books category,891.00,990.00,10.00,15,5
+146,46,Jacket,Fashion,Jacket in Fashion category,1664.00,2080.00,20.00,22,6
+147,47,Tennis Balls,Sports,Tennis Balls in Sports category,1029.00,1470.00,30.00,29,7
+148,48,Coffee,Grocery,Coffee in Grocery category,6656.00,6656.00,0.00,36,8
+149,49,Dog Treats,Pets,Dog Treats in Pets category,990.00,1100.00,10.00,43,9
+150,50,Watering Can,Garden,Watering Can in Garden category,1792.00,2240.00,20.00,50,10

@@ -112,10 +112,3 @@ export async function loadHourlySales() {
         }
     });
 }
-
-// Automatically load all charts
-document.addEventListener('DOMContentLoaded', async () => {
-    await loadTopProducts();
-    await loadSalesByCategory();
-    await loadHourlySales();
-});
