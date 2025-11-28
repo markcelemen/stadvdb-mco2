@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { pool } = require('../db/pool');
 
+// Get user cart (read-only, no locking)
 router.get('/:userId', async (req, res) => {
     try {
         const userId = parseInt(req.params.userId);
@@ -45,79 +46,103 @@ router.get('/:userId', async (req, res) => {
     }
 });
 
-// Add to cart (always set quantity = 1; do not increment)
+// Add to cart (lightweight lock)
 router.post('/:userId/add', async (req, res) => {
+    const connection = await pool.getConnection();
     try {
+        await connection.beginTransaction();
+        
         const userId = parseInt(req.params.userId);
         const { productId } = req.body;
 
-        const [[product]] = await pool.query(
-            'SELECT product_id, quantity_stock FROM Products WHERE product_id = ?',
+        // Lock product row
+        const [[product]] = await connection.query(
+            'SELECT product_id, quantity_stock FROM Products WHERE product_id = ? FOR UPDATE',
             [productId]
         );
-        if (!product) return res.status(404).json({ success: false, message: 'Product not found' });
-        if (product.quantity_stock < 1) return res.status(400).json({ success: false, message: 'Out of stock' });
+        
+        if (!product) {
+            await connection.rollback();
+            return res.status(404).json({ success: false, message: 'Product not found' });
+        }
+        
+        if (product.quantity_stock < 1) {
+            await connection.rollback();
+            return res.status(400).json({ success: false, message: 'Out of stock' });
+        }
 
         // Check if already in cart
-        const [[existing]] = await pool.query(
+        const [[existing]] = await connection.query(
             'SELECT quantity_added FROM CartItems WHERE user_id = ? AND product_id = ?',
             [userId, productId]
         );
 
         if (existing) {
-            // Force quantity to 1 (no accumulation)
-            await pool.query(
+            await connection.query(
                 'UPDATE CartItems SET quantity_added = 1 WHERE user_id = ? AND product_id = ?',
                 [userId, productId]
             );
         } else {
-            await pool.query(
+            await connection.query(
                 'INSERT INTO CartItems (user_id, product_id, quantity_added) VALUES (?, ?, 1)',
                 [userId, productId]
             );
         }
 
-        res.json({ success: true, message: 'Added to cart (quantity set to 1)' });
+        await connection.commit();
+        res.json({ success: true, message: 'Added to cart' });
     } catch (error) {
+        await connection.rollback();
         console.error('Add to cart error:', error);
         res.status(500).json({ success: false, message: error.message });
+    } finally {
+        connection.release();
     }
 });
 
-// Update quantity
+// Update quantity (with lock)
 router.patch('/:userId/items/:productId', async (req, res) => {
+    const connection = await pool.getConnection();
     try {
+        await connection.beginTransaction();
+        
         const userId = parseInt(req.params.userId);
         const productId = parseInt(req.params.productId);
         const { quantity } = req.body;
 
         if (quantity < 1) {
+            await connection.rollback();
             return res.status(400).json({ success: false, message: 'Quantity must be at least 1' });
         }
 
-        // Check stock
-        const [[product]] = await pool.query(
-            'SELECT quantity_stock FROM Products WHERE product_id = ?',
+        // Lock product to check stock
+        const [[product]] = await connection.query(
+            'SELECT quantity_stock FROM Products WHERE product_id = ? FOR UPDATE',
             [productId]
         );
 
         if (!product || product.quantity_stock < quantity) {
+            await connection.rollback();
             return res.status(400).json({ success: false, message: 'Insufficient stock' });
         }
 
-        await pool.query(
+        await connection.query(
             'UPDATE CartItems SET quantity_added = ? WHERE user_id = ? AND product_id = ?',
             [quantity, userId, productId]
         );
 
+        await connection.commit();
         res.json({ success: true, message: 'Cart updated' });
     } catch (error) {
+        await connection.rollback();
         console.error('Update cart error:', error);
         res.status(500).json({ success: false, message: error.message });
+    } finally {
+        connection.release();
     }
 });
 
-// Remove from cart
+// Remove from cart (no lock needed on product)
 router.delete('/:userId/items/:productId', async (req, res) => {
     try {
         const userId = parseInt(req.params.userId);
@@ -135,45 +160,75 @@ router.delete('/:userId/items/:productId', async (req, res) => {
     }
 });
 
-// Validate cart before checkout
+// Validate cart (MySQL-side sorting with shared lock)
 router.post('/validate', async (req, res) => {
+    const connection = await pool.getConnection();
     try {
+        await connection.beginTransaction();
+        
         const { userId, items } = req.body;
 
-        for (const item of items) {
-            const [[product]] = await pool.query(`
-                SELECT 
-                    p.quantity_stock,
-                    p.flash_sale_id,
-                    fs.end_time
-                FROM Products p
-                LEFT JOIN FlashSales fs ON p.flash_sale_id = fs.flash_sale_id
-                WHERE p.product_id = ?
-            `, [item.productId]);
+        // Extract product IDs
+        const productIds = items.map(item => item.productId);
+        
+        if (productIds.length === 0) {
+            await connection.rollback();
+            return res.json({ success: false, message: 'Cart is empty' });
+        }
 
-            if (!product) {
-                return res.json({ success: false, message: 'Product no longer available' });
+        // Fetch and lock products in sorted order (MySQL handles sorting)
+        const placeholders = productIds.map(() => '?').join(',');
+        const [products] = await connection.query(`
+            SELECT 
+                p.product_id,
+                p.quantity_stock,
+                p.flash_sale_id,
+                fs.end_time
+            FROM Products p
+            LEFT JOIN FlashSales fs ON p.flash_sale_id = fs.flash_sale_id
+            WHERE p.product_id IN (${placeholders})
+            ORDER BY p.product_id ASC  -- MySQL sorts for consistent lock order
+            LOCK IN SHARE MODE  -- Shared lock (allows concurrent reads)
+        `, productIds);
+
+        if (products.length !== productIds.length) {
+            await connection.rollback();
+            return res.json({ success: false, message: 'Product no longer available' });
+        }
+
+        // Validate each product (products already sorted by MySQL)
+        for (const product of products) {
+            const item = items.find(i => i.productId === product.product_id);
+            
+            if (!item) {
+                await connection.rollback();
+                return res.json({ success: false, message: 'Product mismatch in cart' });
             }
 
-            // Check if flash sale ended
             if (product.flash_sale_id && product.end_time && new Date(product.end_time) < new Date()) {
+                await connection.rollback();
                 return res.json({ success: false, message: 'Flash sale has ended for one or more items' });
             }
 
-            // Check stock
             if (product.quantity_stock < 1) {
+                await connection.rollback();
                 return res.json({ success: false, message: 'One or more items are out of stock' });
             }
 
             if (product.quantity_stock < item.quantity) {
+                await connection.rollback();
                 return res.json({ success: false, message: `Insufficient stock. Only ${product.quantity_stock} available` });
             }
         }
 
+        await connection.commit();
         res.json({ success: true });
     } catch (error) {
+        await connection.rollback();
         console.error('Validate cart error:', error);
         res.status(500).json({ success: false, message: error.message });
+    } finally {
+        connection.release();
     }
 });
 
