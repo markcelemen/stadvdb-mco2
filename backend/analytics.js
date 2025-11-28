@@ -1,10 +1,9 @@
-// backend/analytics.js
-const pool = require('./db');
+const { olapPool } = require('./db/pool');
 
 // Report 1: Top 10 Selling Items
 async function getTop10SellingItems() {
     try {
-        const [rows] = await pool.query(`
+        const [rows] = await olapPool.query(`
             SELECT 
                 p.product_id,
                 p.product_name,
@@ -26,7 +25,7 @@ async function getTop10SellingItems() {
 // Report 2: Sales by Product/Category
 async function getSalesByCategory() {
     try {
-        const [rows] = await pool.query(`
+        const [rows] = await olapPool.query(`
             SELECT 
                 p.category,
                 SUM(f.quantity_sold) AS total_quantity_sold,
@@ -46,7 +45,7 @@ async function getSalesByCategory() {
 // Report 3: Hourly sales
 async function getHourlySales() {
     try {
-        const [rows] = await pool.query(`
+        const [rows] = await olapPool.query(`
             SELECT h.hour AS t_hour,
                 COALESCE(AVG(f.total_sale), 0) AS avg_sales
             FROM (SELECT 0 AS hour UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3

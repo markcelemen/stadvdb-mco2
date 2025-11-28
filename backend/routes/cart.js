@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../db/pool');
+const { pool } = require('../db/pool');
 
-// Get user cart
 router.get('/:userId', async (req, res) => {
     try {
         const userId = parseInt(req.params.userId);
