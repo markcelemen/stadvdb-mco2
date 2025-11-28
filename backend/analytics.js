@@ -44,7 +44,6 @@ async function getSalesByCategory() {
 }
 
 // Report 3: Hourly sales
-// backend/analytics.js
 async function getHourlySales() {
     try {
         const [rows] = await pool.query(`

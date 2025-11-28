@@ -67,19 +67,14 @@ export async function loadHourlySales() {
 
     // Initialize arrays for all 24 hours
     const values = Array(24).fill(0);
-    const count = Array(24).fill(0); // optional if you want averages
+    const count = Array(24).fill(0);
 
     // Fill in sales data
     data.forEach(d => {
         const hour = d.t_hour;
-        values[hour] += d.avg_sales; // if API already gives avg, this is fine
+        values[hour] += d.avg_sales; 
         count[hour] += 1;
     });
-
-    // If API is giving totals instead of averages, uncomment:
-    // for (let i = 0; i < 24; i++) {
-    //     if (count[i] > 0) values[i] = values[i] / count[i];
-    // }
 
     const labels = Array.from({ length: 24 }, (_, i) => `${i}:00`);
 
