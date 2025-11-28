@@ -15,30 +15,40 @@ router.post('/', async (req, res) => {
             throw new Error('Cart is empty');
         }
 
-        // STEP 1: Sort product IDs to ensure consistent lock order (deadlock avoidance)
-        const sortedItems = [...items].sort((a, b) => a.productId - b.productId);
-
+        // STEP 1: Extract product IDs
+        const productIds = items.map(item => item.productId);
+        
         let total = 0;
         const validatedProducts = [];
 
-        // STEP 2: Lock products in ascending ID order
-        for (const item of sortedItems) {
-            const [[product]] = await connection.query(`
-                SELECT 
-                    p.product_id,
-                    p.product_name,
-                    p.quantity_stock, 
-                    p.price, 
-                    p.flash_sale_id,
-                    fs.end_time as flash_end
-                FROM Products p
-                LEFT JOIN FlashSales fs ON p.flash_sale_id = fs.flash_sale_id
-                WHERE p.product_id = ?
-                FOR UPDATE  -- Pessimistic lock in sorted order
-            `, [item.productId]);
+        // STEP 2: Lock products in ascending ID order (sorted by MySQL)
+        const placeholders = productIds.map(() => '?').join(',');
+        const [products] = await connection.query(`
+            SELECT 
+                p.product_id,
+                p.product_name,
+                p.quantity_stock, 
+                p.price, 
+                p.flash_sale_id,
+                fs.end_time as flash_end
+            FROM Products p
+            LEFT JOIN FlashSales fs ON p.flash_sale_id = fs.flash_sale_id
+            WHERE p.product_id IN (${placeholders})
+            ORDER BY p.product_id ASC  -- MySQL sorts in ascending order for consistent locking
+            FOR UPDATE  -- Pessimistic lock in sorted order
+        `, productIds);
 
-            if (!product) {
-                throw new Error(`Product ${item.productId} not found`);
+        if (products.length !== productIds.length) {
+            throw new Error('One or more products not found');
+        }
+
+        // STEP 3: Validate each product
+        for (const product of products) {
+            // Find matching item from request
+            const item = items.find(i => i.productId === product.product_id);
+            
+            if (!item) {
+                throw new Error(`Product ${product.product_id} not in order items`);
             }
             
             // Validate flash sale
@@ -55,7 +65,7 @@ router.post('/', async (req, res) => {
             validatedProducts.push({ ...product, orderQuantity: item.quantity });
         }
 
-        // STEP 3: Create order (lock user row to prevent concurrent orders)
+        // STEP 4: Create order
         const [orderResult] = await connection.query(`
             INSERT INTO Orders (buyer_id, created_at) 
             VALUES (?, NOW())
@@ -63,7 +73,7 @@ router.post('/', async (req, res) => {
 
         const orderId = orderResult.insertId;
 
-        // STEP 4: Insert order items and update stock (already locked, safe to update)
+        // STEP 5: Insert order items and update stock (already locked, safe to update)
         for (const product of validatedProducts) {
             await connection.query(
                 'INSERT INTO OrderItems (order_id, product_id, quantity_sold) VALUES (?, ?, ?)',
@@ -82,7 +92,7 @@ router.post('/', async (req, res) => {
             }
         }
 
-        // STEP 5: Clear cart
+        // STEP 6: Clear cart
         await connection.query('DELETE FROM CartItems WHERE user_id = ?', [userId]);
 
         await connection.commit();

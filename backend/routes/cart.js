@@ -160,7 +160,7 @@ router.delete('/:userId/items/:productId', async (req, res) => {
     }
 });
 
-// Validate cart (read-only with shared lock)
+// Validate cart (MySQL-side sorting with shared lock)
 router.post('/validate', async (req, res) => {
     const connection = await pool.getConnection();
     try {
@@ -168,24 +168,41 @@ router.post('/validate', async (req, res) => {
         
         const { userId, items } = req.body;
 
-        // Sort by product_id to maintain lock order
-        const sortedItems = [...items].sort((a, b) => a.productId - b.productId);
+        // Extract product IDs
+        const productIds = items.map(item => item.productId);
+        
+        if (productIds.length === 0) {
+            await connection.rollback();
+            return res.json({ success: false, message: 'Cart is empty' });
+        }
 
-        for (const item of sortedItems) {
-            const [[product]] = await connection.query(`
-                SELECT 
-                    p.quantity_stock,
-                    p.flash_sale_id,
-                    fs.end_time
-                FROM Products p
-                LEFT JOIN FlashSales fs ON p.flash_sale_id = fs.flash_sale_id
-                WHERE p.product_id = ?
-                LOCK IN SHARE MODE  -- Shared lock (allows concurrent reads)
-            `, [item.productId]);
+        // Fetch and lock products in sorted order (MySQL handles sorting)
+        const placeholders = productIds.map(() => '?').join(',');
+        const [products] = await connection.query(`
+            SELECT 
+                p.product_id,
+                p.quantity_stock,
+                p.flash_sale_id,
+                fs.end_time
+            FROM Products p
+            LEFT JOIN FlashSales fs ON p.flash_sale_id = fs.flash_sale_id
+            WHERE p.product_id IN (${placeholders})
+            ORDER BY p.product_id ASC  -- MySQL sorts for consistent lock order
+            LOCK IN SHARE MODE  -- Shared lock (allows concurrent reads)
+        `, productIds);
 
-            if (!product) {
+        if (products.length !== productIds.length) {
+            await connection.rollback();
+            return res.json({ success: false, message: 'Product no longer available' });
+        }
+
+        // Validate each product (products already sorted by MySQL)
+        for (const product of products) {
+            const item = items.find(i => i.productId === product.product_id);
+            
+            if (!item) {
                 await connection.rollback();
-                return res.json({ success: false, message: 'Product no longer available' });
+                return res.json({ success: false, message: 'Product mismatch in cart' });
             }
 
             if (product.flash_sale_id && product.end_time && new Date(product.end_time) < new Date()) {
