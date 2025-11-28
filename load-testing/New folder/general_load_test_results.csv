@@ -1,0 +1,6 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+GET - All Products,250,0,0,6,1.07,0.000%,25.39618,45.16,4.04,1821.0
+POST - Add to Cart,250,3,0,14,2.19,9.200%,25.40650,8.14,5.26,328.0
+POST - Place Order,250,4,0,19,2.26,9.200%,25.40134,9.00,8.51,362.6
+GET - User Orders,250,1,0,7,0.74,0.000%,25.44270,20.07,4.08,807.7
+TOTAL,1000,2,0,19,2.38,4.600%,101.49193,82.25,21.85,829.8
