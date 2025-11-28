@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  oltp-db:
+    image: mysql:8
+    container_name: oltp-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: flashsale
+      MYSQL_USER: flashsale_user
+      MYSQL_PASSWORD: flashsale_pass
+    ports:
+      - "3307:3306"
+    volumes:
+      - oltp_data:/var/lib/mysql
+
+  olap-db:
+    image: mysql:8
+    container_name: olap-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: flashsale_olap
+      MYSQL_USER: olap_user
+      MYSQL_PASSWORD: olap_pass
+    ports:
+      - "3308:3306"
+    volumes:
+      - olap_data:/var/lib/mysql
+
+volumes:
+  oltp_data:
+  olap_data:

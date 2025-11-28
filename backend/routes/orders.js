@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../db/pool');
+const { pool } = require('../db/pool');
 
 // Create order with deadlock-safe locking
 router.post('/', async (req, res) => {

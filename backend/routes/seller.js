@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../db/pool');
+const { pool } = require('../db/pool');
 
 // GET all products posted by the seller
 router.get('/products', async (req, res) => {

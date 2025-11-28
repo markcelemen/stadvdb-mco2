@@ -1,55 +1,43 @@
 const express = require('express');
 const router = express.Router();
-const analytics = require('../analytics'); // import your analytics.js functions
+const analytics = require('../analytics'); 
 
-
-// Route: Top 10 Selling Items
-
+// Top 10 Selling Items
 router.get('/top-products', async (req, res) => {
+    const sellerId = Number(req.query.sellerId);
+    if (!sellerId) return res.status(400).json({ success: false, message: 'Missing sellerId' });
+
     try {
-        const data = await analytics.getTop10SellingItems();
-        res.json({
-            success: true,
-            report: 'Top 10 Selling Items',
-            data
-        });
+        const data = await analytics.getTop10SellingItems(sellerId);
+        res.json({ success: true, report: 'Top 10 Selling Items', data });
     } catch (error) {
-        res.status(500).json({
-            success: false,
-            message: 'Failed to fetch Top 10 Selling Items',
-            error: error.message
-        });
+        res.status(500).json({ success: false, message: error.message });
     }
 });
 
-// Route: Sales by Category
-
+// Sales by Category
 router.get('/sales-by-category', async (req, res) => {
+    const sellerId = Number(req.query.sellerId);
+    if (!sellerId) return res.status(400).json({ success: false, message: 'Missing sellerId' });
+
     try {
-        const data = await analytics.getSalesByCategory();
-        res.json({
-            success: true,
-            report: 'Sales by Category',
-            data
-        });
+        const data = await analytics.getSalesByCategory(sellerId);
+        res.json({ success: true, report: 'Sales by Category', data });
     } catch (error) {
-        res.status(500).json({
-            success: false,
-            message: 'Failed to fetch Sales by Category',
-            error: error.message
-        });
+        res.status(500).json({ success: false, message: error.message });
     }
 });
 
-// Route: Hourly Sales
+// Hourly Sales
+router.get('/hourly-sales', async (req, res) => {
+    const sellerId = Number(req.query.sellerId);
+    if (!sellerId) return res.status(400).json({ success: false, message: 'Missing sellerId' });
 
-router.get("/hourly-sales", async (req, res) => {
     try {
-        const data = await analytics.getHourlySales(); 
+        const data = await analytics.getHourlySales(sellerId);
         res.json({ success: true, data });
-    } catch (err) {
-        console.error("Hourly sales line API error:", err);
-        res.status(500).json({ success: false, message: "Server error." });
+    } catch (error) {
+        res.status(500).json({ success: false, message: error.message });
     }
 });
 

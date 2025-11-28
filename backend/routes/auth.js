@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../db/pool');
+const { pool } = require('../db/pool');
 
 // Register user
 router.post('/register', async (req, res) => {

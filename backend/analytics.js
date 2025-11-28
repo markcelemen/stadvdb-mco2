@@ -1,10 +1,9 @@
-// backend/analytics.js
-const pool = require('./db'); // import the connection pool
+const { olapPool } = require('./db/pool');
 
 // Report 1: Top 10 Selling Items
-async function getTop10SellingItems() {
+async function getTop10SellingItems(sellerId) {
     try {
-        const [rows] = await pool.query(`
+        const [rows] = await olapPool.query(`
             SELECT 
                 p.product_id,
                 p.product_name,
@@ -12,10 +11,11 @@ async function getTop10SellingItems() {
                 SUM(f.total_sale) AS total_sales_amount
             FROM FactOrders f
             JOIN DimProduct p ON f.product_id = p.product_id
+            WHERE f.seller_id = ? 
             GROUP BY p.product_id, p.product_name
             ORDER BY total_quantity_sold DESC
             LIMIT 10
-        `);
+        `, [sellerId]);
         return rows;
     } catch (error) {
         console.error('Error fetching Top 10 Selling Items:', error);
@@ -24,18 +24,19 @@ async function getTop10SellingItems() {
 }
 
 // Report 2: Sales by Product/Category
-async function getSalesByCategory() {
+async function getSalesByCategory(sellerId) {
     try {
-        const [rows] = await pool.query(`
+        const [rows] = await olapPool.query(`
             SELECT 
                 p.category,
                 SUM(f.quantity_sold) AS total_quantity_sold,
                 SUM(f.total_sale) AS total_sales_amount
             FROM FactOrders f
             JOIN DimProduct p ON f.product_id = p.product_id
+            WHERE f.seller_id = ?
             GROUP BY p.category
             ORDER BY total_sales_amount DESC
-        `);
+        `, [sellerId]);
         return rows;
     } catch (error) {
         console.error('Error fetching Sales by Category:', error);
@@ -44,10 +45,9 @@ async function getSalesByCategory() {
 }
 
 // Report 3: Hourly sales
-// backend/analytics.js
-async function getHourlySales() {
+async function getHourlySales(sellerId) {
     try {
-        const [rows] = await pool.query(`
+        const [rows] = await olapPool.query(`
             SELECT h.hour AS t_hour,
                 COALESCE(AVG(f.total_sale), 0) AS avg_sales
             FROM (SELECT 0 AS hour UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3
@@ -57,10 +57,10 @@ async function getHourlySales() {
                 UNION ALL SELECT 16 UNION ALL SELECT 17 UNION ALL SELECT 18 UNION ALL SELECT 19
                 UNION ALL SELECT 20 UNION ALL SELECT 21 UNION ALL SELECT 22 UNION ALL SELECT 23) h
             LEFT JOIN DimTime t ON t.t_hour = h.hour
-            LEFT JOIN FactOrders f ON f.time_id = t.time_id
+            LEFT JOIN FactOrders f ON f.time_id = t.time_id AND f.seller_id = ?
             GROUP BY h.hour
-            ORDER BY h.hour;
-        `);
+            ORDER BY h.hour
+        `, [sellerId]);
         return rows;
     } catch (error) {
         console.error('Error fetching hourly average sales:', error);
@@ -68,7 +68,7 @@ async function getHourlySales() {
     }
 }
 
-// Export functions for routes
+// Export functions
 module.exports = {
     getTop10SellingItems,
     getSalesByCategory,

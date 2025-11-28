@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../db/pool');
+const { pool } = require('../db/pool');
 
 // Get user cart (read-only, no locking)
 router.get('/:userId', async (req, res) => {
