@@ -1,5 +1,5 @@
 // backend/analytics.js
-const pool = require('./db'); // import the connection pool
+const pool = require('./db');
 
 // Report 1: Top 10 Selling Items
 async function getTop10SellingItems() {

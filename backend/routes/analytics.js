@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const analytics = require('../analytics'); // import your analytics.js functions
+const analytics = require('../analytics'); 
 
 
 // Route: Top 10 Selling Items
