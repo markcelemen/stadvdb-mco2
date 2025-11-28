@@ -501,7 +501,15 @@ $('flashSalesBody').addEventListener('click', async e=>{
 })();
 
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadTopProducts();
-    await loadSalesByCategory();
-    await loadHourlySales();
+    let currentUser = null;
+    try { currentUser = JSON.parse(localStorage.getItem('currentUser')); } 
+    catch(e){ console.error(e); }
+
+    if (!currentUser || currentUser.role !== 'SELLER') return;
+
+    const sellerId = currentUser.id;
+
+    await loadTopProducts(sellerId);
+    await loadSalesByCategory(sellerId);
+    await loadHourlySales(sellerId);
 });
