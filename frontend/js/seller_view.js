@@ -17,6 +17,10 @@ if (!currentUser || currentUser.role !== 'SELLER') {
     window.location.href = '/';
 }
 
+// ✅ ADD DEBUG LOGGING
+console.log('🔍 Current user:', currentUser);
+console.log('🔍 Seller ID:', currentUser?.id);
+
 // Utilities
 const $ = id => document.getElementById(id);
 
@@ -494,22 +498,34 @@ $('flashSalesBody').addEventListener('click', async e=>{
 });
 
 // Initial render - fetch data from API
-(async function init() {
+document.addEventListener('DOMContentLoaded', async () => {
+    console.log('📊 Initializing seller view...');
+    
+    let currentUser = null;
+    try { 
+        currentUser = JSON.parse(localStorage.getItem('currentUser')); 
+    } catch(e){ 
+        console.error('❌ Failed to parse currentUser:', e); 
+    }
+
+    if (!currentUser || currentUser.role !== 'SELLER') {
+        console.error('❌ Not a seller or not logged in');
+        return;
+    }
+
+    const sellerId = currentUser.id;
+    console.log('🔍 Loading data for seller ID:', sellerId);
+
+    // Load products, orders, flash sales
     await fetchProducts();
     await fetchOrders();
     await fetchFlashSales();
-})();
 
-document.addEventListener('DOMContentLoaded', async () => {
-    let currentUser = null;
-    try { currentUser = JSON.parse(localStorage.getItem('currentUser')); } 
-    catch(e){ console.error(e); }
-
-    if (!currentUser || currentUser.role !== 'SELLER') return;
-
-    const sellerId = currentUser.id;
-
+    // Load analytics
+    console.log('📊 Loading analytics for seller:', sellerId);
     await loadTopProducts(sellerId);
     await loadSalesByCategory(sellerId);
     await loadHourlySales(sellerId);
+    
+    console.log('✅ Seller view initialized');
 });

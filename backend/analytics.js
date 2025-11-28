@@ -1,18 +1,16 @@
-const { olapPool } = require('./db/pool');
+const { olapPool } = require('./db/pool'); // ✅ Use olapPool instead of pool
 
 // Report 1: Top 10 Selling Items
 async function getTop10SellingItems(sellerId) {
     try {
         const [rows] = await olapPool.query(`
             SELECT 
-                p.product_id,
                 p.product_name,
-                SUM(f.quantity_sold) AS total_quantity_sold,
-                SUM(f.total_sale) AS total_sales_amount
+                SUM(f.quantity_sold) AS total_quantity_sold
             FROM FactOrders f
             JOIN DimProduct p ON f.product_id = p.product_id
-            WHERE f.seller_id = ? 
-            GROUP BY p.product_id, p.product_name
+            WHERE f.seller_id = ?
+            GROUP BY f.product_id, p.product_name
             ORDER BY total_quantity_sold DESC
             LIMIT 10
         `, [sellerId]);
@@ -29,7 +27,6 @@ async function getSalesByCategory(sellerId) {
         const [rows] = await olapPool.query(`
             SELECT 
                 p.category,
-                SUM(f.quantity_sold) AS total_quantity_sold,
                 SUM(f.total_sale) AS total_sales_amount
             FROM FactOrders f
             JOIN DimProduct p ON f.product_id = p.product_id
@@ -48,20 +45,27 @@ async function getSalesByCategory(sellerId) {
 async function getHourlySales(sellerId) {
     try {
         const [rows] = await olapPool.query(`
-            SELECT h.hour AS t_hour,
-                COALESCE(AVG(f.total_sale), 0) AS avg_sales
-            FROM (SELECT 0 AS hour UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3
-                UNION ALL SELECT 4 UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7
-                UNION ALL SELECT 8 UNION ALL SELECT 9 UNION ALL SELECT 10 UNION ALL SELECT 11
-                UNION ALL SELECT 12 UNION ALL SELECT 13 UNION ALL SELECT 14 UNION ALL SELECT 15
-                UNION ALL SELECT 16 UNION ALL SELECT 17 UNION ALL SELECT 18 UNION ALL SELECT 19
-                UNION ALL SELECT 20 UNION ALL SELECT 21 UNION ALL SELECT 22 UNION ALL SELECT 23) h
-            LEFT JOIN DimTime t ON t.t_hour = h.hour
-            LEFT JOIN FactOrders f ON f.time_id = t.time_id AND f.seller_id = ?
-            GROUP BY h.hour
-            ORDER BY h.hour
+            SELECT 
+                t.t_hour,
+                AVG(f.total_sale) AS avg_sales
+            FROM FactOrders f
+            JOIN DimTime t ON f.time_id = t.time_id
+            WHERE f.seller_id = ?
+            GROUP BY t.t_hour
+            ORDER BY t.t_hour
         `, [sellerId]);
-        return rows;
+        
+        // Ensure all 24 hours are represented
+        const hourlyData = Array(24).fill(0).map((_, hour) => ({
+            t_hour: hour,
+            avg_sales: 0
+        }));
+        
+        rows.forEach(row => {
+            hourlyData[row.t_hour] = row;
+        });
+        
+        return hourlyData;
     } catch (error) {
         console.error('Error fetching hourly average sales:', error);
         throw error;
