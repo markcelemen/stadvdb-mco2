@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { pool } = require('../db/pool');
 
-// Create order
+// Create order with deadlock-safe locking
 router.post('/', async (req, res) => {
     const connection = await pool.getConnection();
     
@@ -15,69 +15,84 @@ router.post('/', async (req, res) => {
             throw new Error('Cart is empty');
         }
 
+        // STEP 1: Extract product IDs
+        const productIds = items.map(item => item.productId);
+        
         let total = 0;
+        const validatedProducts = [];
 
-        // Validate stock for ALL items first (before any updates)
-        for (const item of items) {
-            const [[product]] = await connection.query(`
-                SELECT 
-                    p.quantity_stock, 
-                    p.price, 
-                    p.flash_sale_id,
-                    p.product_name,
-                    fs.end_time as flash_end
-                FROM Products p
-                LEFT JOIN FlashSales fs ON p.flash_sale_id = fs.flash_sale_id
-                WHERE p.product_id = ?
-                FOR UPDATE
-            `, [item.productId]);
+        // STEP 2: Lock products in ascending ID order (sorted by MySQL)
+        const placeholders = productIds.map(() => '?').join(',');
+        const [products] = await connection.query(`
+            SELECT 
+                p.product_id,
+                p.product_name,
+                p.quantity_stock, 
+                p.price, 
+                p.flash_sale_id,
+                fs.end_time as flash_end
+            FROM Products p
+            LEFT JOIN FlashSales fs ON p.flash_sale_id = fs.flash_sale_id
+            WHERE p.product_id IN (${placeholders})
+            ORDER BY p.product_id ASC  -- MySQL sorts in ascending order for consistent locking
+            FOR UPDATE  -- Pessimistic lock in sorted order
+        `, productIds);
 
-            if (!product) {
-                throw new Error(`Product ${item.productId} not found`);
+        if (products.length !== productIds.length) {
+            throw new Error('One or more products not found');
+        }
+
+        // STEP 3: Validate each product
+        for (const product of products) {
+            // Find matching item from request
+            const item = items.find(i => i.productId === product.product_id);
+            
+            if (!item) {
+                throw new Error(`Product ${product.product_id} not in order items`);
             }
             
-            // Check flash sale hasn't ended
+            // Validate flash sale
             if (product.flash_sale_id && product.flash_end && new Date(product.flash_end) < new Date()) {
                 throw new Error(`Flash sale has ended for ${product.product_name}`);
             }
             
-            // Check sufficient stock
+            // Validate stock
             if (product.quantity_stock < item.quantity) {
-                throw new Error(`Insufficient stock for ${product.product_name}. Only ${product.quantity_stock} available, but you ordered ${item.quantity}`);
+                throw new Error(`Insufficient stock for ${product.product_name}. Available: ${product.quantity_stock}, Requested: ${item.quantity}`);
             }
 
             total += product.price * item.quantity;
+            validatedProducts.push({ ...product, orderQuantity: item.quantity });
         }
 
-        // Create order
-        const [orderResult] = await connection.query(
-            'INSERT INTO Orders (buyer_id, created_at) VALUES (?, NOW())',
-            [userId]
-        );
+        // STEP 4: Create order
+        const [orderResult] = await connection.query(`
+            INSERT INTO Orders (buyer_id, created_at) 
+            VALUES (?, NOW())
+        `, [userId]);
 
         const orderId = orderResult.insertId;
 
-        // Insert order items and reduce stock
-        for (const item of items) {
-            // Insert order item
+        // STEP 5: Insert order items and update stock (already locked, safe to update)
+        for (const product of validatedProducts) {
             await connection.query(
                 'INSERT INTO OrderItems (order_id, product_id, quantity_sold) VALUES (?, ?, ?)',
-                [orderId, item.productId, item.quantity]
+                [orderId, product.product_id, product.orderQuantity]
             );
 
-            // Reduce stock by the ORDERED QUANTITY
-            const [updateResult] = await connection.query(
-                'UPDATE Products SET quantity_stock = quantity_stock - ? WHERE product_id = ? AND quantity_stock >= ?',
-                [item.quantity, item.productId, item.quantity]
-            );
+            // Atomic stock reduction with double-check
+            const [updateResult] = await connection.query(`
+                UPDATE Products 
+                SET quantity_stock = quantity_stock - ? 
+                WHERE product_id = ? AND quantity_stock >= ?
+            `, [product.orderQuantity, product.product_id, product.orderQuantity]);
 
-            // Double-check the update succeeded
             if (updateResult.affectedRows === 0) {
-                throw new Error(`Failed to update stock for product ${item.productId}. Possible race condition.`);
+                throw new Error(`Stock update failed for ${product.product_name} (race condition detected)`);
             }
         }
 
-        // Clear cart
+        // STEP 6: Clear cart
         await connection.query('DELETE FROM CartItems WHERE user_id = ?', [userId]);
 
         await connection.commit();
@@ -96,7 +111,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-// Get user orders
+// Get user orders (read-only, no locking needed)
 router.get('/:userId', async (req, res) => {
     try {
         const userId = parseInt(req.params.userId);
