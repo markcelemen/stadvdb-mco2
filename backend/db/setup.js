@@ -31,6 +31,31 @@ async function setupDatabase() {
     await connection.query(schema);
 
     console.log('✅ Database schema created successfully');
+
+    // Configure MySQL settings for deadlock handling
+    console.log('⚙️  Configuring MySQL runtime settings...');
+    
+    try {
+      await connection.query('SET GLOBAL innodb_lock_wait_timeout = 5');
+      console.log('   ✓ innodb_lock_wait_timeout set to 5 seconds');
+    } catch (err) {
+      console.warn('   ⚠️  Could not set innodb_lock_wait_timeout (may need SUPER privilege)');
+    }
+
+    try {
+      await connection.query('SET GLOBAL innodb_print_all_deadlocks = ON');
+      console.log('   ✓ innodb_print_all_deadlocks enabled');
+    } catch (err) {
+      console.warn('   ⚠️  Could not enable innodb_print_all_deadlocks (may need SUPER privilege)');
+    }
+
+    // Verify innodb_autoinc_lock_mode setting
+    const [[{ Value: autoincMode }]] = await connection.query(
+      "SHOW VARIABLES LIKE 'innodb_autoinc_lock_mode'"
+    );
+    console.log(`   ℹ️  innodb_autoinc_lock_mode = ${autoincMode} (${autoincMode === '2' ? 'optimal' : 'consider setting to 2 in my.cnf'})`);
+
+    console.log('✅ MySQL configuration complete');
     
   } catch (err) {
     console.error('❌ Database setup failed:', err.message);
