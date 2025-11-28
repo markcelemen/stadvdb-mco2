@@ -1,0 +1,3 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+POST - Place Order (Scalability),5000,9,3,349,22.21,0.000%,50.00200,17.68,17.09,362.0
+TOTAL,5000,9,3,349,22.21,0.000%,50.00200,17.68,17.09,362.0
